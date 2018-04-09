@@ -1,0 +1,476 @@
+11:58:05 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+11:58:05 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+11:58:05 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r clean 
+rm -rf  ./src/acc.o ./src/eeprom.o ./src/flash.o ./src/font5x7.o ./src/joystick.o ./src/led7seg.o ./src/light.o ./src/oled.o ./src/pca9532.o ./src/rgb.o ./src/rotary.o ./src/temp.o ./src/uart2.o  ./src/acc.d ./src/eeprom.d ./src/flash.d ./src/font5x7.d ./src/joystick.d ./src/led7seg.d ./src/light.d ./src/oled.d ./src/pca9532.d ./src/rgb.d ./src/rotary.d ./src/temp.d ./src/uart2.d  libLib_EaBaseBoard.a
+ 
+11:58:06 **** Clean-only build of configuration Debug for project demo ****
+make -r clean 
+rm -rf  ./src/cr_startup_lpc17.o ./src/main.o  ./src/cr_startup_lpc17.d ./src/main.d  demo.axf
+rm: cannot unlink `demo.axf': Permission denied
+make: [clean] Error 1 (ignored)
+ 
+11:59:16 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+11:59:19 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+11:59:19 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r clean 
+rm -rf  ./src/acc.o ./src/eeprom.o ./src/flash.o ./src/font5x7.o ./src/joystick.o ./src/led7seg.o ./src/light.o ./src/oled.o ./src/pca9532.o ./src/rgb.o ./src/rotary.o ./src/temp.o ./src/uart2.o  ./src/acc.d ./src/eeprom.d ./src/flash.d ./src/font5x7.d ./src/joystick.d ./src/led7seg.d ./src/light.d ./src/oled.d ./src/pca9532.d ./src/rgb.d ./src/rotary.d ./src/temp.d ./src/uart2.d  libLib_EaBaseBoard.a
+ 
+11:59:34 **** Incremental Build of configuration Release for project CMSISv2p00_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+11:59:34 **** Build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r all 
+Building file: ../src/core_cm3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx" -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/core_cm3.d" -MT"src/core_cm3.o" -MT"src/core_cm3.d" -o "src/core_cm3.o" "../src/core_cm3.c"
+Finished building: ../src/core_cm3.c
+ 
+Building file: ../src/system_LPC17xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx" -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/system_LPC17xx.d" -MT"src/system_LPC17xx.o" -MT"src/system_LPC17xx.d" -o "src/system_LPC17xx.o" "../src/system_LPC17xx.c"
+Finished building: ../src/system_LPC17xx.c
+ 
+Building target: libCMSISv2p00_LPC17xx.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libCMSISv2p00_LPC17xx.a"  ./src/core_cm3.o ./src/system_LPC17xx.o   
+c:\nxp\LPCXpresso_8.2.2_650\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libCMSISv2p00_LPC17xx.a
+Finished building target: libCMSISv2p00_LPC17xx.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libCMSISv2p00_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv2p00_LPC17xx.a >libCMSISv2p00_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+      0	      0	      0	      0	      0	core_cm3.o (ex libCMSISv2p00_LPC17xx.a)
+    408	      4	      0	    412	    19c	system_LPC17xx.o (ex libCMSISv2p00_LPC17xx.a)
+ 
+11:59:36 **** Clean-only build of configuration Release for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+11:59:36 **** Incremental Build of configuration Release for project CMSISv2p00_LPC17xx ****
+make -r all 
+Building file: ../src/core_cm3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/core_cm3.d" -MT"src/core_cm3.o" -MT"src/core_cm3.d" -o "src/core_cm3.o" "../src/core_cm3.c"
+Finished building: ../src/core_cm3.c
+ 
+Building file: ../src/system_LPC17xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/system_LPC17xx.d" -MT"src/system_LPC17xx.o" -MT"src/system_LPC17xx.d" -o "src/system_LPC17xx.o" "../src/system_LPC17xx.c"
+Finished building: ../src/system_LPC17xx.c
+ 
+Building target: libCMSISv2p00_LPC17xx.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libCMSISv2p00_LPC17xx.a"  ./src/core_cm3.o ./src/system_LPC17xx.o   
+c:\nxp\LPCXpresso_8.2.2_650\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libCMSISv2p00_LPC17xx.a
+Finished building target: libCMSISv2p00_LPC17xx.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libCMSISv2p00_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv2p00_LPC17xx.a >libCMSISv2p00_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+      0	      0	      0	      0	      0	core_cm3.o (ex libCMSISv2p00_LPC17xx.a)
+    408	      4	      0	    412	    19c	system_LPC17xx.o (ex libCMSISv2p00_LPC17xx.a)
+ 
+11:59:38 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+11:59:38 **** Build of configuration Debug for project Lib_MCU ****
+make -r all 
+Building file: ../src/lpc17xx_adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_adc.d" -MT"src/lpc17xx_adc.o" -MT"src/lpc17xx_adc.d" -o "src/lpc17xx_adc.o" "../src/lpc17xx_adc.c"
+Finished building: ../src/lpc17xx_adc.c
+ 
+Building file: ../src/lpc17xx_can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_can.d" -MT"src/lpc17xx_can.o" -MT"src/lpc17xx_can.d" -o "src/lpc17xx_can.o" "../src/lpc17xx_can.c"
+../src/lpc17xx_can.c: In function 'CAN_Init':
+../src/lpc17xx_can.c:177:11: warning: variable 'temp' set but not used [-Wunused-but-set-variable]
+  uint32_t temp;
+           ^
+Finished building: ../src/lpc17xx_can.c
+ 
+Building file: ../src/lpc17xx_clkpwr.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_clkpwr.d" -MT"src/lpc17xx_clkpwr.o" -MT"src/lpc17xx_clkpwr.d" -o "src/lpc17xx_clkpwr.o" "../src/lpc17xx_clkpwr.c"
+Finished building: ../src/lpc17xx_clkpwr.c
+ 
+Building file: ../src/lpc17xx_dac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_dac.d" -MT"src/lpc17xx_dac.o" -MT"src/lpc17xx_dac.d" -o "src/lpc17xx_dac.o" "../src/lpc17xx_dac.c"
+Finished building: ../src/lpc17xx_dac.c
+ 
+Building file: ../src/lpc17xx_emac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_emac.d" -MT"src/lpc17xx_emac.o" -MT"src/lpc17xx_emac.d" -o "src/lpc17xx_emac.o" "../src/lpc17xx_emac.c"
+Finished building: ../src/lpc17xx_emac.c
+ 
+Building file: ../src/lpc17xx_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_gpio.d" -MT"src/lpc17xx_gpio.o" -MT"src/lpc17xx_gpio.d" -o "src/lpc17xx_gpio.o" "../src/lpc17xx_gpio.c"
+Finished building: ../src/lpc17xx_gpio.c
+ 
+Building file: ../src/lpc17xx_i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_i2c.d" -MT"src/lpc17xx_i2c.o" -MT"src/lpc17xx_i2c.d" -o "src/lpc17xx_i2c.o" "../src/lpc17xx_i2c.c"
+Finished building: ../src/lpc17xx_i2c.c
+ 
+Building file: ../src/lpc17xx_i2s.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_i2s.d" -MT"src/lpc17xx_i2s.o" -MT"src/lpc17xx_i2s.d" -o "src/lpc17xx_i2s.o" "../src/lpc17xx_i2s.c"
+Finished building: ../src/lpc17xx_i2s.c
+ 
+Building file: ../src/lpc17xx_libcfg_default.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_libcfg_default.d" -MT"src/lpc17xx_libcfg_default.o" -MT"src/lpc17xx_libcfg_default.d" -o "src/lpc17xx_libcfg_default.o" "../src/lpc17xx_libcfg_default.c"
+Finished building: ../src/lpc17xx_libcfg_default.c
+ 
+Building file: ../src/lpc17xx_mcpwm.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_mcpwm.d" -MT"src/lpc17xx_mcpwm.o" -MT"src/lpc17xx_mcpwm.d" -o "src/lpc17xx_mcpwm.o" "../src/lpc17xx_mcpwm.c"
+Finished building: ../src/lpc17xx_mcpwm.c
+ 
+Building file: ../src/lpc17xx_nvic.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_nvic.d" -MT"src/lpc17xx_nvic.o" -MT"src/lpc17xx_nvic.d" -o "src/lpc17xx_nvic.o" "../src/lpc17xx_nvic.c"
+Finished building: ../src/lpc17xx_nvic.c
+ 
+Building file: ../src/lpc17xx_pinsel.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_pinsel.d" -MT"src/lpc17xx_pinsel.o" -MT"src/lpc17xx_pinsel.d" -o "src/lpc17xx_pinsel.o" "../src/lpc17xx_pinsel.c"
+Finished building: ../src/lpc17xx_pinsel.c
+ 
+Building file: ../src/lpc17xx_pwm.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_pwm.d" -MT"src/lpc17xx_pwm.o" -MT"src/lpc17xx_pwm.d" -o "src/lpc17xx_pwm.o" "../src/lpc17xx_pwm.c"
+Finished building: ../src/lpc17xx_pwm.c
+ 
+Building file: ../src/lpc17xx_qei.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_qei.d" -MT"src/lpc17xx_qei.o" -MT"src/lpc17xx_qei.d" -o "src/lpc17xx_qei.o" "../src/lpc17xx_qei.c"
+Finished building: ../src/lpc17xx_qei.c
+ 
+Building file: ../src/lpc17xx_rit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_rit.d" -MT"src/lpc17xx_rit.o" -MT"src/lpc17xx_rit.d" -o "src/lpc17xx_rit.o" "../src/lpc17xx_rit.c"
+Finished building: ../src/lpc17xx_rit.c
+ 
+Building file: ../src/lpc17xx_rtc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_rtc.d" -MT"src/lpc17xx_rtc.o" -MT"src/lpc17xx_rtc.d" -o "src/lpc17xx_rtc.o" "../src/lpc17xx_rtc.c"
+Finished building: ../src/lpc17xx_rtc.c
+ 
+Building file: ../src/lpc17xx_spi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_spi.d" -MT"src/lpc17xx_spi.o" -MT"src/lpc17xx_spi.d" -o "src/lpc17xx_spi.o" "../src/lpc17xx_spi.c"
+Finished building: ../src/lpc17xx_spi.c
+ 
+Building file: ../src/lpc17xx_ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_ssp.d" -MT"src/lpc17xx_ssp.o" -MT"src/lpc17xx_ssp.d" -o "src/lpc17xx_ssp.o" "../src/lpc17xx_ssp.c"
+Finished building: ../src/lpc17xx_ssp.c
+ 
+Building file: ../src/lpc17xx_timer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_timer.d" -MT"src/lpc17xx_timer.o" -MT"src/lpc17xx_timer.d" -o "src/lpc17xx_timer.o" "../src/lpc17xx_timer.c"
+../src/lpc17xx_timer.c: In function 'TIM_Init':
+../src/lpc17xx_timer.c:244:11: warning: variable 'timer' set but not used [-Wunused-but-set-variable]
+  uint32_t timer;
+           ^
+../src/lpc17xx_timer.c: In function 'TIM_ConfigMatch':
+../src/lpc17xx_timer.c:389:11: warning: variable 'timer' set but not used [-Wunused-but-set-variable]
+  uint32_t timer;
+           ^
+../src/lpc17xx_timer.c: In function 'TIM_ConfigCapture':
+../src/lpc17xx_timer.c:436:11: warning: variable 'timer' set but not used [-Wunused-but-set-variable]
+  uint32_t timer;
+           ^
+Finished building: ../src/lpc17xx_timer.c
+ 
+Building file: ../src/lpc17xx_uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_uart.d" -MT"src/lpc17xx_uart.o" -MT"src/lpc17xx_uart.d" -o "src/lpc17xx_uart.o" "../src/lpc17xx_uart.c"
+../src/lpc17xx_uart.c: In function 'UART_SendString':
+../src/lpc17xx_uart.c:1394:33: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  return UART_Send(UARTx, txbuf, strlen(txbuf), BLOCKING);
+                                 ^
+Finished building: ../src/lpc17xx_uart.c
+ 
+Building file: ../src/lpc17xx_wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_wdt.d" -MT"src/lpc17xx_wdt.o" -MT"src/lpc17xx_wdt.d" -o "src/lpc17xx_wdt.o" "../src/lpc17xx_wdt.c"
+Finished building: ../src/lpc17xx_wdt.c
+ 
+Building target: libLib_MCU.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libLib_MCU.a"  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o   
+c:\nxp\LPCXpresso_8.2.2_650\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLib_MCU.a
+Finished building target: libLib_MCU.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1241	      0	      0	   1241	    4d9	lpc17xx_adc.o (ex libLib_MCU.a)
+  10777	     16	     60	  10853	   2a65	lpc17xx_can.o (ex libLib_MCU.a)
+    536	      0	      0	    536	    218	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    385	      0	      0	    385	    181	lpc17xx_dac.o (ex libLib_MCU.a)
+   2951	      0	  10892	  13843	   3613	lpc17xx_emac.o (ex libLib_MCU.a)
+   1708	      0	      0	   1708	    6ac	lpc17xx_gpio.o (ex libLib_MCU.a)
+   4469	      0	     36	   4505	   1199	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2901	      0	      8	   2909	    b5d	lpc17xx_i2s.o (ex libLib_MCU.a)
+     12	      0	      0	     12	      c	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1820	      0	      0	   1820	    71c	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    240	      0	      0	    240	     f0	lpc17xx_nvic.o (ex libLib_MCU.a)
+    564	      0	      0	    564	    234	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2557	      0	      0	   2557	    9fd	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2145	      0	      0	   2145	    861	lpc17xx_qei.o (ex libLib_MCU.a)
+    633	      0	      0	    633	    279	lpc17xx_rit.o (ex libLib_MCU.a)
+   3905	      0	      0	   3905	    f41	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1717	      0	     12	   1729	    6c1	lpc17xx_spi.o (ex libLib_MCU.a)
+   3517	      0	     24	   3541	    dd5	lpc17xx_ssp.o (ex libLib_MCU.a)
+   2591	      0	      0	   2591	    a1f	lpc17xx_timer.o (ex libLib_MCU.a)
+   5822	      0	     68	   5890	   1702	lpc17xx_uart.o (ex libLib_MCU.a)
+    701	      0	      0	    701	    2bd	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+11:59:49 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r all 
+make: Nothing to be done for `all'.
+11:59:51 **** Incremental Build of configuration Release for project CMSISv2p00_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+11:59:51 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+11:59:51 **** Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r all 
+Building file: ../src/acc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/acc.d" -MT"src/acc.o" -MT"src/acc.d" -o "src/acc.o" "../src/acc.c"
+Finished building: ../src/acc.c
+ 
+Building file: ../src/eeprom.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/eeprom.d" -MT"src/eeprom.o" -MT"src/eeprom.d" -o "src/eeprom.o" "../src/eeprom.c"
+Finished building: ../src/eeprom.c
+ 
+Building file: ../src/flash.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/flash.d" -MT"src/flash.o" -MT"src/flash.d" -o "src/flash.o" "../src/flash.c"
+Finished building: ../src/flash.c
+ 
+Building file: ../src/font5x7.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/font5x7.d" -MT"src/font5x7.o" -MT"src/font5x7.d" -o "src/font5x7.o" "../src/font5x7.c"
+Finished building: ../src/font5x7.c
+ 
+Building file: ../src/joystick.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/joystick.d" -MT"src/joystick.o" -MT"src/joystick.d" -o "src/joystick.o" "../src/joystick.c"
+Finished building: ../src/joystick.c
+ 
+Building file: ../src/led7seg.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/led7seg.d" -MT"src/led7seg.o" -MT"src/led7seg.d" -o "src/led7seg.o" "../src/led7seg.c"
+Finished building: ../src/led7seg.c
+ 
+Building file: ../src/light.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/light.d" -MT"src/light.o" -MT"src/light.d" -o "src/light.o" "../src/light.c"
+Finished building: ../src/light.c
+ 
+Building file: ../src/oled.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/oled.d" -MT"src/oled.o" -MT"src/oled.d" -o "src/oled.o" "../src/oled.c"
+Finished building: ../src/oled.c
+ 
+Building file: ../src/pca9532.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/pca9532.d" -MT"src/pca9532.o" -MT"src/pca9532.d" -o "src/pca9532.o" "../src/pca9532.c"
+Finished building: ../src/pca9532.c
+ 
+Building file: ../src/rgb.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/rgb.d" -MT"src/rgb.o" -MT"src/rgb.d" -o "src/rgb.o" "../src/rgb.c"
+Finished building: ../src/rgb.c
+ 
+Building file: ../src/rotary.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/rotary.d" -MT"src/rotary.o" -MT"src/rotary.d" -o "src/rotary.o" "../src/rotary.c"
+Finished building: ../src/rotary.c
+ 
+Building file: ../src/temp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/temp.d" -MT"src/temp.o" -MT"src/temp.d" -o "src/temp.o" "../src/temp.c"
+Finished building: ../src/temp.c
+ 
+Building file: ../src/uart2.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/uart2.d" -MT"src/uart2.o" -MT"src/uart2.d" -o "src/uart2.o" "../src/uart2.c"
+Finished building: ../src/uart2.c
+ 
+Building target: libLib_EaBaseBoard.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libLib_EaBaseBoard.a"  ./src/acc.o ./src/eeprom.o ./src/flash.o ./src/font5x7.o ./src/joystick.o ./src/led7seg.o ./src/light.o ./src/oled.o ./src/pca9532.o ./src/rgb.o ./src/rotary.o ./src/temp.o ./src/uart2.o   
+c:\nxp\LPCXpresso_8.2.2_650\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLib_EaBaseBoard.a
+Finished building target: libLib_EaBaseBoard.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    580	      0	      0	    580	    244	acc.o (ex libLib_EaBaseBoard.a)
+    588	      0	      0	    588	    24c	eeprom.o (ex libLib_EaBaseBoard.a)
+   1395	     80	     12	   1487	    5cf	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    168	      0	      0	    168	     a8	joystick.o (ex libLib_EaBaseBoard.a)
+    144	     80	      0	    224	     e0	led7seg.o (ex libLib_EaBaseBoard.a)
+   1176	      8	      0	   1184	    4a0	light.o (ex libLib_EaBaseBoard.a)
+   3032	      0	    768	   3800	    ed8	oled.o (ex libLib_EaBaseBoard.a)
+   1080	      0	      6	   1086	    43e	pca9532.o (ex libLib_EaBaseBoard.a)
+    148	      0	      0	    148	     94	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    848	      0	      1	    849	    351	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+11:59:59 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r all 
+make: Nothing to be done for `all'.
+11:59:59 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r all 
+make: Nothing to be done for `all'.
+11:59:59 **** Incremental Build of configuration Release for project CMSISv2p00_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+11:59:59 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+12:00:00 **** Build of configuration Debug for project demo ****
+make -r all 
+Building file: ../src/cr_startup_lpc17.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv2p00_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_startup_lpc17.d" -MT"src/cr_startup_lpc17.o" -MT"src/cr_startup_lpc17.d" -o "src/cr_startup_lpc17.o" "../src/cr_startup_lpc17.c"
+Finished building: ../src/cr_startup_lpc17.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv2p00_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\inc" -I"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: demo.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug" -L"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug" -L"C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=demo.map -mcpu=cortex-m3 -mthumb -T "demo_Debug.ld" -o "demo.axf"  ./src/cr_startup_lpc17.o ./src/main.o   -lCMSISv2p00_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+Finished building target: demo.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size demo.axf; # arm-none-eabi-objdump -h -S demo.axf >demo.lss
+   text	   data	    bss	    dec	    hex	filename
+  14796	    152	    844	  15792	   3db0	demo.axf
+ 
+12:00:30 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+12:00:32 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+12:00:32 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r clean 
+rm -rf  ./src/acc.o ./src/eeprom.o ./src/flash.o ./src/font5x7.o ./src/joystick.o ./src/led7seg.o ./src/light.o ./src/oled.o ./src/pca9532.o ./src/rgb.o ./src/rotary.o ./src/temp.o ./src/uart2.o  ./src/acc.d ./src/eeprom.d ./src/flash.d ./src/font5x7.d ./src/joystick.d ./src/led7seg.d ./src/light.d ./src/oled.d ./src/pca9532.d ./src/rgb.d ./src/rotary.d ./src/temp.d ./src/uart2.d  libLib_EaBaseBoard.a
+ 
+12:00:33 **** Clean-only build of configuration Debug for project demo ****
+make -r clean 
+rm -rf  ./src/cr_startup_lpc17.o ./src/main.o  ./src/cr_startup_lpc17.d ./src/main.d  demo.axf
+ 
+12:00:49 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+12:00:53 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+12:00:53 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+12:00:53 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r clean 
+rm -rf  ./src/acc.o ./src/eeprom.o ./src/flash.o ./src/font5x7.o ./src/joystick.o ./src/led7seg.o ./src/light.o ./src/oled.o ./src/pca9532.o ./src/rgb.o ./src/rotary.o ./src/temp.o ./src/uart2.o  ./src/acc.d ./src/eeprom.d ./src/flash.d ./src/font5x7.d ./src/joystick.d ./src/led7seg.d ./src/light.d ./src/oled.d ./src/pca9532.d ./src/rgb.d ./src/rotary.d ./src/temp.d ./src/uart2.d  libLib_EaBaseBoard.a
+ 
+12:00:53 **** Clean-only build of configuration Debug for project easyweb ****
+make -r clean 
+rm -rf  ./src/cr_startup_lpc17.o ./src/easyweb.o ./src/ethmac.o ./src/ew_systick.o ./src/tcpip.o  ./src/cr_startup_lpc17.d ./src/easyweb.d ./src/ethmac.d ./src/ew_systick.d ./src/tcpip.d  easyweb.axf
+ 
+12:00:56 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+12:00:56 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+12:00:56 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r clean 
+rm -rf  ./src/acc.o ./src/eeprom.o ./src/flash.o ./src/font5x7.o ./src/joystick.o ./src/led7seg.o ./src/light.o ./src/oled.o ./src/pca9532.o ./src/rgb.o ./src/rotary.o ./src/temp.o ./src/uart2.o  ./src/acc.d ./src/eeprom.d ./src/flash.d ./src/font5x7.d ./src/joystick.d ./src/led7seg.d ./src/light.d ./src/oled.d ./src/pca9532.d ./src/rgb.d ./src/rotary.d ./src/temp.d ./src/uart2.d  libLib_EaBaseBoard.a
+ 
+12:00:59 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+12:01:00 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+12:01:03 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+12:01:05 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+12:01:05 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r clean 
+rm -rf  ./src/acc.o ./src/eeprom.o ./src/flash.o ./src/font5x7.o ./src/joystick.o ./src/led7seg.o ./src/light.o ./src/oled.o ./src/pca9532.o ./src/rgb.o ./src/rotary.o ./src/temp.o ./src/uart2.o  ./src/acc.d ./src/eeprom.d ./src/flash.d ./src/font5x7.d ./src/joystick.d ./src/led7seg.d ./src/light.d ./src/oled.d ./src/pca9532.d ./src/rgb.d ./src/rotary.d ./src/temp.d ./src/uart2.d  libLib_EaBaseBoard.a
+ 
+12:01:05 **** Clean-only build of configuration Debug for project oled_periph ****
+make -r clean 
+rm -rf  ./src/cr_startup_lpc17.o ./src/main.o  ./src/cr_startup_lpc17.d ./src/main.d  oled_periph.axf
+ 
+12:01:10 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+12:01:10 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+12:01:16 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+12:01:16 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r clean 
+rm -rf  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o  ./src/lpc17xx_adc.d ./src/lpc17xx_can.d ./src/lpc17xx_clkpwr.d ./src/lpc17xx_dac.d ./src/lpc17xx_emac.d ./src/lpc17xx_gpio.d ./src/lpc17xx_i2c.d ./src/lpc17xx_i2s.d ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_mcpwm.d ./src/lpc17xx_nvic.d ./src/lpc17xx_pinsel.d ./src/lpc17xx_pwm.d ./src/lpc17xx_qei.d ./src/lpc17xx_rit.d ./src/lpc17xx_rtc.d ./src/lpc17xx_spi.d ./src/lpc17xx_ssp.d ./src/lpc17xx_timer.d ./src/lpc17xx_uart.d ./src/lpc17xx_wdt.d  libLib_MCU.a
+ 
+12:01:16 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r clean 
+rm -rf  ./src/acc.o ./src/eeprom.o ./src/flash.o ./src/font5x7.o ./src/joystick.o ./src/led7seg.o ./src/light.o ./src/oled.o ./src/pca9532.o ./src/rgb.o ./src/rotary.o ./src/temp.o ./src/uart2.o  ./src/acc.d ./src/eeprom.d ./src/flash.d ./src/font5x7.d ./src/joystick.d ./src/led7seg.d ./src/light.d ./src/oled.d ./src/pca9532.d ./src/rgb.d ./src/rotary.d ./src/temp.d ./src/uart2.d  libLib_EaBaseBoard.a
+ 

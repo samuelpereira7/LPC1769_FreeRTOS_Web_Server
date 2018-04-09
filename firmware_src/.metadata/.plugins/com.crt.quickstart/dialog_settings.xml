@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\samuelpereira\Dropbox\Inatel\P9\EC020\LPC1769\baseboard examples LPCXpresso 8.2.2 CMSISv2p00\LPC1769_bb_examples_CMSISv2p00.zip"/>
+		</list>
+	</section>
+	<section name="com.crt.quickstart.views.wizards.examples.QSExampleSelectionPage">
+		<item value="C:\Users\samuelpereira\Dropbox\Inatel\P9\EC020\LPC1769\baseboard examples LPCXpresso 8.2.2 CMSISv2p00" key="dirname"/>
+	</section>
+</section>
