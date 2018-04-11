@@ -57,6 +57,7 @@
 #include "ew_systick.h"
 #include "Services/Temperature.h"
 #include "Services/Button.h"
+#include "Services/Accelerometer.h"
 
 // CodeRed - added for use in dynamic side of web page
 unsigned int aaPagecounter=0;
@@ -96,6 +97,77 @@ static void init_ssp(void)
 
 	// Enable SSP peripheral
 	SSP_Cmd(LPC_SSP1, ENABLE);
+}
+
+static void init_i2c(void)
+{
+	PINSEL_CFG_Type PinCfg;
+
+	/* Initialize I2C2 pin connect */
+	PinCfg.Funcnum = 2;
+	PinCfg.Pinnum = 10;
+	PinCfg.Portnum = 0;
+	PINSEL_ConfigPin(&PinCfg);
+	PinCfg.Pinnum = 11;
+	PINSEL_ConfigPin(&PinCfg);
+
+	// Initialize I2C peripheral
+	I2C_Init(LPC_I2C2, 100000);
+
+	/* Enable I2C1 operation */
+	I2C_Cmd(LPC_I2C2, ENABLE);
+}
+
+static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
+{
+    static const char* pAscii = "0123456789abcdefghijklmnopqrstuvwxyz";
+    int pos = 0;
+    int tmpValue = value;
+
+    // the buffer must not be null and at least have a length of 2 to handle one
+    // digit and null-terminator
+    if (pBuf == NULL || len < 2)
+    {
+        return;
+    }
+
+    // a valid base cannot be less than 2 or larger than 36
+    // a base value of 2 means binary representation. A value of 1 would mean only zeros
+    // a base larger than 36 can only be used if a larger alphabet were used.
+    if (base < 2 || base > 36)
+    {
+        return;
+    }
+
+    // negative value
+    if (value < 0)
+    {
+        tmpValue = -tmpValue;
+        value    = -value;
+        pBuf[pos++] = '-';
+    }
+
+    // calculate the required length of the buffer
+    do {
+        pos++;
+        tmpValue /= base;
+    } while(tmpValue > 0);
+
+
+    if (pos > len)
+    {
+        // the len parameter is invalid.
+        return;
+    }
+
+    pBuf[pos] = '\0';
+
+    do {
+        pBuf[--pos] = pAscii[value % base];
+        value /= base;
+    } while(value > 0);
+
+    return;
 
 }
 
@@ -103,18 +175,34 @@ int main (void)
 {
 	uint8_t buf[50];
 
+	int8_t x = 0, y = 0, z = 0;
+	int32_t xoff = 0;
+	int32_t yoff = 0;
+	int32_t zoff = 0;
+
     init_ssp();
+    init_i2c();
 
     oled_init();
     oled_clearScreen(OLED_COLOR_WHITE);
 
     Temperature_init(&getTicks);
+    Accelerometer_init();
+    Accelerometer_read(&x, &y, &z);
+	xoff = 0-x;
+	yoff = 0-y;
+	zoff = 64-z;
 
+	oled_clearScreen(OLED_COLOR_WHITE);
     oled_putString(1,1,  (uint8_t*)"EasyWeb Demo", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
-    oled_putString(1,17, (uint8_t*)"IP Address:", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
-
+    oled_putString(1,9, (uint8_t*)"IP Address:", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
     sprintf((char*)buf, " %d.%d.%d.%d", MYIP_1, MYIP_2, MYIP_3, MYIP_4);
-    oled_putString(1,25, (uint8_t*)buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+    oled_putString(1,17, (uint8_t*)buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+    oled_putString(1,25, (uint8_t*)"Acc x  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+	oled_putString(1,33, (uint8_t*)"Acc y  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+	oled_putString(1,41, (uint8_t*)"Acc z  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+
+
 
 	TCPLowLevelInit();
 
@@ -139,11 +227,26 @@ int main (void)
 
   TCPLocalPort = TCP_PORT_HTTP;                  // set port we want to listen to
  
-  
   while (1)                                      // repeat forever
   {
 	int temp = Temperature_read();
 	int button = Button_read();
+	Accelerometer_read(&x, &y, &z);
+	x += xoff;
+	y += yoff;
+	z += zoff;
+
+	intToString(x, buf, 10, 10);
+	oled_fillRect((1+9*6),25, 80, 32, OLED_COLOR_WHITE);
+	oled_putString((1+9*6),25, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+
+	intToString(y, buf, 10, 10);
+	oled_fillRect((1+9*6),33, 80, 40, OLED_COLOR_WHITE);
+	oled_putString((1+9*6),33, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+
+	intToString(z, buf, 10, 10);
+	oled_fillRect((1+9*6),41, 80, 48, OLED_COLOR_WHITE);
+	oled_putString((1+9*6),41, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
     if (!(SocketStatus & SOCK_ACTIVE)) TCPPassiveOpen();   // listen for incoming TCP-connection
     DoNetworkStuff();                                      // handle network and easyWEB-stack

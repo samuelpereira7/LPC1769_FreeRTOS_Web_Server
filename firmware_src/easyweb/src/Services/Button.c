@@ -19,7 +19,7 @@ void Button_init(void)
 	GPIO_SetDir( DEFAULT_PORT, DEFAULT_PIN, INPUT);
 }
 
-uint8_t Button_read()
+uint8_t Button_read(void)
 {
 	return ((GPIO_ReadValue(DEFAULT_PORT) >> DEFAULT_PIN) & 0x01);
 }

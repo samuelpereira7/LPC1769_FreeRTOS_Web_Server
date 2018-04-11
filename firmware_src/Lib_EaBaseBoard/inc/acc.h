@@ -8,6 +8,7 @@
 #ifndef __ACC_H
 #define __ACC_H
 
+#include <stdint.h>
 
 typedef enum
 {
