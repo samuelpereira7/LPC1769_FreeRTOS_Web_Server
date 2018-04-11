@@ -56,6 +56,7 @@
 
 #include "ew_systick.h"
 #include "Services/Temperature.h"
+#include "Services/Button.h"
 
 // CodeRed - added for use in dynamic side of web page
 unsigned int aaPagecounter=0;
@@ -142,6 +143,7 @@ int main (void)
   while (1)                                      // repeat forever
   {
 	int temp = Temperature_read();
+	int button = Button_read();
 
     if (!(SocketStatus & SOCK_ACTIVE)) TCPPassiveOpen();   // listen for incoming TCP-connection
     DoNetworkStuff();                                      // handle network and easyWEB-stack
