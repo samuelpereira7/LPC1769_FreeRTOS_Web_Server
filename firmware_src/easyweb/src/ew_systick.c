@@ -26,8 +26,11 @@
 
 #include "LPC17xx.h"
 
+#include "ew_systick.h"
+
 extern void TCPClockHandler(void);
 
+volatile uint32_t TimeTick0 = 0;
 volatile uint32_t TimeTick = 0;
 volatile uint32_t TimeTick2 = 0;
 
@@ -36,26 +39,44 @@ volatile uint32_t TimeTick2 = 0;
 //  SysTick_Handler
 void SysTick_Handler(void)
 {
-	TimeTick++;		// Increment first SysTick counter
-	TimeTick2++;	// Increment second SysTick counter
+	TimeTick0++;
 	
-	// After 100 ticks (100 x 10ms = 1sec)
-	if (TimeTick >= 100) {
-	  TimeTick = 0;	// Reset counter
-	  LPC_GPIO1->FIOPIN ^= 1 << 25;	// Toggle user LED
+	if( (TimeTick0 % 10) == 0 )
+	{
+		TimeTick++;		// Increment first SysTick counter
+		TimeTick2++;	// Increment second SysTick counter
+
+		// After 100 ticks (100 x 10ms = 1sec)
+		if (TimeTick >= 100) {
+		  TimeTick = 0;	// Reset counter
+		  LPC_GPIO1->FIOPIN ^= 1 << 25;	// Toggle user LED
+		}
+		// After 20 ticks (20 x 10ms = 1/5sec)
+		if (TimeTick2 >= 20) {
+		  TimeTick2 = 0; // Reset counter
+		  TCPClockHandler();  // Call TCP handler
+		}
 	}
-	// After 20 ticks (20 x 10ms = 1/5sec)
-	if (TimeTick2 >= 20) {
-	  TimeTick2 = 0; // Reset counter
-	  TCPClockHandler();  // Call TCP handler
-	}  
 }
 
 // ****************
 // Setup SysTick Timer to interrupt at 10 msec intervals
 void Start_SysTick10ms(void)
 {
-	if (SysTick_Config(SystemCoreClock / 100)) { 
+	if (SysTick_Config(SystemCoreClock / 100)) {
 		while (1);  // Capture error
 	}
+}
+
+// Setup SysTick Timer to interrupt at 10 msec intervals
+void Start_SysTick1ms(void)
+{
+	if (SysTick_Config(SystemCoreClock / 1000)) {
+		while (1);  // Capture error
+	}
+}
+
+uint32_t getTicks(void)
+{
+    return TimeTick0;
 }

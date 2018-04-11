@@ -54,6 +54,9 @@
 #include "lpc17xx_ssp.h"
 #include "oled.h"
 
+#include "ew_systick.h"
+#include "Services/Temperature.h"
+
 // CodeRed - added for use in dynamic side of web page
 unsigned int aaPagecounter=0;
 unsigned int adcValue = 0;
@@ -104,6 +107,8 @@ int main (void)
     oled_init();
     oled_clearScreen(OLED_COLOR_WHITE);
 
+    Temperature_init(&getTicks);
+
     oled_putString(1,1,  (uint8_t*)"EasyWeb Demo", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
     oled_putString(1,17, (uint8_t*)"IP Address:", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
@@ -136,6 +141,8 @@ int main (void)
   
   while (1)                                      // repeat forever
   {
+	int temp = Temperature_read();
+
     if (!(SocketStatus & SOCK_ACTIVE)) TCPPassiveOpen();   // listen for incoming TCP-connection
     DoNetworkStuff();                                      // handle network and easyWEB-stack
                                                            // events

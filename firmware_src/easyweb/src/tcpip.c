@@ -53,7 +53,7 @@ void TCPLowLevelInit(void)
 */
   LPC_GPIO1->FIODIR = 1 << 25;               // P1.25 defined as Output (LED)
 	
-  Start_SysTick10ms();	// Start SysTick timer running (10ms ticks)
+  Start_SysTick1ms();	// Start SysTick timer running (10ms ticks)
   
   Init_EthMAC();
 	
