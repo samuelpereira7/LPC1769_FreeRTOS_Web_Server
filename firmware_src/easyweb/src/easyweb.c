@@ -187,7 +187,7 @@ int main (void)
 //    init_i2c();
 	Bus_init();
 	Trimpot_init();
-	RGB_Leds_init();
+//	RGB_Leds_init();
 
     oled_init();
     oled_clearScreen(OLED_COLOR_WHITE);
@@ -241,12 +241,12 @@ int main (void)
 	z += zoff;
 	int trim = Trimpot_read();
 
-	RGB_Leds_setLeds(RGB_LEDS_RED);
-	RGB_Leds_setLeds(0);
-	RGB_Leds_setLeds(RGB_LEDS_GREEN);
-	RGB_Leds_setLeds(0);
-	RGB_Leds_setLeds(RGB_LEDS_BLUE);
-	RGB_Leds_setLeds(0);
+//	RGB_Leds_setLeds(RGB_LEDS_RED);
+//	RGB_Leds_setLeds(0);
+//	RGB_Leds_setLeds(RGB_LEDS_GREEN);
+//	RGB_Leds_setLeds(0);
+//	RGB_Leds_setLeds(RGB_LEDS_BLUE);
+//	RGB_Leds_setLeds(0);
 
 	intToString(x, buf, 10, 10);
 	oled_fillRect((1+9*6),25, 80, 32, OLED_COLOR_WHITE);
@@ -437,33 +437,42 @@ void InsertDynamicValues(void)
   
   Key = TCP_TX_BUF;
   
+  int8_t x, y, z;
+  uint8_t t;
+
   for (i = 0; i < (TCPTxDataCount - 3); i++)
   {
     if (*Key == 'A')
-     if (*(Key + 1) == 'D')
-       if (*(Key + 3) == '%')
-         switch (*(Key + 2))
-         {
-           case '8' :                                 // "AD8%"?
-           {
-             sprintf(NewKey, "%04d", GetAD7Val());     // insert pseudo-ADconverter value
-             memcpy(Key, NewKey, 4);                  
-             break;
-           }
-           case '7' :                                 // "AD7%"?
-           {
-             sprintf(NewKey, "%3u", adcValue);     // copy saved value from previous read
-             memcpy(Key, NewKey, 3);                 
-             break;
-           }
-		   case '1' :                                 // "AD1%"?
-           {
- 			 sprintf(NewKey, "%4u", ++aaPagecounter);    // increment and insert page counter
-             memcpy(Key, NewKey, 4);  
-//			 *(Key + 3) = ' ';  
-             break;
-           }
-         }
+     if (*(Key + 1) == 'C')
+		 switch (*(Key + 2))
+		 {
+		   case 'X' :                                 // "AD8%"?
+		   {
+			 sprintf(NewKey, "%04d", GetAD7Val());     // insert pseudo-ADconverter value
+			 memcpy(Key, NewKey, 4);
+			 break;
+		   }
+		   case 'Y' :                                 // "AD7%"?
+		   {
+			 sprintf(NewKey, "%3u", adcValue);     // copy saved value from previous read
+			 memcpy(Key, NewKey, 3);
+			 break;
+		   }
+		   case 'Z' :                                 // "AD1%"?
+		   {
+			 sprintf(NewKey, "%4u", ++aaPagecounter);    // increment and insert page counter
+			 memcpy(Key, NewKey, 4);
+	//			 *(Key + 3) = ' ';
+			 break;
+		   }
+		   case 'T' :                                 // "AD1%"?
+		   {
+			 sprintf(NewKey, "%4u", Temperature_read());    // increment and insert page counter
+			 memcpy(Key, NewKey, 4);
+	//			 *(Key + 3) = ' ';
+			 break;
+		   }
+		 }
     Key++;
   }
 }
