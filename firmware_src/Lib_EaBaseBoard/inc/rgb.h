@@ -8,6 +8,7 @@
 #ifndef __RGB_H
 #define __RGB_H
 
+#include <stdint.h>
 
 #define RGB_RED   0x01
 #define RGB_BLUE  0x02

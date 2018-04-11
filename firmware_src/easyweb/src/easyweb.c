@@ -59,6 +59,8 @@
 #include "Services/Button.h"
 #include "Services/Accelerometer.h"
 #include "Services/Bus.h"
+#include "Services/Trimpot.h"
+#include "Services/RGB_Leds.h"
 
 // CodeRed - added for use in dynamic side of web page
 unsigned int aaPagecounter=0;
@@ -184,7 +186,8 @@ int main (void)
 //    init_ssp();
 //    init_i2c();
 	Bus_init();
-
+	Trimpot_init();
+	RGB_Leds_init();
 
     oled_init();
     oled_clearScreen(OLED_COLOR_WHITE);
@@ -204,8 +207,6 @@ int main (void)
     oled_putString(1,25, (uint8_t*)"Acc x  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 	oled_putString(1,33, (uint8_t*)"Acc y  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 	oled_putString(1,41, (uint8_t*)"Acc z  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
-
-
 
 	TCPLowLevelInit();
 
@@ -238,6 +239,14 @@ int main (void)
 	x += xoff;
 	y += yoff;
 	z += zoff;
+	int trim = Trimpot_read();
+
+	RGB_Leds_setLeds(RGB_LEDS_RED);
+	RGB_Leds_setLeds(0);
+	RGB_Leds_setLeds(RGB_LEDS_GREEN);
+	RGB_Leds_setLeds(0);
+	RGB_Leds_setLeds(RGB_LEDS_BLUE);
+	RGB_Leds_setLeds(0);
 
 	intToString(x, buf, 10, 10);
 	oled_fillRect((1+9*6),25, 80, 32, OLED_COLOR_WHITE);

@@ -60,9 +60,9 @@ void rgb_init (void)
 void rgb_setLeds (uint8_t ledMask)
 {
     if ((ledMask & RGB_RED) != 0) {
-        GPIO_SetValue( 2, 0);
+    	GPIO_ClearValue( 2, 0 );
     } else {
-        GPIO_ClearValue( 2, 0 );
+    	GPIO_SetValue( 2, 0);
     }
 
     if ((ledMask & RGB_BLUE) != 0) {
