@@ -179,7 +179,7 @@ int main (void)
 {
 	uint8_t buf[50];
 
-	int8_t x = 0, y = 0, z = 0;
+	static int8_t x = 0, y = 0, z = 0;
 	int32_t xoff = 0;
 	int32_t yoff = 0;
 	int32_t zoff = 0;
@@ -210,7 +210,7 @@ int main (void)
 	oled_putString(1,41, (uint8_t*)"Acc z  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 	oled_putString(1,49, (uint8_t*)"Temp   : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
-	TCPLowLevelInit();
+	//TCPLowLevelInit();
 
 /*
   *(unsigned char *)RemoteIP = 24;               // uncomment those lines to get the
@@ -229,51 +229,65 @@ int main (void)
   }
 */
 
-  HTTPStatus = 0;                                // clear HTTP-server's flag register
+	HTTPStatus = 0;                                // clear HTTP-server's flag register
 
-  TCPLocalPort = TCP_PORT_HTTP;                  // set port we want to listen to
+	TCPLocalPort = TCP_PORT_HTTP;                  // set port we want to listen to
  
-  while (1)                                      // repeat forever
-  {
-	int temp = Temperature_read();
-	//int button = Button_read();
-	Accelerometer_read(&x, &y, &z);
-	x += xoff;
-	y += yoff;
-	z += zoff;
-	//int trim = Trimpot_read();
+	static int16_t temp;
+	static uint64_t counter = 0;
+	int c2 = 0;
 
-	memset(b,0x00,50);
-	sprintf (b, "%d,%d,%d,%d", x, y, z, temp);
 
-//	RGB_Leds_setLeds(RGB_LEDS_RED);
-//	RGB_Leds_setLeds(0);
-//	RGB_Leds_setLeds(RGB_LEDS_GREEN);
-//	RGB_Leds_setLeds(0);
-//	RGB_Leds_setLeds(RGB_LEDS_BLUE);
-//	RGB_Leds_setLeds(0);
+  	while (1)                                      // repeat forever
+	{
+  		if ( (counter % 32000) == 0 )
+  		{
+  			TCPLowLevelInit();
+  			c2++;
+  		}
 
-	intToString(x, buf, 10, 10);
-	oled_fillRect((1+9*6),25, 80, 32, OLED_COLOR_WHITE);
-	oled_putString((1+9*6),25, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+  		if( (counter++ % 1000) == 0)
+  		{
+  			temp = Temperature_read();
+  			//int button = Button_read();
+  			Accelerometer_read(&x, &y, &z);
+  			x += xoff;
+  			y += yoff;
+  			z += zoff;
+  			//int trim = Trimpot_read();
 
-	intToString(y, buf, 10, 10);
-	oled_fillRect((1+9*6),33, 80, 40, OLED_COLOR_WHITE);
-	oled_putString((1+9*6),33, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+  			memset(b,0x00,50);
+  			sprintf (b, "%d,%d,%d,%d", x, y, z, temp);
 
-	intToString(z, buf, 10, 10);
-	oled_fillRect((1+9*6),41, 80, 48, OLED_COLOR_WHITE);
-	oled_putString((1+9*6),41, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+  			//	RGB_Leds_setLeds(RGB_LEDS_RED);
+  			//	RGB_Leds_setLeds(0);
+  			//	RGB_Leds_setLeds(RGB_LEDS_GREEN);
+  			//	RGB_Leds_setLeds(0);
+  			//	RGB_Leds_setLeds(RGB_LEDS_BLUE);
+  			//	RGB_Leds_setLeds(0);
 
-	intToString(temp, buf, 10, 10);
-	oled_fillRect((1+9*6),49, 80, 56, OLED_COLOR_WHITE);
-	oled_putString((1+9*6),49, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+  			intToString(x, buf, 10, 10);
+  			oled_fillRect((1+9*6),25, 80, 32, OLED_COLOR_WHITE);
+  			oled_putString((1+9*6),25, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
-    if (!(SocketStatus & SOCK_ACTIVE)) TCPPassiveOpen();   // listen for incoming TCP-connection
-    DoNetworkStuff();                                      // handle network and easyWEB-stack
+  			intToString(y, buf, 10, 10);
+  			oled_fillRect((1+9*6),33, 80, 40, OLED_COLOR_WHITE);
+  			oled_putString((1+9*6),33, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+
+  			intToString(z, buf, 10, 10);
+  			oled_fillRect((1+9*6),41, 80, 48, OLED_COLOR_WHITE);
+  			oled_putString((1+9*6),41, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+
+  			intToString(c2, buf, 10, 10);
+  			oled_fillRect((1+9*6),49, 80, 56, OLED_COLOR_WHITE);
+  			oled_putString((1+9*6),49, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+  		}
+
+  		if (!(SocketStatus & SOCK_ACTIVE)) TCPPassiveOpen();   // listen for incoming TCP-connection
+  		DoNetworkStuff();                                      // handle network and easyWEB-stack
                                                            // events
-    HTTPServer();
-  }
+  		HTTPServer();
+	}
 }
 
 // This function implements a very simple dynamic HTTP-server.
