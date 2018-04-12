@@ -14,7 +14,7 @@
 
 // Embedded Artists - Example webpage updated
 
-unsigned char WebSide[50];
+unsigned char WebSide[21];
 
 //const unsigned char WebSide[] = {
 //"<html>\r\n"

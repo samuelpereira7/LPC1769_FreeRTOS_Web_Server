@@ -65,7 +65,7 @@
 // CodeRed - added for use in dynamic side of web page
 unsigned int aaPagecounter=0;
 unsigned int adcValue = 0;
-char b[50];
+char b[20];
 
 //static void init_ssp(void)
 //{
@@ -256,8 +256,8 @@ int main (void)
   			z += zoff;
   			//int trim = Trimpot_read();
 
-  			memset(b,0x00,50);
-  			sprintf (b, "%d,%d,%d,%d", x, y, z, temp);
+  			memset(b,0x00,20);
+  			sprintf (b, "%d,%d,%d,%d\n", x, y, z, temp);
 
   			//	RGB_Leds_setLeds(RGB_LEDS_RED);
   			//	RGB_Leds_setLeds(0);
@@ -452,7 +452,7 @@ unsigned int GetTempVal(void)
 // Code Red - new version of InsertDynamicValues()
 void InsertDynamicValues(void)
 {
-	memset(WebSide,0x00, 50);
+	memset(WebSide,0x00, 20);
 	strcpy(WebSide, b);
 
 	unsigned char *Key;
