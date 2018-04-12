@@ -65,6 +65,7 @@
 // CodeRed - added for use in dynamic side of web page
 unsigned int aaPagecounter=0;
 unsigned int adcValue = 0;
+char b[50];
 
 //static void init_ssp(void)
 //{
@@ -240,6 +241,9 @@ int main (void)
 	y += yoff;
 	z += zoff;
 	int trim = Trimpot_read();
+
+	memset(b,0x00,50);
+	sprintf (b, "%d,%d,%d,%d", x, y, z, temp);
 
 //	RGB_Leds_setLeds(RGB_LEDS_RED);
 //	RGB_Leds_setLeds(0);
@@ -429,9 +433,12 @@ unsigned int GetTempVal(void)
 // Code Red - new version of InsertDynamicValues()
 void InsertDynamicValues(void)
 {
-  unsigned char *Key;
-           char NewKey[6];
-  unsigned int i;
+	memset(WebSide,0x00, 50);
+	strcpy(WebSide, b);
+
+	unsigned char *Key;
+	char NewKey[6];
+    unsigned int i;
   
   if (TCPTxDataCount < 4) return;                     // there can't be any special string
   
@@ -446,28 +453,28 @@ void InsertDynamicValues(void)
      if (*(Key + 1) == 'C')
 		 switch (*(Key + 2))
 		 {
-		   case 'X' :                                 // "AD8%"?
+		   case 'X' :                                // "AD8%"?
 		   {
-			 sprintf(NewKey, "%04d", GetAD7Val());     // insert pseudo-ADconverter value
+			 sprintf(NewKey, "%3d", 255);     // insert pseudo-ADconverter value
 			 memcpy(Key, NewKey, 4);
 			 break;
 		   }
 		   case 'Y' :                                 // "AD7%"?
 		   {
-			 sprintf(NewKey, "%3u", adcValue);     // copy saved value from previous read
+			 sprintf(NewKey, "%3d", -127);     // copy saved value from previous read
 			 memcpy(Key, NewKey, 3);
 			 break;
 		   }
 		   case 'Z' :                                 // "AD1%"?
 		   {
-			 sprintf(NewKey, "%4u", ++aaPagecounter);    // increment and insert page counter
+			 sprintf(NewKey, "%3d", 0);    // increment and insert page counter
 			 memcpy(Key, NewKey, 4);
 	//			 *(Key + 3) = ' ';
 			 break;
 		   }
 		   case 'T' :                                 // "AD1%"?
 		   {
-			 sprintf(NewKey, "%4u", Temperature_read());    // increment and insert page counter
+			 sprintf(NewKey, "%3u", Temperature_read());    // increment and insert page counter
 			 memcpy(Key, NewKey, 4);
 	//			 *(Key + 3) = ' ';
 			 break;

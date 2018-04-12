@@ -14,9 +14,7 @@
 
 // Embedded Artists - Example webpage updated
 
-const unsigned char WebSide[] = {
-	"ACX,ACY,ACZ,ACT\r\n"
-};
+unsigned char WebSide[50];
 
 //const unsigned char WebSide[] = {
 //"<html>\r\n"
