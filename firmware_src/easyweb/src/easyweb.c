@@ -208,6 +208,7 @@ int main (void)
     oled_putString(1,25, (uint8_t*)"Acc x  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 	oled_putString(1,33, (uint8_t*)"Acc y  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 	oled_putString(1,41, (uint8_t*)"Acc z  : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+	oled_putString(1,49, (uint8_t*)"Temp   : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
 	TCPLowLevelInit();
 
@@ -235,12 +236,12 @@ int main (void)
   while (1)                                      // repeat forever
   {
 	int temp = Temperature_read();
-	int button = Button_read();
+	//int button = Button_read();
 	Accelerometer_read(&x, &y, &z);
 	x += xoff;
 	y += yoff;
 	z += zoff;
-	int trim = Trimpot_read();
+	//int trim = Trimpot_read();
 
 	memset(b,0x00,50);
 	sprintf (b, "%d,%d,%d,%d", x, y, z, temp);
@@ -263,6 +264,10 @@ int main (void)
 	intToString(z, buf, 10, 10);
 	oled_fillRect((1+9*6),41, 80, 48, OLED_COLOR_WHITE);
 	oled_putString((1+9*6),41, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+
+	intToString(temp, buf, 10, 10);
+	oled_fillRect((1+9*6),49, 80, 56, OLED_COLOR_WHITE);
+	oled_putString((1+9*6),49, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
     if (!(SocketStatus & SOCK_ACTIVE)) TCPPassiveOpen();   // listen for incoming TCP-connection
     DoNetworkStuff();                                      // handle network and easyWEB-stack
