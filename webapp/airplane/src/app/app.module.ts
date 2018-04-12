@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PlaneComponent } from './plane/plane.component';
+import { SkyComponent } from './sky/sky.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlaneComponent,
+    SkyComponent
   ],
   imports: [
     BrowserModule
