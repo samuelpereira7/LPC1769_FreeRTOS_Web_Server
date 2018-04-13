@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
-        setTimeout(() => {
+        setInterval(() => {
            this.planeService.getAirplane().subscribe(
                (res) => this.parseServerResponse(res),
                (error) => console.log('error:' + error)
