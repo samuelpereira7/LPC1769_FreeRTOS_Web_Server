@@ -66,6 +66,9 @@
 unsigned int aaPagecounter=0;
 unsigned int adcValue = 0;
 char b[20];
+static int8_t x = 0, y = 0, z = 0;
+static int16_t temp = 0;
+
 
 //static void init_ssp(void)
 //{
@@ -178,8 +181,6 @@ static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
 int main (void)
 {
 	uint8_t buf[50];
-
-	static int8_t x = 0, y = 0, z = 0;
 	int32_t xoff = 0;
 	int32_t yoff = 0;
 	int32_t zoff = 0;
@@ -232,8 +233,7 @@ int main (void)
 	HTTPStatus = 0;                                // clear HTTP-server's flag register
 
 	TCPLocalPort = TCP_PORT_HTTP;                  // set port we want to listen to
- 
-	static int16_t temp;
+
 	static uint64_t counter = 0;
 	int c2 = 0;
 
@@ -256,7 +256,7 @@ int main (void)
   			z += zoff;
   			//int trim = Trimpot_read();
 
-  			memset(b,0x00,20);
+  			memset(b,' ',20);
   			sprintf (b, ",%d,%d,%d,%d,\n", x, y, z, temp);
 
   			//	RGB_Leds_setLeds(RGB_LEDS_RED);
@@ -452,8 +452,8 @@ unsigned int GetTempVal(void)
 // Code Red - new version of InsertDynamicValues()
 void InsertDynamicValues(void)
 {
-	memset(&WebSide[62],0x00, 25);
-	strcpy(&WebSide[62], b);
+	//memset(&WebSide[205],' ', 25);
+	//memcpy(&WebSide[205], b, 20);
 
 	unsigned char *Key;
 	char NewKey[6];
@@ -462,9 +462,6 @@ void InsertDynamicValues(void)
   if (TCPTxDataCount < 4) return;                     // there can't be any special string
   
   Key = TCP_TX_BUF;
-  
-  int8_t x, y, z;
-  uint8_t t;
 
   for (i = 0; i < (TCPTxDataCount - 3); i++)
   {
@@ -474,27 +471,27 @@ void InsertDynamicValues(void)
 		 {
 		   case 'X' :                                // "AD8%"?
 		   {
-			 sprintf(NewKey, "%3d", 255);     // insert pseudo-ADconverter value
+			 sprintf(NewKey, "%04d", x);     // insert pseudo-ADconverter value
 			 memcpy(Key, NewKey, 4);
 			 break;
 		   }
 		   case 'Y' :                                 // "AD7%"?
 		   {
-			 sprintf(NewKey, "%3d", -127);     // copy saved value from previous read
-			 memcpy(Key, NewKey, 3);
+			 sprintf(NewKey, "%04d", y);     // copy saved value from previous read
+			 memcpy(Key, NewKey, 4);
 			 break;
 		   }
 		   case 'Z' :                                 // "AD1%"?
 		   {
-			 sprintf(NewKey, "%3d", 0);    // increment and insert page counter
+			 sprintf(NewKey, "%04d", z);    // increment and insert page counter
 			 memcpy(Key, NewKey, 4);
 	//			 *(Key + 3) = ' ';
 			 break;
 		   }
 		   case 'T' :                                 // "AD1%"?
 		   {
-			 sprintf(NewKey, "%3u", Temperature_read());    // increment and insert page counter
-			 memcpy(Key, NewKey, 4);
+			 sprintf(NewKey, "%03u", temp);    // increment and insert page counter
+			 memcpy(Key, NewKey, 3);
 	//			 *(Key + 3) = ' ';
 			 break;
 		   }

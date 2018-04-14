@@ -14,20 +14,43 @@
 
 // Embedded Artists - Example webpage updated
 
-unsigned char WebSide[] = {
-"<html>\r\n"
-"<head>\r\n"
-"<title>Aviao Cajada</title>\r\n"
-"</head>\r\n"
-"<body>\r\n"
-"                         "
-"</body>\r\n"
-"</html>\r\n"};
+//unsigned char WebSide[] = {
+//		"<html>\r\n"
+//		"<head>\r\n"
+//		"<title>LPC1768 - Demo page</title>\r\n"
+//		"</head>\r\n"
+//		"\r\n"
+//		"<body bgcolor=\"#F5F5F5\" text=\"#336688\">\r\n"
+//		"<p><b><font color=\"black\" size=\"6\"><i>Hello World from Embedded Artists!</i></font></b></p>\r\n"
+//		"\r\n"
+//		"<p><b>This is a website hosted by the embedded Webserver</b> <b>easyWEB.</b></p>\r\n"
+//		"<p><b>Hardware:</b></p>\r\n"
+//		"<ul>\r\n"
+//		"<li><b>LPC1768 LPCXpresso Board - NXP LPC1768 MCU with ARM Cortex-M3 CPU</b></li>\r\n"
+//		"<li><b>Embedded Artists LPCXpresso Base Board</b></li>\r\n"
+//		"<li><b>Embedded EMAC Ethernet Controller</b></li>\r\n"
+//		"</ul>\r\n"
+//		"\r\n"
+//		"</body>\r\n"
+//		"</html>\r\n"
+//		"\r\n"};
+
+
+
+//unsigned char WebSide[] = {
+//"<html>\r\n"
+//"<head>\r\n"
+//"<title>Aviao Cajada</title>\r\n"
+//"</head>\r\n"
+//"<body>\r\n"
+//"<p>                         </p>\r\n"
+//"</body>\r\n"
+//"</html>\r\n"};
 
 
 // Original page removed
-/*
-const unsigned char WebSide[] = {
+
+unsigned char WebSide[] = {
 "<html>\r\n"
 "<head>\r\n"
 "<meta http-equiv=\"refresh\" content=\"5\">\r\n"
@@ -35,8 +58,8 @@ const unsigned char WebSide[] = {
 "</head>\r\n"
 "\r\n"
 "<body bgcolor=\"#3030A0\" text=\"#FFFF00\">\r\n"
-"<p><b><font color=\"#FFFFFF\" size=\"6\"><i>Hello World!</i></font></b></p>\r\n"
 "\r\n"
+"<p>,ACX ,ACY ,ACZ ,ACT,</p>"
 "<p><b>This is a dynamic webside hosted by the embedded Webserver</b> <b>easyWEB.</b></p>\r\n"
 "<p><b>Hardware:</b></p>\r\n"
 "<ul>\r\n"
@@ -90,4 +113,4 @@ const unsigned char WebSide[] = {
 "</body>\r\n"
 "</html>\r\n"
 "\r\n"};
-*/
+
