@@ -3,8 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PlaneService {
-
-  configUrl = '192.168.0.87'
+  configUrl = 'http://localhost:5200/'
 
   constructor(private http: HttpClient) { }
 

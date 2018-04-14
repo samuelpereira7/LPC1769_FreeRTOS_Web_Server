@@ -8,9 +8,9 @@ import { PlaneService } from './plane.service';
 })
 export class AppComponent implements OnInit {
     title = 'app';
-    x: number = 10;
-    y: number = 90;
-    z: number = -20;
+    x: number = -8;
+    y: number = 0;
+    z: number = 95;
     temp: number = 0;
 
     constructor (
@@ -24,18 +24,13 @@ export class AppComponent implements OnInit {
            this.planeService.getAirplane().subscribe(
                (res) => this.parseServerResponse(res),
                (error) => console.log('error:' + error)
-           ); 
-        }, 10000);
+           );
+        }, 1000);
     }
-
 
     parseServerResponse (data) {
-        const splittedData = data.split(',');
-        this.x = splittedData[0];
-        this.y = splittedData[1];
-        this.z = splittedData[2];
-        this.temp = splittedData[3];
+        this.x = data.x;
+        this.y = data.y;
+        this.temp = data.t;
     }
-
-
 }
