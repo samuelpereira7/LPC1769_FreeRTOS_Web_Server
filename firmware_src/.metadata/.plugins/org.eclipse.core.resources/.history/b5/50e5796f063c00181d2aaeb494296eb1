@@ -1,0 +1,1435 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                              ./src/cr_startup_lpc17.o (SystemInit)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                              ./src/main.o (acc_init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+                              ./src/main.o (joystick_init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+                              ./src/main.o (led7seg_init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                              ./src/main.o (oled_putPixel)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+                              ./src/main.o (pca9532_init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+                              ./src/main.o (rgb_init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+                              ./src/main.o (rotary_init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+                              C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o) (font5x7)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                              ./src/main.o (ADC_Init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                              C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o) (CLKPWR_GetPCLK)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                              ./src/main.o (GPIO_SetDir)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                              ./src/main.o (I2C_Init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                              ./src/main.o (PINSEL_ConfigPin)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                              ./src/main.o (SSP_Init)
+C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                              ./src/main.o (Timer0_Wait)
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_uldivmod.o)
+                              C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o) (__aeabi_uldivmod)
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+                              c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+                              c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
+                              C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o) (memset)
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./src/cr_startup_lpc17.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc17.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc17.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc17.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc17.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc17.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc17.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .text          0x00000000        0x0 ./src/main.o
+ .debug_macro   0x00000000      0x886 ./src/main.o
+ .debug_macro   0x00000000       0x22 ./src/main.o
+ .debug_macro   0x00000000       0x87 ./src/main.o
+ .debug_macro   0x00000000       0x44 ./src/main.o
+ .debug_macro   0x00000000       0xfd ./src/main.o
+ .debug_macro   0x00000000       0x5e ./src/main.o
+ .debug_macro   0x00000000      0x1df ./src/main.o
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000       0xb4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.getModeControl
+                0x00000000       0x2c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.acc_setRange
+                0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.acc_setMode
+                0x00000000       0x38 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00000000       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00000000      0x2af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .rodata        0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.hLine    0x00000000       0x58 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.vLine    0x00000000       0x58 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_line
+                0x00000000      0x1b8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_circle
+                0x00000000      0x340 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_rect
+                0x00000000       0x58 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_fillRect
+                0x00000000       0xa0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_putChar
+                0x00000000       0xd8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_putString
+                0x00000000       0x54 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x192 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x2af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x16 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.I2CRead  0x00000000       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.pca9532_getLedState
+                0x00000000       0x98 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.pca9532_setBlink0Period
+                0x00000000       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.pca9532_setBlink0Duty
+                0x00000000       0x4c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.pca9532_setBlink0Leds
+                0x00000000       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.pca9532_setBlink1Period
+                0x00000000       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.pca9532_setBlink1Duty
+                0x00000000       0x4c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.pca9532_setBlink1Leds
+                0x00000000       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000      0x18c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00000000       0xb2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .rodata        0x00000000      0x300 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_info    0x00000000       0x61 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_abbrev  0x00000000       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_aranges
+                0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_macro   0x00000000       0x1a C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_macro   0x00000000      0x696 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_line    0x00000000       0x98 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_str     0x00000000     0x32dd C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .comment       0x00000000       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .ARM.attributes
+                0x00000000       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_DeInit
+                0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GetData
+                0x00000000       0x2c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_BurstCmd
+                0x00000000       0x4c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_PowerdownCmd
+                0x00000000       0x4c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_EdgeStartConfig
+                0x00000000       0x60 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GlobalGetData
+                0x00000000       0x3c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GlobalGetStatus
+                0x00000000       0x6c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_Sleep
+                0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepSleep
+                0x00000000       0x24 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_PowerDown
+                0x00000000       0x24 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepPowerDown
+                0x00000000       0x24 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordGetPointer
+                0x00000000       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteGetPointer
+                0x00000000       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetDir
+                0x00000000       0x24 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetValue
+                0x00000000       0x20 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ClearValue
+                0x00000000       0x20 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ReadValue
+                0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetMask
+                0x00000000       0x4c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetDir
+                0x00000000       0xa4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetMask
+                0x00000000       0xa4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetValue
+                0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordClearValue
+                0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordReadValue
+                0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetDir
+                0x00000000       0x7c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetMask
+                0x00000000       0x88 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetValue
+                0x00000000       0x3c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteClearValue
+                0x00000000       0x3c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteReadValue
+                0x00000000       0x3c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0xcb C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SlaveHandler
+                0x00000000      0x1ac C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_DeInit
+                0x00000000       0x80 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SlaveTransferData
+                0x00000000      0x218 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SetOwnSlaveAddr
+                0x00000000       0xfc C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorModeConfig
+                0x00000000       0x84 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorModeCmd
+                0x00000000       0x7c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorGetDatabuffer
+                0x00000000       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C0_StdIntHandler
+                0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C1_StdIntHandler
+                0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C2_StdIntHandler
+                0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x18c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x2fe C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0xcb C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_ConfigTraceFunc
+                0x00000000       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_SetI2C0Pins
+                0x00000000       0x38 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x143 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_DeInit
+                0x00000000       0x5c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_LoopBackCmd
+                0x00000000       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_SlaveOutputCmd
+                0x00000000       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetStatus
+                0x00000000       0x74 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_IntConfig
+                0x00000000       0x84 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetRawIntStatus
+                0x00000000       0x6c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetIntStatus
+                0x00000000       0x6c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_ClearIntPending
+                0x00000000       0x54 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_DMACmd
+                0x00000000       0x90 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP0_StdIntHandler
+                0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP1_StdIntHandler
+                0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x2fe C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0xcb C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0x8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .data          0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .bss           0x00000000        0x0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_GetIntCaptureStatus
+                0x00000000       0x9c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ClearIntCapturePending
+                0x00000000       0x8c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ConfigStructInit
+                0x00000000       0x38 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_DeInit
+                0x00000000       0x9c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ResetCounter
+                0x00000000       0x64 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ConfigCapture
+                0x00000000       0xdc C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_GetCaptureValue
+                0x00000000       0x74 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x2e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x7af C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x63 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x2fe C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x149 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0xcb C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc17.o
+LOAD ./src/main.o
+LOAD C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a
+LOAD C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a
+LOAD C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a
+START GROUP
+LOAD c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a
+LOAD c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_newlib_semihost.a
+END GROUP
+                0x00000000                __base_MFlash512 = 0x0
+                0x00000000                __base_Flash = 0x0
+                0x00080000                __top_MFlash512 = 0x80000
+                0x00080000                __top_Flash = 0x80000
+                0x10000000                __base_RamLoc32 = 0x10000000
+                0x10000000                __base_RAM = 0x10000000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x10008000                __top_RAM = 0x10008000
+                0x2007c000                __base_RamAHB32 = 0x2007c000
+                0x2007c000                __base_RAM2 = 0x2007c000
+                0x20084000                __top_RamAHB32 = 0x20084000
+                0x20084000                __top_RAM2 = 0x20084000
+
+.text           0x00000000     0x39c4
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc17.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x39cc LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x98 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x39cc LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000098 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x34c SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ *(.text*)
+ .text.ResetISR
+                0x000000f4       0x58 ./src/cr_startup_lpc17.o
+                0x000000f4                ResetISR
+ .text.NMI_Handler
+                0x0000014c        0x8 ./src/cr_startup_lpc17.o
+                0x0000014c                NMI_Handler
+ .text.HardFault_Handler
+                0x00000154        0x8 ./src/cr_startup_lpc17.o
+                0x00000154                HardFault_Handler
+ .text.MemManage_Handler
+                0x0000015c        0x8 ./src/cr_startup_lpc17.o
+                0x0000015c                MemManage_Handler
+ .text.BusFault_Handler
+                0x00000164        0x8 ./src/cr_startup_lpc17.o
+                0x00000164                BusFault_Handler
+ .text.UsageFault_Handler
+                0x0000016c        0x8 ./src/cr_startup_lpc17.o
+                0x0000016c                UsageFault_Handler
+ .text.SVCall_Handler
+                0x00000174        0x8 ./src/cr_startup_lpc17.o
+                0x00000174                SVCall_Handler
+ .text.DebugMon_Handler
+                0x0000017c        0x8 ./src/cr_startup_lpc17.o
+                0x0000017c                DebugMon_Handler
+ .text.PendSV_Handler
+                0x00000184        0x8 ./src/cr_startup_lpc17.o
+                0x00000184                PendSV_Handler
+ .text.SysTick_Handler
+                0x0000018c        0x8 ./src/cr_startup_lpc17.o
+                0x0000018c                SysTick_Handler
+ .text.IntDefaultHandler
+                0x00000194        0x8 ./src/cr_startup_lpc17.o
+                0x00000194                TIMER2_IRQHandler
+                0x00000194                RIT_IRQHandler
+                0x00000194                I2C0_IRQHandler
+                0x00000194                USBActivity_IRQHandler
+                0x00000194                PWM1_IRQHandler
+                0x00000194                I2C1_IRQHandler
+                0x00000194                EINT2_IRQHandler
+                0x00000194                UART1_IRQHandler
+                0x00000194                EINT3_IRQHandler
+                0x00000194                CANActivity_IRQHandler
+                0x00000194                TIMER3_IRQHandler
+                0x00000194                UART0_IRQHandler
+                0x00000194                IntDefaultHandler
+                0x00000194                PLL0_IRQHandler
+                0x00000194                CAN_IRQHandler
+                0x00000194                PLL1_IRQHandler
+                0x00000194                SSP0_IRQHandler
+                0x00000194                I2S_IRQHandler
+                0x00000194                I2C2_IRQHandler
+                0x00000194                RTC_IRQHandler
+                0x00000194                TIMER0_IRQHandler
+                0x00000194                SPI_IRQHandler
+                0x00000194                EINT1_IRQHandler
+                0x00000194                TIMER1_IRQHandler
+                0x00000194                UART2_IRQHandler
+                0x00000194                ADC_IRQHandler
+                0x00000194                SSP1_IRQHandler
+                0x00000194                USB_IRQHandler
+                0x00000194                BOD_IRQHandler
+                0x00000194                WDT_IRQHandler
+                0x00000194                QEI_IRQHandler
+                0x00000194                EINT0_IRQHandler
+                0x00000194                DMA_IRQHandler
+                0x00000194                UART3_IRQHandler
+                0x00000194                MCPWM_IRQHandler
+                0x00000194                ENET_IRQHandler
+ .text.moveBar  0x0000019c       0x80 ./src/main.o
+ .text.change7Seg
+                0x0000021c       0x68 ./src/main.o
+ .text.drawOled
+                0x00000284      0x100 ./src/main.o
+ .text.changeRgbLeds
+                0x00000384       0x24 ./src/main.o
+ .text.playNote
+                0x000003a8       0x68 ./src/main.o
+ .text.getNote  0x00000410       0x4c ./src/main.o
+ .text.getDuration
+                0x0000045c       0x30 ./src/main.o
+ .text.getPause
+                0x0000048c       0x40 ./src/main.o
+ .text.playSong
+                0x000004cc       0x7c ./src/main.o
+ .text.init_ssp
+                0x00000548       0x78 ./src/main.o
+ .text.init_i2c
+                0x000005c0       0x48 ./src/main.o
+ .text.init_adc
+                0x00000608       0x50 ./src/main.o
+ .text.main     0x00000658      0x228 ./src/main.o
+                0x00000658                main
+ .text.check_failed
+                0x00000880        0xc ./src/main.o
+                0x00000880                check_failed
+ .text.SystemInit
+                0x0000088c       0xe4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x0000088c                SystemInit
+ .text.I2CRead  0x00000970       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.I2CWrite
+                0x000009c0       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.getStatus
+                0x00000a10       0x2c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.setModeControl
+                0x00000a3c       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.acc_init
+                0x00000a64       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x00000a64                acc_init
+ .text.acc_read
+                0x00000a74       0x9c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x00000a74                acc_read
+ .text.joystick_init
+                0x00000b10       0x20 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+                0x00000b10                joystick_init
+ .text.joystick_read
+                0x00000b30       0x88 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+                0x00000b30                joystick_read
+ .text.led7seg_init
+                0x00000bb8       0x1c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+                0x00000bb8                led7seg_init
+ .text.led7seg_setChar
+                0x00000bd4       0x74 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+                0x00000bd4                led7seg_setChar
+ .text.writeCommand
+                0x00000c48       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.writeData
+                0x00000c90       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.writeDataLen
+                0x00000cd8       0x78 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.runInitSequence
+                0x00000d50       0xd4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_init
+                0x00000e24       0x74 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00000e24                oled_init
+ .text.oled_putPixel
+                0x00000e98      0x150 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00000e98                oled_putPixel
+ .text.oled_clearScreen
+                0x00000fe8       0x64 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00000fe8                oled_clearScreen
+ .text.I2CWrite
+                0x0000104c       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.setLsStates
+                0x0000109c       0xcc C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.setLeds  0x00001168       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .text.pca9532_init
+                0x000011d8        0xc C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+                0x000011d8                pca9532_init
+ .text.pca9532_setLeds
+                0x000011e4       0x80 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+                0x000011e4                pca9532_setLeds
+ .text.rgb_init
+                0x00001264       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+                0x00001264                rgb_init
+ .text.rgb_setLeds
+                0x0000128c       0x6c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+                0x0000128c                rgb_setLeds
+ .text.rotary_init
+                0x000012f8       0x14 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+                0x000012f8                rotary_init
+ .text.rotary_read
+                0x0000130c       0xd4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+                0x0000130c                rotary_read
+ .text.ADC_Init
+                0x000013e0       0x78 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x000013e0                ADC_Init
+ .text.ADC_StartCmd
+                0x00001458       0x80 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00001458                ADC_StartCmd
+ .text.ADC_IntConfig
+                0x000014d8       0x9c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x000014d8                ADC_IntConfig
+ .text.ADC_ChannelCmd
+                0x00001574       0x60 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00001574                ADC_ChannelCmd
+ .text.ADC_ChannelGetData
+                0x000015d4       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x000015d4                ADC_ChannelGetData
+ .text.ADC_ChannelGetStatus
+                0x0000161c       0x7c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x0000161c                ADC_ChannelGetStatus
+ .text.CLKPWR_SetPCLKDiv
+                0x00001698       0x8c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00001698                CLKPWR_SetPCLKDiv
+ .text.CLKPWR_GetPCLKSEL
+                0x00001724       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00001724                CLKPWR_GetPCLKSEL
+ .text.CLKPWR_GetPCLK
+                0x0000176c       0x64 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x0000176c                CLKPWR_GetPCLK
+ .text.CLKPWR_ConfigPPWR
+                0x000017d0       0x58 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x000017d0                CLKPWR_ConfigPPWR
+ .text.GPIO_GetPointer
+                0x00001828       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_SetDir
+                0x00001898       0x4c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x00001898                GPIO_SetDir
+ .text.GPIO_SetValue
+                0x000018e4       0x2c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x000018e4                GPIO_SetValue
+ .text.GPIO_ClearValue
+                0x00001910       0x2c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x00001910                GPIO_ClearValue
+ .text.GPIO_ReadValue
+                0x0000193c       0x2c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x0000193c                GPIO_ReadValue
+ .text.NVIC_EnableIRQ
+                0x00001968       0x30 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.NVIC_DisableIRQ
+                0x00001998       0x34 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_getNum
+                0x000019cc       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Start
+                0x00001a14       0x3c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Stop
+                0x00001a50       0x30 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SendByte
+                0x00001a80       0x4c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_GetByte
+                0x00001acc       0x54 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_IntCmd
+                0x00001b20       0x88 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00001b20                I2C_IntCmd
+ .text.I2C_MasterHandler
+                0x00001ba8      0x3a0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00001ba8                I2C_MasterHandler
+ .text.I2C_SetClock
+                0x00001f48       0xa4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00001f48                I2C_SetClock
+ .text.I2C_Init
+                0x00001fec       0xa4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00001fec                I2C_Init
+ .text.I2C_Cmd  0x00002090       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002090                I2C_Cmd
+ .text.I2C_MasterTransferData
+                0x00002100      0x2f8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002100                I2C_MasterTransferData
+ .text.PINSEL_SetPinFunc
+                0x000023f8       0x84 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x000023f8                PINSEL_SetPinFunc
+ .text.PINSEL_SetResistorMode
+                0x0000247c       0x84 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x0000247c                PINSEL_SetResistorMode
+ .text.PINSEL_SetOpenDrainMode
+                0x00002500       0x6c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00002500                PINSEL_SetOpenDrainMode
+ .text.PINSEL_ConfigPin
+                0x0000256c       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x0000256c                PINSEL_ConfigPin
+ .text.SSP_getNum
+                0x000025b4       0x38 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_IntHandler
+                0x000025ec      0x2cc C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x000025ec                SSP_IntHandler
+ .text.SSP_SetClock
+                0x000028b8       0xc4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x000028b8                SSP_SetClock
+ .text.SSP_Init
+                0x0000297c       0xd8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x0000297c                SSP_Init
+ .text.SSP_ConfigStructInit
+                0x00002a54       0x3c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002a54                SSP_ConfigStructInit
+ .text.SSP_Cmd  0x00002a90       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002a90                SSP_Cmd
+ .text.SSP_SendData
+                0x00002b00       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002b00                SSP_SendData
+ .text.SSP_ReceiveData
+                0x00002b40       0x3c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002b40                SSP_ReceiveData
+ .text.SSP_ReadWrite
+                0x00002b7c      0x3c0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002b7c                SSP_ReadWrite
+ .text.TIM_GetPClock
+                0x00002f3c       0x58 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00002f3c                TIM_GetPClock
+ .text.TIM_ConverUSecToVal
+                0x00002f94       0x58 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00002f94                TIM_ConverUSecToVal
+ .text.TIM_ConverPtrToTimeNum
+                0x00002fec       0x5c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00002fec                TIM_ConverPtrToTimeNum
+ .text.TIM_GetIntStatus
+                0x00003048       0x98 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00003048                TIM_GetIntStatus
+ .text.TIM_ClearIntPending
+                0x000030e0       0x8c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x000030e0                TIM_ClearIntPending
+ .text.TIM_Init
+                0x0000316c      0x170 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x0000316c                TIM_Init
+ .text.TIM_Cmd  0x000032dc       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x000032dc                TIM_Cmd
+ .text.TIM_ConfigMatch
+                0x0000334c      0x15c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x0000334c                TIM_ConfigMatch
+ .text.Timer0_Wait
+                0x000034a8       0x78 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x000034a8                Timer0_Wait
+ .text.Timer0_us_Wait
+                0x00003520       0x74 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00003520                Timer0_us_Wait
+ .text          0x00003594       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_uldivmod.o)
+                0x00003594                __aeabi_uldivmod
+ .text          0x000035c4      0x2ec c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+                0x000035c4                __udivmoddi4
+ .text          0x000038b0        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+                0x000038b0                __aeabi_idiv0
+                0x000038b0                __aeabi_ldiv0
+ .text.memset   0x000038b4       0x9c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
+                0x000038b4                memset
+ *(.rodata .rodata.* .constdata .constdata.*)
+ .rodata        0x00003950       0x13 ./src/main.o
+ *fill*         0x00003963        0x1 ff
+ .rodata        0x00003964       0x15 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ *fill*         0x00003979        0x3 ff
+ .rodata        0x0000397c       0x15 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ *fill*         0x00003991        0x3 ff
+ .rodata        0x00003994       0x15 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ *fill*         0x000039a9        0x3 ff
+ .rodata        0x000039ac       0x17 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x000039c4                . = ALIGN (0x4)
+ *fill*         0x000039c3        0x1 ff
+
+.glue_7         0x000039c4        0x0
+ .glue_7        0x000039c4        0x0 linker stubs
+
+.glue_7t        0x000039c4        0x0
+ .glue_7t       0x000039c4        0x0 linker stubs
+
+.vfp11_veneer   0x000039c4        0x0
+ .vfp11_veneer  0x000039c4        0x0 linker stubs
+
+.v4_bx          0x000039c4        0x0
+ .v4_bx         0x000039c4        0x0 linker stubs
+
+.iplt           0x000039c4        0x0
+ .iplt          0x000039c4        0x0 ./src/cr_startup_lpc17.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000039c4                __exidx_start = .
+
+.ARM.exidx      0x000039c4        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x000039c4        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+                0x000039cc                __exidx_end = .
+                0x000039cc                _etext = .
+
+.rel.dyn        0x000039cc        0x0
+ .rel.iplt      0x000039cc        0x0 ./src/cr_startup_lpc17.o
+
+.data_RAM2      0x2007c000        0x0 load address 0x000039cc
+ FILL mask 0xff
+                [!provide]                PROVIDE (__start_data_RAM2, .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__end_data_RAM2, .)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000       0x98 load address 0x000039cc
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+ .data          0x10000000       0x42 ./src/main.o
+ *fill*         0x10000042        0x2 ff
+ .data.SystemCoreClock
+                0x10000044        0x4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x10000044                SystemCoreClock
+ .data          0x10000048       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+                0x10000098                . = ALIGN (0x4)
+                0x10000098                _edata = .
+
+.igot.plt       0x10000098        0x0 load address 0x00003a64
+ .igot.plt      0x10000098        0x0 ./src/cr_startup_lpc17.o
+
+.bss_RAM2       0x2007c000        0x0
+                [!provide]                PROVIDE (__start_bss_RAM2, .)
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                PROVIDE (__end_bss_RAM2, .)
+
+.bss            0x10000098      0x34c
+                0x10000098                _bss = .
+ *(.bss*)
+ .bss           0x10000098        0x6 ./src/main.o
+ *fill*         0x1000009e        0x2 
+ .bss           0x100000a0      0x300 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .bss           0x100003a0        0x6 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ *fill*         0x100003a6        0x2 
+ .bss           0x100003a8       0x24 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .bss           0x100003cc       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ *(COMMON)
+                0x100003e4                . = ALIGN (0x4)
+                0x100003e4                _ebss = .
+                [!provide]                PROVIDE (end, .)
+
+.noinit_RAM2    0x2007c000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.noinit         0x100003e4        0x0
+                0x100003e4                _noinit = .
+ *(.noinit*)
+                0x100003e4                . = ALIGN (0x4)
+                0x100003e4                _end_noinit = .
+                [!provide]                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10008000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
+                [!provide]                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+OUTPUT(demo.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x5e5d
+ .debug_info    0x00000000      0x1b6 ./src/cr_startup_lpc17.o
+ .debug_info    0x000001b6      0x8b0 ./src/main.o
+ .debug_info    0x00000a66      0x318 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_info    0x00000d7e      0x4f5 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_info    0x00001273      0x105 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_info    0x00001378      0x259 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_info    0x000015d1      0x920 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_info    0x00001ef1      0x5e1 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_info    0x000024d2       0xda C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_info    0x000025ac       0xf8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_info    0x000026a4      0x5e5 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_info    0x00002c89      0x638 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_info    0x000032c1      0xad4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_info    0x00003d95      0xc14 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_info    0x000049a9      0x459 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_info    0x00004e02      0x7e1 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_info    0x000055e3      0x87a C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_abbrev   0x00000000     0x182c
+ .debug_abbrev  0x00000000       0xb9 ./src/cr_startup_lpc17.o
+ .debug_abbrev  0x000000b9      0x1c9 ./src/main.o
+ .debug_abbrev  0x00000282       0xe6 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_abbrev  0x00000368      0x16b C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_abbrev  0x000004d3       0x95 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_abbrev  0x00000568      0x15c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_abbrev  0x000006c4      0x201 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_abbrev  0x000008c5      0x1d7 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_abbrev  0x00000a9c       0x93 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_abbrev  0x00000b2f       0xa4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_abbrev  0x00000bd3      0x165 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_abbrev  0x00000d38      0x1cc C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_abbrev  0x00000f04      0x193 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_abbrev  0x00001097      0x28b C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_abbrev  0x00001322      0x12b C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_abbrev  0x0000144d      0x1fd C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_abbrev  0x0000164a      0x1e2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_aranges  0x00000000      0x740
+ .debug_aranges
+                0x00000000       0x70 ./src/cr_startup_lpc17.o
+ .debug_aranges
+                0x00000070       0x88 ./src/main.o
+ .debug_aranges
+                0x000000f8       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_aranges
+                0x00000120       0x60 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_aranges
+                0x00000180       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_aranges
+                0x000001a8       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_aranges
+                0x000001d0       0x90 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_aranges
+                0x00000260       0x80 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_aranges
+                0x000002e0       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_aranges
+                0x00000308       0x28 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_aranges
+                0x00000330       0x80 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_aranges
+                0x000003b0       0x58 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_aranges
+                0x00000408       0xc8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_aranges
+                0x000004d0       0xd0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_aranges
+                0x000005a0       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_aranges
+                0x000005e8       0xb8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_aranges
+                0x000006a0       0xa0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_ranges   0x00000000      0x630
+ .debug_ranges  0x00000000       0x60 ./src/cr_startup_lpc17.o
+ .debug_ranges  0x00000060       0x78 ./src/main.o
+ .debug_ranges  0x000000d8       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_ranges  0x000000f0       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_ranges  0x00000140       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_ranges  0x00000158       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_ranges  0x00000170       0x80 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_ranges  0x000001f0       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_ranges  0x00000260       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_ranges  0x00000278       0x18 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_ranges  0x00000290       0x70 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_ranges  0x00000300       0x48 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_ranges  0x00000348       0xb8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_ranges  0x00000400       0xc0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_ranges  0x000004c0       0x38 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_ranges  0x000004f8       0xa8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_ranges  0x000005a0       0x90 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_macro    0x00000000     0x5420
+ .debug_macro   0x00000000       0x79 ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000079      0x886 ./src/cr_startup_lpc17.o
+ .debug_macro   0x000008ff       0x22 ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000921       0x87 ./src/cr_startup_lpc17.o
+ .debug_macro   0x000009a8       0x44 ./src/cr_startup_lpc17.o
+ .debug_macro   0x000009ec       0xfd ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000ae9       0x5e ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000b47      0x1df ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000d26      0x12e ./src/main.o
+ .debug_macro   0x00000e54       0x1c ./src/main.o
+ .debug_macro   0x00000e70       0x2e ./src/main.o
+ .debug_macro   0x00000e9e       0x18 ./src/main.o
+ .debug_macro   0x00000eb6      0x7af ./src/main.o
+ .debug_macro   0x00001665      0x2c7 ./src/main.o
+ .debug_macro   0x0000192c       0x63 ./src/main.o
+ .debug_macro   0x0000198f      0x143 ./src/main.o
+ .debug_macro   0x00001ad2       0x46 ./src/main.o
+ .debug_macro   0x00001b18      0x192 ./src/main.o
+ .debug_macro   0x00001caa      0x2af ./src/main.o
+ .debug_macro   0x00001f59       0xf4 ./src/main.o
+ .debug_macro   0x0000204d       0xe9 ./src/main.o
+ .debug_macro   0x00002136       0x28 ./src/main.o
+ .debug_macro   0x0000215e       0xb2 ./src/main.o
+ .debug_macro   0x00002210       0x1c ./src/main.o
+ .debug_macro   0x0000222c       0x16 ./src/main.o
+ .debug_macro   0x00002242       0x1c ./src/main.o
+ .debug_macro   0x0000225e      0x12b C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002389      0x886 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002c0f       0x10 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002c1f      0x12d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002d4c      0x5b2 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x000032fe      0x175 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00003473      0x880 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00003cf3      0x18c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00003e7f       0x96 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00003f15       0x40 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_macro   0x00003f55       0xac C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_macro   0x00004001       0xf0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x000040f1       0x5d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x0000414e       0xb4 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_macro   0x00004202       0x96 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_macro   0x00004298       0xc6 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_macro   0x0000435e       0x9f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x000043fd       0xee C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x000044eb      0x2fe C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x000047e9       0xcb C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x000048b4       0x8d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00004941      0x2f8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00004c39       0x96 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00004ccf       0xa8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00004d77      0x149 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00004ec0       0x8d C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00004f4d       0x9f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00004fec      0x2a9 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00005295       0xa8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x0000533d       0xe3 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_line     0x00000000     0x43a2
+ .debug_line    0x00000000      0x32e ./src/cr_startup_lpc17.o
+ .debug_line    0x0000032e      0x5d1 ./src/main.o
+ .debug_line    0x000008ff      0x1d3 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x00000ad2      0x343 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_line    0x00000e15      0x2a6 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_line    0x000010bb      0x2b6 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_line    0x00001371      0x5c1 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_line    0x00001932      0x3d6 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_line    0x00001d08      0x294 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_line    0x00001f9c      0x2b8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_line    0x00002254      0x432 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_line    0x00002686      0x306 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_line    0x0000298c      0x444 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_line    0x00002dd0      0x719 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_line    0x000034e9      0x29e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_line    0x00003787      0x64a C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_line    0x00003dd1      0x5d1 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_str      0x00000000     0xfb4c
+ .debug_str     0x00000000     0x336e ./src/cr_startup_lpc17.o
+                               0x34cf (size before relaxing)
+ .debug_str     0x0000336e     0x784f ./src/main.o
+                               0xac17 (size before relaxing)
+ .debug_str     0x0000abbd     0x1c50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                               0x8156 (size before relaxing)
+ .debug_str     0x0000c80d      0x518 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                               0x8c72 (size before relaxing)
+ .debug_str     0x0000cd25       0x3a C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+                               0x8177 (size before relaxing)
+ .debug_str     0x0000cd5f       0xe8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+                               0x9215 (size before relaxing)
+ .debug_str     0x0000ce47      0x334 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                               0x9d96 (size before relaxing)
+ .debug_str     0x0000d17b      0x1a3 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+                               0x8c0f (size before relaxing)
+ .debug_str     0x0000d31e       0x22 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+                               0x811c (size before relaxing)
+ .debug_str     0x0000d340       0x95 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+                               0x8191 (size before relaxing)
+ .debug_str     0x0000d3d5     0x15ae C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                               0x9cdc (size before relaxing)
+ .debug_str     0x0000e983      0x119 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                               0x9327 (size before relaxing)
+ .debug_str     0x0000ea9c      0x33e C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                               0x856d (size before relaxing)
+ .debug_str     0x0000edda      0x526 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                               0xa60a (size before relaxing)
+ .debug_str     0x0000f300      0x214 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                               0x85b1 (size before relaxing)
+ .debug_str     0x0000f514      0x200 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                               0xa555 (size before relaxing)
+ .debug_str     0x0000f714      0x438 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                               0xa2e1 (size before relaxing)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e ./src/cr_startup_lpc17.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f ./src/main.o
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .comment       0x0000006e       0x6f C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 ./src/cr_startup_lpc17.o
+ .ARM.attributes
+                0x00000033       0x33 ./src/main.o
+ .ARM.attributes
+                0x00000066       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x00000099       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .ARM.attributes
+                0x000000cc       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .ARM.attributes
+                0x000000ff       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .ARM.attributes
+                0x00000132       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .ARM.attributes
+                0x00000165       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .ARM.attributes
+                0x00000198       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .ARM.attributes
+                0x000001cb       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .ARM.attributes
+                0x000001fe       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .ARM.attributes
+                0x00000231       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .ARM.attributes
+                0x00000264       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .ARM.attributes
+                0x00000297       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .ARM.attributes
+                0x000002ca       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .ARM.attributes
+                0x000002fd       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .ARM.attributes
+                0x00000330       0x33 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .ARM.attributes
+                0x00000363       0x1d c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000380       0x2d c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000003ad       0x1d c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000003ca       0x2d c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
+
+.debug_frame    0x00000000     0x1ac4
+ .debug_frame   0x00000000      0x120 ./src/cr_startup_lpc17.o
+ .debug_frame   0x00000120      0x208 ./src/main.o
+ .debug_frame   0x00000328       0x3c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_frame   0x00000364      0x14c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_frame   0x000004b0       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(joystick.o)
+ .debug_frame   0x00000500       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(led7seg.o)
+ .debug_frame   0x00000550      0x244 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_frame   0x00000794      0x1e8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(pca9532.o)
+ .debug_frame   0x0000097c       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+ .debug_frame   0x000009cc       0x50 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rotary.o)
+ .debug_frame   0x00000a1c      0x1e8 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_frame   0x00000c04      0x12c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_frame   0x00000d30      0x344 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_frame   0x00001074      0x35c C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_frame   0x000013d0       0xfc C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_frame   0x000014cc      0x2e0 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_frame   0x000017ac      0x280 C:\Users\samuelpereira\Documents\LPCXpresso_8.2.2_650\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_frame   0x00001a2c       0x2c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00001a58       0x38 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00001a90       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)

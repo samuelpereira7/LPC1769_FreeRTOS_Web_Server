@@ -1,0 +1,7 @@
+12:01:16 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r clean 
+rm -rf  ./src/core_cm3.o ./src/system_LPC17xx.o  ./src/core_cm3.d ./src/system_LPC17xx.d  libCMSISv2p00_LPC17xx.a
+ 
+
+12:01:16 Build Finished (took 204ms)
+
