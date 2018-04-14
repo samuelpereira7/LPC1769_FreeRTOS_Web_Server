@@ -257,7 +257,7 @@ int main (void)
   			//int trim = Trimpot_read();
 
   			memset(b,0x00,20);
-  			sprintf (b, "%d,%d,%d,%d\n", x, y, z, temp);
+  			sprintf (b, ",%d,%d,%d,%d,\n", x, y, z, temp);
 
   			//	RGB_Leds_setLeds(RGB_LEDS_RED);
   			//	RGB_Leds_setLeds(0);
@@ -452,8 +452,8 @@ unsigned int GetTempVal(void)
 // Code Red - new version of InsertDynamicValues()
 void InsertDynamicValues(void)
 {
-	memset(WebSide,0x00, 20);
-	strcpy(WebSide, b);
+	memset(&WebSide[62],0x00, 25);
+	strcpy(&WebSide[62], b);
 
 	unsigned char *Key;
 	char NewKey[6];
