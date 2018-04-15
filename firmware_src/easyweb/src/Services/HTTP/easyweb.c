@@ -55,6 +55,11 @@ const unsigned char GetResponse[] =   // 1st thing our server sends to a client
 						"\r\n"               // indicate end of HTTP-header
 		};
 
+void HTTPServer_reset(void)
+{
+	TCPLowLevelInit();
+}
+
 void HTTPServer( void )
 {
 	if (SocketStatus & SOCK_CONNECTED) // check if somebody has connected to our TCP
@@ -143,12 +148,12 @@ void InsertDynamicValues( void )
 						memcpy( Key, NewKey, 4 );
 						break;
 					case 'T':
-						sprintf( NewKey, "%03d", Temperature_read() );
+						sprintf( NewKey, "%03d", Temperature_getTemp() );
 						memcpy( Key, NewKey, 3 );
 						break;
 				}
 			}
-			Key++;
 		}
+		Key++;
 	}
 }

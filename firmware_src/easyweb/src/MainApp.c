@@ -20,8 +20,6 @@
 #include "Services/ew_systick.h"
 
 char b[20];
-static int8_t x = 0, y = 0, z = 0;
-static int16_t temp = 0;
 
 static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
 {
@@ -78,9 +76,14 @@ static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
 int main(void)
 {
 	uint8_t buf[50];
+	int8_t x = 0;
+	int8_t y = 0;
+	int8_t z = 0;
 	int32_t xoff = 0;
 	int32_t yoff = 0;
 	int32_t zoff = 0;
+	int16_t temp = 0;
+	uint64_t counter = 0;
 
 	Trimpot_init();
 //	RGB_Leds_init();
@@ -104,9 +107,6 @@ int main(void)
 	OLED_display_putString(1,41, (uint8_t*)"Acc z  : ");
 	OLED_display_putString(1,49, (uint8_t*)"Temp   : ");
 
-	static uint64_t counter = 0;
-	int c2 = 0;
-
 	HTTPStatus = 0;                                // clear HTTP-server's flag register
 
 	TCPLocalPort = TCP_PORT_HTTP;                  // set port we want to listen to
@@ -115,8 +115,7 @@ int main(void)
 	{
 		if ( (counter % 32000) == 0 )
 		{
-			TCPLowLevelInit();
-			c2++;
+			HTTPServer_reset();
 		}
 
 		if( (counter++ % 1000) == 0)

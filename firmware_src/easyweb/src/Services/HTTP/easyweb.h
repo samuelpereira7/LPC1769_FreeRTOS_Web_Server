@@ -14,6 +14,7 @@
 #ifndef __EASYWEB_H
 #define __EASYWEB_H
 
+void HTTPServer_reset(void);
 void HTTPServer(void);
 void InsertDynamicValues(void);
 
