@@ -20,9 +20,8 @@
 //#include "cs8900.h"
 #include "ethmac.h"
 
-// CodeRed - add additional includes
-#include "tcpip.h"
 #include "LPC17xx.h"
+#include "tcpip.h"
 
 // CodeRed - new static pointers for receive and transmit
 static unsigned short *rxptr;

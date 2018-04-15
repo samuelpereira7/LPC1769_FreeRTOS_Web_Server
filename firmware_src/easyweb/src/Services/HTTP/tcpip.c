@@ -19,13 +19,11 @@
 
 #include "tcpip.h"
 
-//CodeRed - added header for LPC ethernet controller
-#include "ethmac.h" 
-// CodeRed - added library string handling header
 #include <string.h>
 
 // CodeRed - added NXP LPC register definitions header
 #include "LPC17xx.h"
+#include "ethmac.h"
 
 void  Start_SysTick10ms(void);
 
@@ -53,7 +51,7 @@ void TCPLowLevelInit(void)
 */
   LPC_GPIO1->FIODIR = 1 << 25;               // P1.25 defined as Output (LED)
 	
-  Start_SysTick1ms();	// Start SysTick timer running (10ms ticks)
+  Start_SysTick1ms();	// Start SysTick timer running (1ms ticks)
   
   Init_EthMAC();
 	
