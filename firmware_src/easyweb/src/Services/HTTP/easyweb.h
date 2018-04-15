@@ -14,13 +14,8 @@
 #ifndef __EASYWEB_H
 #define __EASYWEB_H
 
-void start(void);
-void InitOsc(void);                              // prototypes
-void InitPorts(void);
 void HTTPServer(void);
 void InsertDynamicValues(void);
-unsigned int GetAD7Val(void);
-unsigned int GetTempVal(void);
 
 unsigned char *PWebSide;                         // pointer to webside
 unsigned int HTTPBytesToSend;                    // bytes left to send
