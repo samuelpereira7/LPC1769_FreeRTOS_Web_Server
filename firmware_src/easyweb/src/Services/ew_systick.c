@@ -24,9 +24,10 @@
 // TO A CURRENT END USER LICENSE AGREEMENT (COMMERCIAL OR EDUCATIONAL) WITH
 // CODE RED TECHNOLOGIES LTD. 
 
+#include "ew_systick.h"
+
 #include "LPC17xx.h"
 
-#include "ew_systick.h"
 
 extern void TCPClockHandler(void);
 

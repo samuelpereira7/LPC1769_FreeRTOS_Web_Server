@@ -8,6 +8,13 @@
 #include "Temperature.h"
 #include <temp.h>
 
+typedef struct tagTemperature
+{
+	int32_t temperature;
+}ttagTemperature;
+
+static ttagTemperature Temp_Instance;
+
 void Temperature_init (uint32_t (*getMsTick)(void))
 {
 	temp_init(getMsTick);
@@ -15,6 +22,12 @@ void Temperature_init (uint32_t (*getMsTick)(void))
 
 int32_t Temperature_read(void)
 {
-	return temp_read();
+	Temp_Instance.temperature = temp_read();
+	return Temp_Instance.temperature;
+}
+
+int32_t Temperature_getTemp(void)
+{
+	return Temp_Instance.temperature;
 }
 
