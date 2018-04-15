@@ -19,13 +19,11 @@
 
 #include "tcpip.h"
 
-//CodeRed - added header for LPC ethernet controller
-#include "ethmac.h" 
-// CodeRed - added library string handling header
 #include <string.h>
 
 // CodeRed - added NXP LPC register definitions header
 #include "LPC17xx.h"
+#include "ethmac.h"
 
 void  Start_SysTick10ms(void);
 

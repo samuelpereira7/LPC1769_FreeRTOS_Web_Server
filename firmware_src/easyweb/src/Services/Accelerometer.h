@@ -15,6 +15,9 @@ void Accelerometer_init (void);
 void Accelerometer_read (int8_t* x, int8_t* y, int8_t* z);
 void Accelerometer_setRange(acc_range_t range);
 void Accelerometer_setMode(acc_mode_t mode);
+int8_t Accelerometer_getX();
+int8_t Accelerometer_getY();
+int8_t Accelerometer_getZ();
 
 
 #endif /* SERVICES_ACCELEROMETER_H_ */
