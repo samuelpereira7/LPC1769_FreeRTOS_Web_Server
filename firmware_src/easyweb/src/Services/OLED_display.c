@@ -1,18 +1,21 @@
 /*
- * Bus.c
+ * OLED_display.c
  *
- *  Created on: 11 de abr de 2018
+ *  Created on: 15 de abr de 2018
  *      Author: samuelpereira
  */
 
-#include "Bus.h"
+
+#include "OLED_display.h"
+#include "oled.h"
+
 #include "LPC17xx.h"
 #include "lpc17xx_pinsel.h"
 #include "lpc17xx_ssp.h"
 
-static void Bus_init_ssp(void);
+static void OLED_display_init_ssp(void);
 
-void Bus_init_ssp(void)
+void OLED_display_init_ssp(void)
 {
 	SSP_CFG_Type SSP_ConfigStruct;
 	PINSEL_CFG_Type PinCfg;
@@ -48,7 +51,26 @@ void Bus_init_ssp(void)
 	SSP_Cmd(LPC_SSP1, ENABLE);
 }
 
-void Bus_init()
+void OLED_display_init (void)
 {
-	Bus_init_ssp();
+	OLED_display_init_ssp();
+	oled_init();
+
+	OLED_display_clearScreen();
 }
+
+void OLED_display_fillRect(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1)
+{
+	oled_fillRect(x0, y0, x1, y1, OLED_COLOR_WHITE);
+}
+
+void OLED_display_clearScreen(void)
+{
+	oled_clearScreen(OLED_COLOR_WHITE);
+}
+
+void OLED_display_putString(uint8_t x, uint8_t y, uint8_t *pStr)
+{
+	oled_putString(x, y, pStr, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+}
+
