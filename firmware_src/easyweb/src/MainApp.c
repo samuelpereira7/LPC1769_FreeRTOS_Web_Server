@@ -15,11 +15,10 @@
 #include "stdlib.h"
 #include "stdio.h"
 #include "string.h"
+
 #include "Services/HTTP/easyweb.h"
 #include "Services/HTTP/tcpip.h"
 #include "Services/ew_systick.h"
-
-char b[20];
 
 static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
 {
@@ -76,40 +75,32 @@ static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
 int main(void)
 {
 	uint8_t buf[50];
+
 	int8_t x = 0;
 	int8_t y = 0;
 	int8_t z = 0;
-	int32_t xoff = 0;
-	int32_t yoff = 0;
-	int32_t zoff = 0;
 	int16_t temp = 0;
+	uint8_t button_status;
+	uint16_t trimpot_value;
+
+	uint8_t RGB_on = 1;
 	uint64_t counter = 0;
 
 	Trimpot_init();
-//	RGB_Leds_init();
-
+	RGB_Leds_init();
 	OLED_display_init();
-
 	Temperature_init(&getTicks);
 	Accelerometer_init();
-	Accelerometer_read(&x, &y, &z);
-	xoff = 0-x;
-	yoff = 0-y;
-	zoff = 64-z;
 
 	OLED_display_clearScreen();
-	OLED_display_putString(1,1,  (uint8_t*)"EasyWeb Demo");
+	OLED_display_putString(1,1,  (uint8_t*)"++Aviao Cajada++");
 	OLED_display_putString(1,9, (uint8_t*)"IP Address:");
 	sprintf((char*)buf, " %d.%d.%d.%d", MYIP_1, MYIP_2, MYIP_3, MYIP_4);
-	OLED_display_putString(1,17, (uint8_t*)buf);
+	OLED_display_putString(1,9, (uint8_t*)buf);
 	OLED_display_putString(1,25, (uint8_t*)"Acc x  : ");
 	OLED_display_putString(1,33, (uint8_t*)"Acc y  : ");
 	OLED_display_putString(1,41, (uint8_t*)"Acc z  : ");
 	OLED_display_putString(1,49, (uint8_t*)"Temp   : ");
-
-	HTTPStatus = 0;                                // clear HTTP-server's flag register
-
-	TCPLocalPort = TCP_PORT_HTTP;                  // set port we want to listen to
 
 	while(1)
 	{
@@ -121,22 +112,37 @@ int main(void)
 		if( (counter++ % 1000) == 0)
 		{
 			temp = Temperature_read();
-			//int button = Button_read();
-			Accelerometer_read(&x, &y, &z);
-			x += xoff;
-			y += yoff;
-			z += zoff;
-			//int trim = Trimpot_read();
+			button_status = Button_read();
+			Accelerometer_read(&x, &y, &z);;
+			trimpot_value = Trimpot_read();
 
-			memset(b,' ',20);
-			sprintf (b, ",%d,%d,%d,%d,\n", x, y, z, temp);
+			if(button_status == 0)
+			{
+				RGB_on = !RGB_on;
+			}
 
-			//	RGB_Leds_setLeds(RGB_LEDS_RED);
-			//	RGB_Leds_setLeds(0);
-			//	RGB_Leds_setLeds(RGB_LEDS_GREEN);
-			//	RGB_Leds_setLeds(0);
-			//	RGB_Leds_setLeds(RGB_LEDS_BLUE);
-			//	RGB_Leds_setLeds(0);
+			if( (y > 10 + (trimpot_value/1000) * 2) && RGB_on )
+			{
+				RGB_Leds_setLeds(RGB_LEDS_BLUE);
+			}
+			else if( (y < -10 - (trimpot_value/1000) * 2) && RGB_on )
+			{
+				RGB_Leds_setLeds(RGB_LEDS_RED);
+			}
+			else
+			{
+				RGB_Leds_setLeds(0);
+			}
+
+			OLED_display_fillRect((1+9*6),17, 80, 24);
+			if(RGB_on == 1)
+			{
+				OLED_display_putString(1,17, "RGB ON ");
+			}
+			else
+			{
+				OLED_display_putString(1,17, "RGB OFF");
+			}
 
 			intToString(x, buf, 10, 10);
 			OLED_display_fillRect((1+9*6),25, 80, 32);

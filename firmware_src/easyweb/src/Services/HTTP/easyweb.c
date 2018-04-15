@@ -57,6 +57,10 @@ const unsigned char GetResponse[] =   // 1st thing our server sends to a client
 
 void HTTPServer_reset(void)
 {
+	HTTPStatus = 0;                                // clear HTTP-server's flag register
+
+	TCPLocalPort = TCP_PORT_HTTP;                  // set port we want to listen to
+
 	TCPLowLevelInit();
 }
 
