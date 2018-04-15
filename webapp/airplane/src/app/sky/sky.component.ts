@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-sky',
-  templateUrl: './sky.component.html',
-  styleUrls: ['./sky.component.css']
+    selector: 'app-sky',
+    templateUrl: './sky.component.html',
+    styleUrls: ['./sky.component.css']
 })
-export class SkyComponent implements OnInit {
+export class SkyComponent {
 
-  constructor() { }
+    @Input() temp = 350;
 
-  ngOnInit() {
-  }
+    constructor() { }
 
 }
