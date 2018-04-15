@@ -1,0 +1,7 @@
+12:00:53 **** Clean-only build of configuration Debug for project easyweb ****
+make -r clean 
+rm -rf  ./src/cr_startup_lpc17.o ./src/easyweb.o ./src/ethmac.o ./src/ew_systick.o ./src/tcpip.o  ./src/cr_startup_lpc17.d ./src/easyweb.d ./src/ethmac.d ./src/ew_systick.d ./src/tcpip.d  easyweb.axf
+ 
+
+12:00:53 Build Finished (took 203ms)
+

@@ -1,0 +1,10 @@
+output/
+*.d
+*.o
+/up_*
+firmware_src/CMSISv2p00_LPC17xx/Debug/
+firmware_src/Lib_MCU/Debug/
+firmware_src/Lib_EaBaseBoard/Debug/
+firmware_src/demo/Debug/
+firmware_src/easyweb/Debug/
+firmware_src/oled_periph/Debug/
