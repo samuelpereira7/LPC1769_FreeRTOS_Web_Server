@@ -11,11 +11,11 @@
  *****                                                        *****
  ******************************************************************/
 
-#ifndef __EASYWEB_H
-#define __EASYWEB_H
+#ifndef __HTTP_SERVER_H
+#define __HTTP_SERVER_H
 
-void HTTPServer_reset(void);
-void HTTPServer(void);
+void HTTP_Server_reset(void);
+void HTTP_Server_process(void);
 void InsertDynamicValues(void);
 
 unsigned char *PWebSide;                         // pointer to webside

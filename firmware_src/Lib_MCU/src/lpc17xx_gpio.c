@@ -245,7 +245,6 @@ uint32_t GPIO_ReadValue(uint8_t portNum)
 	if (pGPIO != NULL) {
 		return pGPIO->FIOPIN;
 	}
-
 	return (0);
 }
 
