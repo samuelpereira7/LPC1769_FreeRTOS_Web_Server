@@ -24,8 +24,7 @@
 // TO A CURRENT END USER LICENSE AGREEMENT (COMMERCIAL OR EDUCATIONAL) WITH
 // CODE RED TECHNOLOGIES LTD. 
 
-#include "ew_systick.h"
-
+#include <Systick.h>
 #include "LPC17xx.h"
 
 
