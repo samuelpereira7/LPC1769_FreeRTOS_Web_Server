@@ -1,20 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-plane',
-  templateUrl: './plane.component.html',
-  styleUrls: ['./plane.component.css']
+    selector: 'app-plane',
+    templateUrl: './plane.component.html',
+    styleUrls: ['./plane.component.css']
 })
-export class PlaneComponent implements OnInit {
+export class PlaneComponent {
 
-  @Input() x: number = 0
-  @Input() y: number = 0
-  @Input() z: number = 0
-  @Input() temp: number = 0
+    @Input() x = 0;
+    @Input() y = 0;
+    @Input() z = 0;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+    constructor() { }
 
 }

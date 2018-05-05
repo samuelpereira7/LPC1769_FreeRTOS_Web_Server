@@ -5,8 +5,8 @@
  *      Author: samuelpereira
  */
 
-#ifndef SERVICES_EW_SYSTICK_H_
-#define SERVICES_EW_SYSTICK_H_
+#ifndef SERVICES_SYSTICK_H_
+#define SERVICES_SYSTICK_H_
 
 #include <stdint.h>
 
@@ -14,4 +14,4 @@ void Start_SysTick10ms(void);
 void Start_SysTick1ms(void);
 uint32_t getTicks(void);
 
-#endif /* SERVICES_EW_SYSTICK_H_ */
+#endif /* SERVICES_SYSTICK_H_ */

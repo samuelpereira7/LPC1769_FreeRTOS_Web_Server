@@ -8,12 +8,12 @@ import { PlaneService } from './plane.service';
 })
 export class AppComponent implements OnInit {
     title = 'app';
-    x: number = -8;
-    y: number = 0;
-    z: number = 95;
-    temp: number = 0;
+    x = -8;
+    y = 0;
+    z = 95;
+    temp = 150;
 
-    constructor (
+    constructor(
         private planeService: PlaneService
     ) {
 
@@ -21,14 +21,18 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         setInterval(() => {
-           this.planeService.getAirplane().subscribe(
-               (res) => this.parseServerResponse(res),
-               (error) => console.log('error:' + error)
-           );
+            // Realiza requisição ao servidor
+            this.planeService.getAirplane().subscribe(
+                // Requisição realizada com sucesso
+                (res) => this.parseServerResponse(res),
+                // Erro ao realizar requisição
+                (error) => console.log('error:' + error)
+            );
         }, 1000);
     }
 
-    parseServerResponse (data) {
+    // Faz o parse dos dados recebidos
+    parseServerResponse(data) {
         this.x = data.x;
         this.y = data.y;
         this.temp = data.t;

@@ -3,12 +3,12 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PlaneService {
-  configUrl = 'http://localhost:5200/'
+    configUrl = 'http://localhost:5200/';
 
-  constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) { }
 
-  getAirplane() {
-    return this.http.get(this.configUrl);
-  }
+    getAirplane() {
+        return this.http.get(this.configUrl);
+    }
 
 }

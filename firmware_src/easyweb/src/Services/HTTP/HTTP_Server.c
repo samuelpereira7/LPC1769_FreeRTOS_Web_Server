@@ -24,7 +24,7 @@
 // rather than the .c files as in the original version of easyweb.
 #define extern 
 
-#include "easyweb.h"
+#include <HTTP_Server.h>
 
 //CodeRed - added for LPC ethernet controller
 #include "ethmac.h"
@@ -37,7 +37,7 @@
 // #include "webside.c"                             // webside for our HTTP server (HTML)
 #include "webside.h"                             // webside for our HTTP server (HTML)
 
-#include "ew_systick.h"
+#include <Systick.h>
 #include "Temperature.h"
 #include "Accelerometer.h"
 
@@ -55,7 +55,7 @@ const unsigned char GetResponse[] =   // 1st thing our server sends to a client
 						"\r\n"               // indicate end of HTTP-header
 		};
 
-void HTTPServer_reset(void)
+void HTTP_Server_reset(void)
 {
 	HTTPStatus = 0;                                // clear HTTP-server's flag register
 
@@ -64,7 +64,7 @@ void HTTPServer_reset(void)
 	TCPLowLevelInit();
 }
 
-void HTTPServer( void )
+void HTTP_Server_process( void )
 {
 	if (SocketStatus & SOCK_CONNECTED) // check if somebody has connected to our TCP
 	{
