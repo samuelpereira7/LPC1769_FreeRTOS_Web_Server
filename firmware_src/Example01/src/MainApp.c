@@ -1,0 +1,233 @@
+/*
+ * MainApp.c
+ *
+ *  Created on: 15 de abr de 2018
+ *      Author: samuelpereira
+ */
+
+/* FreeRTOS.org includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+
+/* Demo includes. */
+#include "basic_io.h"
+
+#include "stdlib.h"
+#include "stdio.h"
+#include "string.h"
+
+#include <Systick.h>
+
+#include "Temperature.h"
+#include "Button.h"
+#include "Accelerometer.h"
+#include "Trimpot.h"
+#include "RGB_Leds.h"
+#include "OLED_display.h"
+
+#include "Services/HTTP/tcpip.h"
+#include <HTTP_Server.h>
+
+#include "helper.h"
+
+inline static uint8_t calc_threshold( uint16_t trimpot_value );
+
+/* Used as a loop counter to create a very crude delay. */
+#define mainDELAY_LOOP_COUNT		( 0xfffff )
+
+/* The task functions. */
+void vTask1( void *pvParameters );
+void vTask2( void *pvParameters );
+
+int main( void )
+{
+	/* Init the semi-hosting. */
+	printf( "\n" );
+
+	/* Create one of the two tasks. */
+	xTaskCreate(	vTask1,		/* Pointer to the function that implements the task. */
+					"Task 1",	/* Text name for the task.  This is to facilitate debugging only. */
+					240,		/* Stack depth in words. */
+					NULL,		/* We are not using the task parameter. */
+					1,			/* This task will run at priority 1. */
+					NULL );		/* We are not using the task handle. */
+
+	/* Create the other task in exactly the same way. */
+	xTaskCreate( vTask2, "Task 2", 240, NULL, 1, NULL );
+
+	/* Start the scheduler so our tasks start executing. */
+	vTaskStartScheduler();
+
+	/* If all is well we will never reach here as the scheduler will now be
+	running.  If we do reach here then it is likely that there was insufficient
+	heap available for the idle task to be created. */
+	for( ;; );
+	return 0;
+}
+
+void vTask1( void *pvParameters )
+{
+	/* buffer for string operations */
+	uint8_t buf[30];
+
+	int8_t x = 0;
+	int8_t y = 0;
+	int8_t z = 0;
+	int16_t temp = 0;
+	uint8_t button_status;
+	uint16_t trimpot_value;
+
+	uint8_t RGB_on = 1;
+	uint64_t counter = 0;
+	uint8_t threshold;
+
+	/* initializing sensors and actuators */
+	OLED_display_init();
+	Temperature_init( &getTicks );
+	Button_init();
+	Accelerometer_init();
+	Trimpot_init();
+	RGB_Leds_init();
+
+	OLED_display_clearScreen();
+	OLED_display_putString( 1, 1, (uint8_t*) "+Aviao Cajada+" );
+	OLED_display_putString( 1, 9, (uint8_t*) "IP Address:" );
+	sprintf( (char*) buf, " %d.%d.%d.%d", MYIP_1, MYIP_2, MYIP_3, MYIP_4 );
+	OLED_display_putString( 1, 9, (uint8_t*) buf );
+	OLED_display_putString( 1, 25, (uint8_t*) "Acc x  : " );
+	OLED_display_putString( 1, 33, (uint8_t*) "Acc y  : " );
+	OLED_display_putString( 1, 41, (uint8_t*) "Acc z  : " );
+	OLED_display_putString( 1, 49, (uint8_t*) "Temp   : " );
+
+	while (1)
+	{
+		if ((counter % 50000) == 0)
+		{
+			HTTP_Server_reset();
+		}
+
+		if ((counter++ % 4000) == 0)
+		{
+			/* reading sensors */
+			temp = Temperature_read();
+			button_status = Button_read();
+			Accelerometer_read( &x, &y, &z );
+			trimpot_value = Trimpot_read();
+
+			/* calculating the threshold value for y-axis of the accelerometer */
+			threshold = calc_threshold( trimpot_value );
+
+			/* RGB leds operations */
+			if (button_status == 0)
+			{
+				RGB_on = !RGB_on;
+			}
+
+			if ((y > threshold) && RGB_on)
+			{
+				RGB_Leds_setLeds( RGB_LEDS_BLUE );
+			}
+			else if ((y < -threshold) && RGB_on)
+			{
+				RGB_Leds_setLeds( RGB_LEDS_RED );
+			}
+			else
+			{
+				RGB_Leds_setLeds( 0 );
+			}
+
+			/* displaying info in the oled display */
+			OLED_display_fillRect( (1 + 9 * 6), 17, 80, 24 );
+			if (RGB_on == 1)
+			{
+				OLED_display_putString( 1, 17, (uint8_t*) "RGB ON " );
+			}
+			else
+			{
+				OLED_display_putString( 1, 17, (uint8_t*) "RGB OFF" );
+			}
+
+			intToString( x, buf, 10, 10 );
+			OLED_display_fillRect( (1 + 9 * 6), 25, 80, 32 );
+			OLED_display_putString( (1 + 9 * 6), 25, buf );
+
+			intToString( y, buf, 10, 10 );
+			OLED_display_fillRect( (1 + 9 * 6), 33, 80, 40 );
+			OLED_display_putString( (1 + 9 * 6), 33, buf );
+
+			intToString( z, buf, 10, 10 );
+			OLED_display_fillRect( (1 + 9 * 6), 41, 80, 48 );
+			OLED_display_putString( (1 + 9 * 6), 41, buf );
+
+			sprintf( (char*) buf, "%d.%dC", temp / 10, temp % 10 );
+			OLED_display_fillRect( (1 + 9 * 6), 49, 90, 56 );
+			OLED_display_putString( (1 + 9 * 6), 49, buf );
+		}
+
+		/* network operations */
+		if (!(SocketStatus & SOCK_ACTIVE))
+		{
+			TCPPassiveOpen();
+		}
+
+		DoNetworkStuff();
+
+		HTTP_Server_process();
+	}
+}
+
+uint8_t calc_threshold( uint16_t trimpot_value )
+{
+	return (uint8_t) (10 + (trimpot_value / 1000) * 2);
+}
+
+void vTask2( void *pvParameters )
+{
+const char *pcTaskName = "Task 2 is running\n";
+volatile unsigned long ul;
+
+	/* As per most tasks, this task is implemented in an infinite loop. */
+	for( ;; )
+	{
+		/* Print out the name of this task. */
+		vPrintString( pcTaskName );
+
+		/* Delay for a period. */
+		for( ul = 0; ul < mainDELAY_LOOP_COUNT; ul++ )
+		{
+			/* This loop is just a very crude delay implementation.  There is
+			nothing to do in here.  Later exercises will replace this crude
+			loop with a proper delay/sleep function. */
+		}
+	}
+}
+/*-----------------------------------------------------------*/
+
+void vApplicationMallocFailedHook( void )
+{
+	/* This function will only be called if an API call to create a task, queue
+	or semaphore fails because there is too little heap RAM remaining. */
+	for( ;; );
+}
+/*-----------------------------------------------------------*/
+
+void vApplicationStackOverflowHook( xTaskHandle *pxTask, signed char *pcTaskName )
+{
+	/* This function will only be called if a task overflows its stack.  Note
+	that stack overflow checking does slow down the context switch
+	implementation. */
+	for( ;; );
+}
+/*-----------------------------------------------------------*/
+
+void vApplicationIdleHook( void )
+{
+	/* This example does not use the idle hook to perform any processing. */
+}
+/*-----------------------------------------------------------*/
+
+void vApplicationTickHook( void )
+{
+	/* This example does not use the tick hook to perform any processing. */
+}
+
