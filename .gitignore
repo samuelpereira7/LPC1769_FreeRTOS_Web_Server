@@ -8,3 +8,5 @@ firmware_src/Lib_EaBaseBoard/Debug/
 firmware_src/demo/Debug/
 firmware_src/easyweb/Debug/
 firmware_src/oled_periph/Debug/
+firmware_src/FreeRTOS_Library/Debug
+firmware_src/Example01/Debug
