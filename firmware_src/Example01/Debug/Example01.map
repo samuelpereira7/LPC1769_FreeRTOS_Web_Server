@@ -214,8 +214,6 @@ Discarded input sections
                 0x00000000       0x40 ./src/Services/HTTP/tcpip.o
  .text.TCPRestartTimer
                 0x00000000        0xc ./src/Services/HTTP/tcpip.o
- .text.TCPClockHandler
-                0x00000000       0x1c ./src/Services/HTTP/tcpip.o
  .text.WriteWBE
                 0x00000000        0x8 ./src/Services/HTTP/tcpip.o
  .debug_macro   0x00000000      0x880 ./src/Services/HTTP/tcpip.o
@@ -330,8 +328,6 @@ Discarded input sections
  .group         0x00000000        0x8 ./src/Services/Systick.o
  .text          0x00000000        0x0 ./src/Services/Systick.o
  .data          0x00000000        0x0 ./src/Services/Systick.o
- .text.SysTick_Handler
-                0x00000000       0x64 ./src/Services/Systick.o
  .text.Start_SysTick10ms
                 0x00000000       0x40 ./src/Services/Systick.o
  .debug_macro   0x00000000      0x880 ./src/Services/Systick.o
@@ -1383,7 +1379,7 @@ END GROUP
                 0x20084000                __top_RamAHB32 = 0x20084000
                 0x20084000                __top_RAM2 = 0x20084000
 
-.text           0x00000000     0x7f40
+.text           0x00000000     0x7fc8
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -1392,10 +1388,10 @@ END GROUP
                 0x000000cc                . = ALIGN (0x4)
                 0x000000cc                __section_table_start = .
                 0x000000cc                __data_section_table = .
-                0x000000cc        0x4 LONG 0x7f40 LOADADDR (.data)
+                0x000000cc        0x4 LONG 0x7fc8 LOADADDR (.data)
                 0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000d4        0x4 LONG 0x498 SIZEOF (.data)
-                0x000000d8        0x4 LONG 0x7f40 LOADADDR (.data_RAM2)
+                0x000000d8        0x4 LONG 0x7fc8 LOADADDR (.data_RAM2)
                 0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000e4                __data_section_table_end = .
@@ -1506,633 +1502,640 @@ END GROUP
  .text.TCPHandleTimeout
                 0x00000c94       0x30 ./src/Services/HTTP/tcpip.o
                 0x00000c94                TCPHandleTimeout
+ .text.TCPClockHandler
+                0x00000cc4       0x1c ./src/Services/HTTP/tcpip.o
+                0x00000cc4                TCPClockHandler
  .text.SendFrame1
-                0x00000cc4       0x18 ./src/Services/HTTP/tcpip.o
-                0x00000cc4                SendFrame1
+                0x00000ce0       0x18 ./src/Services/HTTP/tcpip.o
+                0x00000ce0                SendFrame1
  .text.SendFrame2
-                0x00000cdc       0x18 ./src/Services/HTTP/tcpip.o
-                0x00000cdc                SendFrame2
+                0x00000cf8       0x18 ./src/Services/HTTP/tcpip.o
+                0x00000cf8                SendFrame2
  .text.WriteDWBE
-                0x00000cf4       0x10 ./src/Services/HTTP/tcpip.o
-                0x00000cf4                WriteDWBE
+                0x00000d10       0x10 ./src/Services/HTTP/tcpip.o
+                0x00000d10                WriteDWBE
  .text.PrepareTCP_FRAME
-                0x00000d04      0x12c ./src/Services/HTTP/tcpip.o
-                0x00000d04                PrepareTCP_FRAME
+                0x00000d20      0x12c ./src/Services/HTTP/tcpip.o
+                0x00000d20                PrepareTCP_FRAME
  .text.ProcessTCPFrame
-                0x00000e30      0x434 ./src/Services/HTTP/tcpip.o
-                0x00000e30                ProcessTCPFrame
+                0x00000e4c      0x434 ./src/Services/HTTP/tcpip.o
+                0x00000e4c                ProcessTCPFrame
  .text.ProcessEthIAFrame
-                0x00001264       0xdc ./src/Services/HTTP/tcpip.o
-                0x00001264                ProcessEthIAFrame
+                0x00001280       0xdc ./src/Services/HTTP/tcpip.o
+                0x00001280                ProcessEthIAFrame
  .text.TCPHandleRetransmission
-                0x00001340       0x48 ./src/Services/HTTP/tcpip.o
-                0x00001340                TCPHandleRetransmission
+                0x0000135c       0x48 ./src/Services/HTTP/tcpip.o
+                0x0000135c                TCPHandleRetransmission
  .text.PrepareTCP_DATA_FRAME
-                0x00001388       0xe0 ./src/Services/HTTP/tcpip.o
-                0x00001388                PrepareTCP_DATA_FRAME
+                0x000013a4       0xe0 ./src/Services/HTTP/tcpip.o
+                0x000013a4                PrepareTCP_DATA_FRAME
  .text.DoNetworkStuff
-                0x00001468      0x1f4 ./src/Services/HTTP/tcpip.o
-                0x00001468                DoNetworkStuff
+                0x00001484      0x1f4 ./src/Services/HTTP/tcpip.o
+                0x00001484                DoNetworkStuff
  .text.SwapBytes
-                0x0000165c        0xc ./src/Services/HTTP/tcpip.o
-                0x0000165c                SwapBytes
+                0x00001678        0xc ./src/Services/HTTP/tcpip.o
+                0x00001678                SwapBytes
  .text.Accelerometer_init
-                0x00001668       0x88 ./src/Services/Accelerometer.o
-                0x00001668                Accelerometer_init
+                0x00001684       0x88 ./src/Services/Accelerometer.o
+                0x00001684                Accelerometer_init
  .text.Accelerometer_read
-                0x000016f0       0x38 ./src/Services/Accelerometer.o
-                0x000016f0                Accelerometer_read
+                0x0000170c       0x38 ./src/Services/Accelerometer.o
+                0x0000170c                Accelerometer_read
  .text.Accelerometer_getX
-                0x00001728        0xc ./src/Services/Accelerometer.o
-                0x00001728                Accelerometer_getX
+                0x00001744        0xc ./src/Services/Accelerometer.o
+                0x00001744                Accelerometer_getX
  .text.Accelerometer_getY
-                0x00001734        0xc ./src/Services/Accelerometer.o
-                0x00001734                Accelerometer_getY
+                0x00001750        0xc ./src/Services/Accelerometer.o
+                0x00001750                Accelerometer_getY
  .text.Accelerometer_getZ
-                0x00001740        0xc ./src/Services/Accelerometer.o
-                0x00001740                Accelerometer_getZ
+                0x0000175c        0xc ./src/Services/Accelerometer.o
+                0x0000175c                Accelerometer_getZ
  .text.Button_init
-                0x0000174c       0x10 ./src/Services/Button.o
-                0x0000174c                Button_init
+                0x00001768       0x10 ./src/Services/Button.o
+                0x00001768                Button_init
  .text.Button_read
-                0x0000175c       0x10 ./src/Services/Button.o
-                0x0000175c                Button_read
+                0x00001778       0x10 ./src/Services/Button.o
+                0x00001778                Button_read
  .text.OLED_display_fillRect
-                0x0000176c       0x10 ./src/Services/OLED_display.o
-                0x0000176c                OLED_display_fillRect
+                0x00001788       0x10 ./src/Services/OLED_display.o
+                0x00001788                OLED_display_fillRect
  .text.OLED_display_clearScreen
-                0x0000177c        0xc ./src/Services/OLED_display.o
-                0x0000177c                OLED_display_clearScreen
+                0x00001798        0xc ./src/Services/OLED_display.o
+                0x00001798                OLED_display_clearScreen
  .text.OLED_display_init
-                0x00001788       0x78 ./src/Services/OLED_display.o
-                0x00001788                OLED_display_init
+                0x000017a4       0x78 ./src/Services/OLED_display.o
+                0x000017a4                OLED_display_init
  .text.OLED_display_putString
-                0x00001800       0x14 ./src/Services/OLED_display.o
-                0x00001800                OLED_display_putString
+                0x0000181c       0x14 ./src/Services/OLED_display.o
+                0x0000181c                OLED_display_putString
  .text.RGB_Leds_init
-                0x00001814       0x10 ./src/Services/RGB_Leds.o
-                0x00001814                RGB_Leds_init
+                0x00001830       0x10 ./src/Services/RGB_Leds.o
+                0x00001830                RGB_Leds_init
  .text.RGB_Leds_setLeds
-                0x00001824        0x8 ./src/Services/RGB_Leds.o
-                0x00001824                RGB_Leds_setLeds
+                0x00001840        0x8 ./src/Services/RGB_Leds.o
+                0x00001840                RGB_Leds_setLeds
+ .text.SysTick_Handler
+                0x00001848       0x64 ./src/Services/Systick.o
+                0x00001848                SysTick_Handler
  .text.Start_SysTick1ms
-                0x0000182c       0x34 ./src/Services/Systick.o
-                0x0000182c                Start_SysTick1ms
+                0x000018ac       0x34 ./src/Services/Systick.o
+                0x000018ac                Start_SysTick1ms
  .text.getTicks
-                0x00001860        0xc ./src/Services/Systick.o
-                0x00001860                getTicks
+                0x000018e0        0xc ./src/Services/Systick.o
+                0x000018e0                getTicks
  .text.Temperature_init
-                0x0000186c        0x8 ./src/Services/Temperature.o
-                0x0000186c                Temperature_init
+                0x000018ec        0x8 ./src/Services/Temperature.o
+                0x000018ec                Temperature_init
  .text.Temperature_read
-                0x00001874       0x10 ./src/Services/Temperature.o
-                0x00001874                Temperature_read
+                0x000018f4       0x10 ./src/Services/Temperature.o
+                0x000018f4                Temperature_read
  .text.Temperature_getTemp
-                0x00001884        0xc ./src/Services/Temperature.o
-                0x00001884                Temperature_getTemp
+                0x00001904        0xc ./src/Services/Temperature.o
+                0x00001904                Temperature_getTemp
  .text.Trimpot_init
-                0x00001890       0x50 ./src/Services/Trimpot.o
-                0x00001890                Trimpot_init
+                0x00001910       0x50 ./src/Services/Trimpot.o
+                0x00001910                Trimpot_init
  .text.Trimpot_read
-                0x000018e0       0x2c ./src/Services/Trimpot.o
-                0x000018e0                Trimpot_read
- .text.vTask1   0x0000190c      0x24c ./src/MainApp.o
-                0x0000190c                vTask1
- .text.vTask2   0x00001b58       0x30 ./src/MainApp.o
-                0x00001b58                vTask2
- .text.main     0x00001b88       0x50 ./src/MainApp.o
-                0x00001b88                main
+                0x00001960       0x2c ./src/Services/Trimpot.o
+                0x00001960                Trimpot_read
+ .text.vTask1   0x0000198c      0x24c ./src/MainApp.o
+                0x0000198c                vTask1
+ .text.vTask2   0x00001bd8       0x30 ./src/MainApp.o
+                0x00001bd8                vTask2
+ .text.main     0x00001c08       0x50 ./src/MainApp.o
+                0x00001c08                main
  .text.vApplicationMallocFailedHook
-                0x00001bd8        0x4 ./src/MainApp.o
-                0x00001bd8                vApplicationMallocFailedHook
+                0x00001c58        0x4 ./src/MainApp.o
+                0x00001c58                vApplicationMallocFailedHook
  .text.vApplicationStackOverflowHook
-                0x00001bdc        0x4 ./src/MainApp.o
-                0x00001bdc                vApplicationStackOverflowHook
+                0x00001c5c        0x4 ./src/MainApp.o
+                0x00001c5c                vApplicationStackOverflowHook
  .text.vApplicationIdleHook
-                0x00001be0        0x4 ./src/MainApp.o
-                0x00001be0                vApplicationIdleHook
+                0x00001c60        0x4 ./src/MainApp.o
+                0x00001c60                vApplicationIdleHook
  .text.vApplicationTickHook
-                0x00001be4        0x4 ./src/MainApp.o
-                0x00001be4                vApplicationTickHook
+                0x00001c64        0x4 ./src/MainApp.o
+                0x00001c64                vApplicationTickHook
  .text.intToString
-                0x00001be8       0x54 ./src/helper.o
-                0x00001be8                intToString
+                0x00001c68       0x54 ./src/helper.o
+                0x00001c68                intToString
  .text.NMI_Handler
-                0x00001c3c        0x4 ./cr_startup_lpc17.o
-                0x00001c3c                NMI_Handler
+                0x00001cbc        0x4 ./cr_startup_lpc17.o
+                0x00001cbc                NMI_Handler
  .text.HardFault_Handler
-                0x00001c40        0x4 ./cr_startup_lpc17.o
-                0x00001c40                HardFault_Handler
+                0x00001cc0        0x4 ./cr_startup_lpc17.o
+                0x00001cc0                HardFault_Handler
  .text.MemManage_Handler
-                0x00001c44        0x4 ./cr_startup_lpc17.o
-                0x00001c44                MemManage_Handler
+                0x00001cc4        0x4 ./cr_startup_lpc17.o
+                0x00001cc4                MemManage_Handler
  .text.BusFault_Handler
-                0x00001c48        0x4 ./cr_startup_lpc17.o
-                0x00001c48                BusFault_Handler
+                0x00001cc8        0x4 ./cr_startup_lpc17.o
+                0x00001cc8                BusFault_Handler
  .text.UsageFault_Handler
-                0x00001c4c        0x4 ./cr_startup_lpc17.o
-                0x00001c4c                UsageFault_Handler
+                0x00001ccc        0x4 ./cr_startup_lpc17.o
+                0x00001ccc                UsageFault_Handler
  .text.DebugMon_Handler
-                0x00001c50        0x4 ./cr_startup_lpc17.o
-                0x00001c50                DebugMon_Handler
+                0x00001cd0        0x4 ./cr_startup_lpc17.o
+                0x00001cd0                DebugMon_Handler
  .text.IntDefaultHandler
-                0x00001c54        0x4 ./cr_startup_lpc17.o
-                0x00001c54                TIMER2_IRQHandler
-                0x00001c54                RIT_IRQHandler
-                0x00001c54                I2C0_IRQHandler
-                0x00001c54                USBActivity_IRQHandler
-                0x00001c54                PWM1_IRQHandler
-                0x00001c54                I2C1_IRQHandler
-                0x00001c54                EINT2_IRQHandler
-                0x00001c54                UART1_IRQHandler
-                0x00001c54                EINT3_IRQHandler
-                0x00001c54                CANActivity_IRQHandler
-                0x00001c54                TIMER3_IRQHandler
-                0x00001c54                UART0_IRQHandler
-                0x00001c54                IntDefaultHandler
-                0x00001c54                PLL0_IRQHandler
-                0x00001c54                CAN_IRQHandler
-                0x00001c54                PLL1_IRQHandler
-                0x00001c54                SSP0_IRQHandler
-                0x00001c54                I2S_IRQHandler
-                0x00001c54                I2C2_IRQHandler
-                0x00001c54                RTC_IRQHandler
-                0x00001c54                TIMER0_IRQHandler
-                0x00001c54                SPI_IRQHandler
-                0x00001c54                EINT1_IRQHandler
-                0x00001c54                TIMER1_IRQHandler
-                0x00001c54                UART2_IRQHandler
-                0x00001c54                ADC_IRQHandler
-                0x00001c54                SSP1_IRQHandler
-                0x00001c54                USB_IRQHandler
-                0x00001c54                BOD_IRQHandler
-                0x00001c54                WDT_IRQHandler
-                0x00001c54                QEI_IRQHandler
-                0x00001c54                EINT0_IRQHandler
-                0x00001c54                DMA_IRQHandler
-                0x00001c54                UART3_IRQHandler
-                0x00001c54                MCPWM_IRQHandler
-                0x00001c54                ENET_IRQHandler
+                0x00001cd4        0x4 ./cr_startup_lpc17.o
+                0x00001cd4                TIMER2_IRQHandler
+                0x00001cd4                RIT_IRQHandler
+                0x00001cd4                I2C0_IRQHandler
+                0x00001cd4                USBActivity_IRQHandler
+                0x00001cd4                PWM1_IRQHandler
+                0x00001cd4                I2C1_IRQHandler
+                0x00001cd4                EINT2_IRQHandler
+                0x00001cd4                UART1_IRQHandler
+                0x00001cd4                EINT3_IRQHandler
+                0x00001cd4                CANActivity_IRQHandler
+                0x00001cd4                TIMER3_IRQHandler
+                0x00001cd4                UART0_IRQHandler
+                0x00001cd4                IntDefaultHandler
+                0x00001cd4                PLL0_IRQHandler
+                0x00001cd4                CAN_IRQHandler
+                0x00001cd4                PLL1_IRQHandler
+                0x00001cd4                SSP0_IRQHandler
+                0x00001cd4                I2S_IRQHandler
+                0x00001cd4                I2C2_IRQHandler
+                0x00001cd4                RTC_IRQHandler
+                0x00001cd4                TIMER0_IRQHandler
+                0x00001cd4                SPI_IRQHandler
+                0x00001cd4                EINT1_IRQHandler
+                0x00001cd4                TIMER1_IRQHandler
+                0x00001cd4                UART2_IRQHandler
+                0x00001cd4                ADC_IRQHandler
+                0x00001cd4                SSP1_IRQHandler
+                0x00001cd4                USB_IRQHandler
+                0x00001cd4                BOD_IRQHandler
+                0x00001cd4                WDT_IRQHandler
+                0x00001cd4                QEI_IRQHandler
+                0x00001cd4                EINT0_IRQHandler
+                0x00001cd4                DMA_IRQHandler
+                0x00001cd4                UART3_IRQHandler
+                0x00001cd4                MCPWM_IRQHandler
+                0x00001cd4                ENET_IRQHandler
  .text.ResetISR
-                0x00001c58       0x58 ./cr_startup_lpc17.o
-                0x00001c58                ResetISR
+                0x00001cd8       0x58 ./cr_startup_lpc17.o
+                0x00001cd8                ResetISR
  .text.SystemInit
-                0x00001cb0       0xe4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
-                0x00001cb0                SystemInit
+                0x00001d30       0xe4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\CMSISv2p00_LPC17xx\Debug\libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x00001d30                SystemInit
  .text.ADC_Init
-                0x00001d94       0x78 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
-                0x00001d94                ADC_Init
+                0x00001e14       0x78 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00001e14                ADC_Init
  .text.ADC_StartCmd
-                0x00001e0c       0x80 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
-                0x00001e0c                ADC_StartCmd
+                0x00001e8c       0x80 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00001e8c                ADC_StartCmd
  .text.ADC_IntConfig
-                0x00001e8c       0x9c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
-                0x00001e8c                ADC_IntConfig
+                0x00001f0c       0x9c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00001f0c                ADC_IntConfig
  .text.ADC_ChannelCmd
-                0x00001f28       0x60 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
-                0x00001f28                ADC_ChannelCmd
+                0x00001fa8       0x60 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00001fa8                ADC_ChannelCmd
  .text.ADC_ChannelGetData
-                0x00001f88       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
-                0x00001f88                ADC_ChannelGetData
+                0x00002008       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00002008                ADC_ChannelGetData
  .text.ADC_ChannelGetStatus
-                0x00001fd0       0x7c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
-                0x00001fd0                ADC_ChannelGetStatus
+                0x00002050       0x7c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00002050                ADC_ChannelGetStatus
  .text.CLKPWR_SetPCLKDiv
-                0x0000204c       0x8c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
-                0x0000204c                CLKPWR_SetPCLKDiv
+                0x000020cc       0x8c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x000020cc                CLKPWR_SetPCLKDiv
  .text.CLKPWR_GetPCLKSEL
-                0x000020d8       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
-                0x000020d8                CLKPWR_GetPCLKSEL
+                0x00002158       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00002158                CLKPWR_GetPCLKSEL
  .text.CLKPWR_GetPCLK
-                0x00002120       0x64 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
-                0x00002120                CLKPWR_GetPCLK
+                0x000021a0       0x64 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x000021a0                CLKPWR_GetPCLK
  .text.CLKPWR_ConfigPPWR
-                0x00002184       0x58 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
-                0x00002184                CLKPWR_ConfigPPWR
+                0x00002204       0x58 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00002204                CLKPWR_ConfigPPWR
  .text.GPIO_GetPointer
-                0x000021dc       0x70 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x0000225c       0x70 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
  .text.GPIO_SetDir
-                0x0000224c       0x4c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
-                0x0000224c                GPIO_SetDir
+                0x000022cc       0x4c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x000022cc                GPIO_SetDir
  .text.GPIO_SetValue
-                0x00002298       0x2c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
-                0x00002298                GPIO_SetValue
+                0x00002318       0x2c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x00002318                GPIO_SetValue
  .text.GPIO_ClearValue
-                0x000022c4       0x2c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
-                0x000022c4                GPIO_ClearValue
+                0x00002344       0x2c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x00002344                GPIO_ClearValue
  .text.GPIO_ReadValue
-                0x000022f0       0x2c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
-                0x000022f0                GPIO_ReadValue
+                0x00002370       0x2c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x00002370                GPIO_ReadValue
  .text.NVIC_EnableIRQ
-                0x0000231c       0x30 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x0000239c       0x30 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
  .text.NVIC_DisableIRQ
-                0x0000234c       0x34 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x000023cc       0x34 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
  .text.I2C_getNum
-                0x00002380       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002400       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
  .text.I2C_Start
-                0x000023c8       0x3c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002448       0x3c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
  .text.I2C_Stop
-                0x00002404       0x30 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002484       0x30 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
  .text.I2C_SendByte
-                0x00002434       0x4c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x000024b4       0x4c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
  .text.I2C_GetByte
-                0x00002480       0x54 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002500       0x54 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
  .text.I2C_IntCmd
-                0x000024d4       0x88 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
-                0x000024d4                I2C_IntCmd
+                0x00002554       0x88 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002554                I2C_IntCmd
  .text.I2C_MasterHandler
-                0x0000255c      0x3a0 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
-                0x0000255c                I2C_MasterHandler
+                0x000025dc      0x3a0 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x000025dc                I2C_MasterHandler
  .text.I2C_SetClock
-                0x000028fc       0xa4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
-                0x000028fc                I2C_SetClock
+                0x0000297c       0xa4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x0000297c                I2C_SetClock
  .text.I2C_Init
-                0x000029a0       0xa4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
-                0x000029a0                I2C_Init
- .text.I2C_Cmd  0x00002a44       0x70 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
-                0x00002a44                I2C_Cmd
+                0x00002a20       0xa4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002a20                I2C_Init
+ .text.I2C_Cmd  0x00002ac4       0x70 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002ac4                I2C_Cmd
  .text.I2C_MasterTransferData
-                0x00002ab4      0x2f8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
-                0x00002ab4                I2C_MasterTransferData
+                0x00002b34      0x2f8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00002b34                I2C_MasterTransferData
  .text.check_failed
-                0x00002dac        0xc C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
-                0x00002dac                check_failed
+                0x00002e2c        0xc C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+                0x00002e2c                check_failed
  .text.PINSEL_SetPinFunc
-                0x00002db8       0x84 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
-                0x00002db8                PINSEL_SetPinFunc
+                0x00002e38       0x84 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00002e38                PINSEL_SetPinFunc
  .text.PINSEL_SetResistorMode
-                0x00002e3c       0x84 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
-                0x00002e3c                PINSEL_SetResistorMode
+                0x00002ebc       0x84 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00002ebc                PINSEL_SetResistorMode
  .text.PINSEL_SetOpenDrainMode
-                0x00002ec0       0x6c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
-                0x00002ec0                PINSEL_SetOpenDrainMode
+                0x00002f40       0x6c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00002f40                PINSEL_SetOpenDrainMode
  .text.PINSEL_ConfigPin
-                0x00002f2c       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
-                0x00002f2c                PINSEL_ConfigPin
+                0x00002fac       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00002fac                PINSEL_ConfigPin
  .text.SSP_getNum
-                0x00002f74       0x38 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002ff4       0x38 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
  .text.SSP_IntHandler
-                0x00002fac      0x2cc C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
-                0x00002fac                SSP_IntHandler
+                0x0000302c      0x2cc C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x0000302c                SSP_IntHandler
  .text.SSP_SetClock
-                0x00003278       0xc4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
-                0x00003278                SSP_SetClock
+                0x000032f8       0xc4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x000032f8                SSP_SetClock
  .text.SSP_Init
-                0x0000333c       0xd8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
-                0x0000333c                SSP_Init
+                0x000033bc       0xd8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x000033bc                SSP_Init
  .text.SSP_ConfigStructInit
-                0x00003414       0x3c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
-                0x00003414                SSP_ConfigStructInit
- .text.SSP_Cmd  0x00003450       0x70 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
-                0x00003450                SSP_Cmd
+                0x00003494       0x3c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00003494                SSP_ConfigStructInit
+ .text.SSP_Cmd  0x000034d0       0x70 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x000034d0                SSP_Cmd
  .text.SSP_SendData
-                0x000034c0       0x40 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
-                0x000034c0                SSP_SendData
+                0x00003540       0x40 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00003540                SSP_SendData
  .text.SSP_ReceiveData
-                0x00003500       0x3c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
-                0x00003500                SSP_ReceiveData
+                0x00003580       0x3c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00003580                SSP_ReceiveData
  .text.SSP_ReadWrite
-                0x0000353c      0x3c0 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
-                0x0000353c                SSP_ReadWrite
- .text.I2CRead  0x000038fc       0x50 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x000035bc      0x3c0 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x000035bc                SSP_ReadWrite
+ .text.I2CRead  0x0000397c       0x50 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
  .text.I2CWrite
-                0x0000394c       0x50 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x000039cc       0x50 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
  .text.getStatus
-                0x0000399c       0x2c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x00003a1c       0x2c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
  .text.setModeControl
-                0x000039c8       0x28 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x00003a48       0x28 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
  .text.acc_init
-                0x000039f0       0x10 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
-                0x000039f0                acc_init
+                0x00003a70       0x10 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x00003a70                acc_init
  .text.acc_read
-                0x00003a00       0x9c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
-                0x00003a00                acc_read
+                0x00003a80       0x9c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x00003a80                acc_read
  .text.writeCommand
-                0x00003a9c       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00003b1c       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
  .text.writeData
-                0x00003ae4       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00003b64       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
  .text.writeDataLen
-                0x00003b2c       0x78 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00003bac       0x78 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
  .text.runInitSequence
-                0x00003ba4       0xd4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
- .text.hLine    0x00003c78       0x58 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
- .text.vLine    0x00003cd0       0x58 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00003c24       0xd4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.hLine    0x00003cf8       0x58 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.vLine    0x00003d50       0x58 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
  .text.oled_init
-                0x00003d28       0x74 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
-                0x00003d28                oled_init
+                0x00003da8       0x74 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00003da8                oled_init
  .text.oled_putPixel
-                0x00003d9c      0x150 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
-                0x00003d9c                oled_putPixel
+                0x00003e1c      0x150 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00003e1c                oled_putPixel
  .text.oled_fillRect
-                0x00003eec       0xa0 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
-                0x00003eec                oled_fillRect
+                0x00003f6c       0xa0 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00003f6c                oled_fillRect
  .text.oled_clearScreen
-                0x00003f8c       0x64 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
-                0x00003f8c                oled_clearScreen
+                0x0000400c       0x64 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x0000400c                oled_clearScreen
  .text.oled_putChar
-                0x00003ff0       0xd8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
-                0x00003ff0                oled_putChar
+                0x00004070       0xd8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00004070                oled_putChar
  .text.oled_putString
-                0x000040c8       0x54 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
-                0x000040c8                oled_putString
+                0x00004148       0x54 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00004148                oled_putString
  .text.rgb_init
-                0x0000411c       0x28 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
-                0x0000411c                rgb_init
+                0x0000419c       0x28 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+                0x0000419c                rgb_init
  .text.rgb_setLeds
-                0x00004144       0x50 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
-                0x00004144                rgb_setLeds
+                0x000041c4       0x50 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
+                0x000041c4                rgb_setLeds
  .text.temp_init
-                0x00004194       0x24 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
-                0x00004194                temp_init
+                0x00004214       0x24 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+                0x00004214                temp_init
  .text.temp_read
-                0x000041b8       0xf0 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
-                0x000041b8                temp_read
- .text          0x000042a8      0x12c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
-                0x000042a8                pxPortInitialiseStack
-                0x000042c4                vPortSVCHandler
-                0x000042e4                vPortStartFirstTask
-                0x000042f0                xPortStartScheduler
-                0x0000432c                vPortEndScheduler
-                0x00004330                vPortYieldFromISR
-                0x00004340                vPortEnterCritical
-                0x00004358                vPortExitCritical
-                0x00004370                xPortPendSVHandler
-                0x000043ac                xPortSysTickHandler
- .text          0x000043d4       0x50 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
-                0x000043d4                vPrintString
-                0x000043f8                vPrintStringAndNumber
- .text          0x00004424       0x14 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)
-                0x00004424                consoleprint
- .text          0x00004438      0xa58 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
-                0x00004438                xTaskGenericCreate
-                0x000045c8                vTaskDelete
-                0x00004630                uxTaskPriorityGet
-                0x0000464c                vTaskPrioritySet
-                0x000046e4                vTaskSuspend
-                0x0000476c                xTaskIsTaskSuspended
-                0x00004790                vTaskResume
-                0x000047f4                xTaskResumeFromISR
-                0x00004864                vTaskStartScheduler
-                0x000048ac                vTaskEndScheduler
-                0x000048c8                vTaskSuspendAll
-                0x000048dc                xTaskGetTickCount
-                0x000048f4                uxTaskGetNumberOfTasks
-                0x00004900                vTaskIncrementTick
-                0x000049b4                xTaskResumeAll
-                0x00004a88                vTaskDelayUntil
-                0x00004b08                vTaskDelay
-                0x00004bb4                vTaskSwitchContext
-                0x00004c74                vTaskPlaceOnEventList
-                0x00004ccc                xTaskRemoveFromEventList
-                0x00004d40                vTaskSetTimeOutState
-                0x00004d54                xTaskCheckForTimeOut
-                0x00004db8                vTaskMissedYield
-                0x00004dc8                xTaskGetCurrentTaskHandle
-                0x00004dd4                vTaskPriorityInherit
-                0x00004e44                vTaskPriorityDisinherit
- .text          0x00004e90      0x12c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
-                0x00004e90                pvPortMalloc
-                0x00004f64                vPortFree
-                0x00004fac                xPortGetFreeHeapSize
-                0x00004fb8                vPortInitialiseBlocks
- .text          0x00004fbc       0x9c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
-                0x00004fbc                vListInitialise
-                0x00004fd4                vListInitialiseItem
-                0x00004fdc                vListInsertEnd
-                0x00004ff8                vListInsert
-                0x00005034                vListRemove
+                0x00004238       0xf0 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+                0x00004238                temp_read
+ .text          0x00004328      0x130 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+                0x00004328                pxPortInitialiseStack
+                0x00004344                vPortSVCHandler
+                0x00004364                vPortStartFirstTask
+                0x00004370                xPortStartScheduler
+                0x000043ac                vPortEndScheduler
+                0x000043b0                vPortYieldFromISR
+                0x000043c0                vPortEnterCritical
+                0x000043d8                vPortExitCritical
+                0x000043f0                xPortPendSVHandler
+                0x0000442c                xPortSysTickHandler
+ .text          0x00004458       0x50 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
+                0x00004458                vPrintString
+                0x0000447c                vPrintStringAndNumber
+ .text          0x000044a8       0x14 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)
+                0x000044a8                consoleprint
+ .text          0x000044bc      0xa58 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+                0x000044bc                xTaskGenericCreate
+                0x0000464c                vTaskDelete
+                0x000046b4                uxTaskPriorityGet
+                0x000046d0                vTaskPrioritySet
+                0x00004768                vTaskSuspend
+                0x000047f0                xTaskIsTaskSuspended
+                0x00004814                vTaskResume
+                0x00004878                xTaskResumeFromISR
+                0x000048e8                vTaskStartScheduler
+                0x00004930                vTaskEndScheduler
+                0x0000494c                vTaskSuspendAll
+                0x00004960                xTaskGetTickCount
+                0x00004978                uxTaskGetNumberOfTasks
+                0x00004984                vTaskIncrementTick
+                0x00004a38                xTaskResumeAll
+                0x00004b0c                vTaskDelayUntil
+                0x00004b8c                vTaskDelay
+                0x00004c38                vTaskSwitchContext
+                0x00004cf8                vTaskPlaceOnEventList
+                0x00004d50                xTaskRemoveFromEventList
+                0x00004dc4                vTaskSetTimeOutState
+                0x00004dd8                xTaskCheckForTimeOut
+                0x00004e3c                vTaskMissedYield
+                0x00004e4c                xTaskGetCurrentTaskHandle
+                0x00004e58                vTaskPriorityInherit
+                0x00004ec8                vTaskPriorityDisinherit
+ .text          0x00004f14      0x12c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+                0x00004f14                pvPortMalloc
+                0x00004fe8                vPortFree
+                0x00005030                xPortGetFreeHeapSize
+                0x0000503c                vPortInitialiseBlocks
+ .text          0x00005040       0x9c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+                0x00005040                vListInitialise
+                0x00005058                vListInitialiseItem
+                0x00005060                vListInsertEnd
+                0x0000507c                vListInsert
+                0x000050b8                vListRemove
  .text.__sys_write
-                0x00005058        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_write.o)
-                0x00005058                __sys_write
-                0x00005058                __write
- .text.__main   0x00005064       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
-                0x00005064                __CR_SEMIHOST
-                0x00005064                __main
- .text.memcpy   0x00005078        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
-                0x00005078                memcpy
- .text.memset   0x0000507c        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
-                0x0000507c                memset
+                0x000050dc        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_write.o)
+                0x000050dc                __sys_write
+                0x000050dc                __write
+ .text.__main   0x000050e8       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
+                0x000050e8                __CR_SEMIHOST
+                0x000050e8                __main
+ .text.memcpy   0x000050fc        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
+                0x000050fc                memcpy
+ .text.memset   0x00005100        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+                0x00005100                memset
  .text.fp_round
-                0x00005080       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00005104       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
  .text.pr_dec.constprop.1
-                0x000050cc       0x26 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
- *fill*         0x000050f2        0x2 ff
- .text.sprintf  0x000050f4       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
-                0x000050f4                sprintf
+                0x00005150       0x26 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+ *fill*         0x00005176        0x2 ff
+ .text.sprintf  0x00005178       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00005178                sprintf
+ *fill*         0x000051e4        0x4 ff
  .text.fp_display
-                0x00005160      0x8ec c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x000051e8      0x8ec c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
  .text.vsnprintf
-                0x00005a4c       0x5c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
-                0x00005a4c                vsnprintf
- .text.printf   0x00005aa8       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
-                0x00005aa8                printf
- .text._initio  0x00005afc       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
-                0x00005afc                _initio
- .text.memcmp   0x00005ba0       0x42 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcmp.o)
-                0x00005ba0                memcmp
- *fill*         0x00005be2        0x2 ff
+                0x00005ad4       0x5c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00005ad4                vsnprintf
+ .text.printf   0x00005b30       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00005b30                printf
+ .text._initio  0x00005b84       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
+                0x00005b84                _initio
+ .text.memcmp   0x00005c28       0x42 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcmp.o)
+                0x00005c28                memcmp
+ *fill*         0x00005c6a        0x2 ff
  .text.__vfprintf
-                0x00005be4      0xd28 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
-                0x00005be4                __vfprintf
- .text.setvbuf  0x0000690c       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(setvbuf.o)
-                0x0000690c                setvbuf
- .text.strcpy   0x0000694c       0x42 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcpy.o)
-                0x0000694c                strcpy
- .text.strlen   0x0000698e       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
-                0x0000698e                strlen
- .text.strncpy  0x000069d8       0x56 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
-                0x000069d8                strncpy
+                0x00005c6c      0xd28 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
+                0x00005c6c                __vfprintf
+ .text.setvbuf  0x00006994       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(setvbuf.o)
+                0x00006994                setvbuf
+ .text.strcpy   0x000069d4       0x42 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strcpy.o)
+                0x000069d4                strcpy
+ .text.strlen   0x00006a16       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+                0x00006a16                strlen
+ .text.strncpy  0x00006a60       0x56 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+                0x00006a60                strncpy
  .text._deferredlazyseek
-                0x00006a2e       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
-                0x00006a2e                _deferredlazyseek
+                0x00006ab6       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
+                0x00006ab6                _deferredlazyseek
  .text.__flsbuf
-                0x00006a72      0x140 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
-                0x00006a72                __flsbuf
- .text._fdopen  0x00006bb2       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fdopen.o)
-                0x00006bb2                _fdopen
- .text._fflush  0x00006c1c       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
-                0x00006c1c                _fflush
- .text._frexpl  0x00006c74       0x5a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_frexpl.o)
-                0x00006c74                _frexpl
- *fill*         0x00006cce        0x2 ff
- .text._ldexpl  0x00006cd0       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_ldexpl.o)
-                0x00006cd0                _ldexpl
+                0x00006afa      0x140 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
+                0x00006afa                __flsbuf
+ .text._fdopen  0x00006c3a       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fdopen.o)
+                0x00006c3a                _fdopen
+ .text._fflush  0x00006ca4       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
+                0x00006ca4                _fflush
+ .text._frexpl  0x00006cfc       0x5a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_frexpl.o)
+                0x00006cfc                _frexpl
+ *fill*         0x00006d56        0x2 ff
+ .text._ldexpl  0x00006d58       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_ldexpl.o)
+                0x00006d58                _ldexpl
  .text._Cwritebuf
-                0x00006d1c       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
-                0x00006d1c                _Cwritebuf
- .text.malloc   0x00006d84       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00006d84                malloc
- .text.free     0x00006e4c       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00006e4c                free
+                0x00006da4       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
+                0x00006da4                _Cwritebuf
+ .text.malloc   0x00006e0c       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00006e0c                malloc
+ .text.free     0x00006ed4       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00006ed4                free
  .text._Csys_alloc
-                0x00006e7c       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00006e7c                _Csys_alloc
- .text.fclose   0x00006e9c       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fclose.o)
-                0x00006e9c                fclose
- .text.fflush   0x00006f08       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fflush.o)
-                0x00006f08                fflush
- .text.fseek    0x00006f38      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
-                0x00006f38                fseek
- .text.ftell    0x00007048       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
-                0x00007048                ftell
- .text.remove   0x00007094       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(remove.o)
-                0x00007094                remove
- .text._sbrk    0x000070a8       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_sbrk.o)
-                0x000070a8                _sbrk
+                0x00006f04       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00006f04                _Csys_alloc
+ .text.fclose   0x00006f24       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fclose.o)
+                0x00006f24                fclose
+ .text.fflush   0x00006f90       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fflush.o)
+                0x00006f90                fflush
+ .text.fseek    0x00006fc0      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
+                0x00006fc0                fseek
+ .text.ftell    0x000070d0       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
+                0x000070d0                ftell
+ .text.remove   0x0000711c       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(remove.o)
+                0x0000711c                remove
+ .text._sbrk    0x00007130       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_sbrk.o)
+                0x00007130                _sbrk
  .text._do_fflush
-                0x000070e8       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_do_fflush.o)
-                0x000070e8                _do_fflush
+                0x00007170       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_do_fflush.o)
+                0x00007170                _do_fflush
  .text.__check_heap_overflow
-                0x0000712c       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_check_heap.o)
-                0x0000712c                __check_heap_overflow
+                0x000071b4       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_check_heap.o)
+                0x000071b4                __check_heap_overflow
  .text.__aeabi_division_uldivmod
-                0x00007144      0x174 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_64.o)
-                0x00007144                __aeabi_uldivmod
-                0x00007148                __bhs_ldivmod1
+                0x000071cc      0x174 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_64.o)
+                0x000071cc                __aeabi_uldivmod
+                0x000071d0                __bhs_ldivmod1
  .text.__aeabi_division_idiv0
-                0x000072b8        0x2 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_idiv0.o)
-                0x000072b8                __aeabi_idiv0
- *fill*         0x000072ba        0x2 ff
+                0x00007340        0x2 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_idiv0.o)
+                0x00007340                __aeabi_idiv0
+ *fill*         0x00007342        0x2 ff
  .text.__aeabi_dmul
-                0x000072bc      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000072bc                __aeabi_dmul
+                0x00007344      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00007344                __aeabi_dmul
  .text.__aeabi_ddiv
-                0x000073cc      0x138 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000073cc                __aeabi_ddiv
+                0x00007454      0x138 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00007454                __aeabi_ddiv
  .text.__aeabi_dsub
-                0x00007504      0x1a0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00007504                __aeabi_dsub
+                0x0000758c      0x1a0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x0000758c                __aeabi_dsub
  .text.__aeabi_dadd
-                0x000076a4      0x10c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000076a4                __aeabi_dadd
+                0x0000772c      0x10c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x0000772c                __aeabi_dadd
  .text.__aeabi_d2iz
-                0x000077b0       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000077b0                __aeabi_d2iz
+                0x00007838       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00007838                __aeabi_d2iz
  .text.__bhs_ui2d
-                0x000077f0       0x46 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000077f0                __bhs_ui2d
+                0x00007878       0x46 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00007878                __bhs_ui2d
  .text.__aeabi_i2d
-                0x00007836       0x10 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00007836                __aeabi_i2d
+                0x000078be       0x10 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000078be                __aeabi_i2d
  .text.__aeabi_dcmpeq
-                0x00007846       0x2c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00007846                __aeabi_dcmpeq
+                0x000078ce       0x2c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000078ce                __aeabi_dcmpeq
  .text.__aeabi_dcmplt
-                0x00007872       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x00007872                __aeabi_dcmplt
+                0x000078fa       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000078fa                __aeabi_dcmplt
  .text.__aeabi_dcmple
-                0x000078c6       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x000078c6                __aeabi_dcmple
+                0x0000794e       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x0000794e                __aeabi_dcmple
  .text.__aeabi_dcmpge
-                0x0000791a       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
-                0x0000791a                __aeabi_dcmpge
+                0x000079a2       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000079a2                __aeabi_dcmpge
  .text.__aeabi_memcpy
-                0x0000796e       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x0000796e                __aeabi_memcpy
-                0x00007978                __aeabi_memcpy8
-                0x00007978                __aeabi_memcpy4
+                0x000079f6       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x000079f6                __aeabi_memcpy
+                0x00007a00                __aeabi_memcpy8
+                0x00007a00                __aeabi_memcpy4
  .text.__aeabi_memset_lowlevel
-                0x000079a2       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x000079a2                __aeabi_lowlevel_memset
+                0x00007a2a       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x00007a2a                __aeabi_lowlevel_memset
  .text.__sys_appexit
-                0x000079d4        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_appexit.o)
-                0x000079d4                __sys_appexit
-                0x000079d4                __exit
+                0x00007a5c        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_appexit.o)
+                0x00007a5c                __sys_appexit
+                0x00007a5c                __exit
  .text.__sys_close
-                0x000079e0        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_close.o)
-                0x000079e0                __sys_close
+                0x00007a68        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_close.o)
+                0x00007a68                __sys_close
  .text.__sys_flen
-                0x000079ec        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_flen.o)
-                0x000079ec                __sys_flen
+                0x00007a74        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_flen.o)
+                0x00007a74                __sys_flen
  .text.__sys_istty
-                0x000079f8        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_istty.o)
-                0x000079f8                __sys_istty
+                0x00007a80        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_istty.o)
+                0x00007a80                __sys_istty
  .text.__sys_remove
-                0x00007a04        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_remove.o)
-                0x00007a04                __sys_remove
+                0x00007a8c        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_remove.o)
+                0x00007a8c                __sys_remove
  .text.__sys_seek
-                0x00007a10        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_seek.o)
-                0x00007a10                __sys_seek
+                0x00007a98        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_seek.o)
+                0x00007a98                __sys_seek
  .text.__sys_tmpnam
-                0x00007a1c        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_tmpnam.o)
-                0x00007a1c                __sys_tmpnam
+                0x00007aa4        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_tmpnam.o)
+                0x00007aa4                __sys_tmpnam
  *(.rodata .rodata.* .constdata .constdata.*)
- .rodata        0x00007a28       0x3c ./src/Services/HTTP/HTTP_Server.o
-                0x00007a28                GetResponse
-                0x00007a58                GatewayIP
-                0x00007a5c                SubnetMask
-                0x00007a60                MyIP
+ .rodata        0x00007ab0       0x3c ./src/Services/HTTP/HTTP_Server.o
+                0x00007ab0                GetResponse
+                0x00007ae0                GatewayIP
+                0x00007ae4                SubnetMask
+                0x00007ae8                MyIP
  .rodata.str1.4
-                0x00007a64        0xd ./src/Services/HTTP/HTTP_Server.o
- *fill*         0x00007a71        0x3 ff
- .rodata        0x00007a74        0x6 ./src/Services/HTTP/tcpip.o
-                0x00007a74                MyMAC
- *fill*         0x00007a7a        0x2 ff
+                0x00007aec        0xd ./src/Services/HTTP/HTTP_Server.o
+ *fill*         0x00007af9        0x3 ff
+ .rodata        0x00007afc        0x6 ./src/Services/HTTP/tcpip.o
+                0x00007afc                MyMAC
+ *fill*         0x00007b02        0x2 ff
  .rodata.str1.4
-                0x00007a7c       0x9b ./src/MainApp.o
- *fill*         0x00007b17        0x1 ff
+                0x00007b04       0x9b ./src/MainApp.o
+ *fill*         0x00007b9f        0x1 ff
  .rodata.str1.4
-                0x00007b18       0x25 ./src/helper.o
- *fill*         0x00007b3d        0x3 ff
- .rodata        0x00007b40       0x15 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
- *fill*         0x00007b55        0x3 ff
- .rodata        0x00007b58       0x15 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
- *fill*         0x00007b6d        0x3 ff
- .rodata        0x00007b70       0x15 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
- *fill*         0x00007b85        0x3 ff
- .rodata        0x00007b88        0x8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
- .rodata        0x00007b90      0x300 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
-                0x00007b90                font5x7
+                0x00007ba0       0x25 ./src/helper.o
+ *fill*         0x00007bc5        0x3 ff
+ .rodata        0x00007bc8       0x15 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ *fill*         0x00007bdd        0x3 ff
+ .rodata        0x00007be0       0x15 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ *fill*         0x00007bf5        0x3 ff
+ .rodata        0x00007bf8       0x15 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ *fill*         0x00007c0d        0x3 ff
+ .rodata        0x00007c10        0x8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .rodata        0x00007c18      0x300 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+                0x00007c18                font5x7
  .rodata.str1.4
-                0x00007e90        0x8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
- .rodata        0x00007e98       0x14 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+                0x00007f18        0x8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
+ .rodata        0x00007f20       0x14 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
  .rodata.str1.4
-                0x00007eac        0x8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+                0x00007f34        0x8 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
                                   0x5 (size before relaxing)
  .rodata.str1.1
-                0x00007eb4       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
+                0x00007f3c       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fpprintf.o)
                                  0x35 (size before relaxing)
  .rodata.str1.1
-                0x00007ee8        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
+                0x00007f70        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
  .rodata.str1.1
-                0x00007eec       0x31 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
+                0x00007f74       0x31 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(printf.o)
                                  0x38 (size before relaxing)
  .rodata.str1.1
-                0x00007f1d       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
- *fill*         0x00007f35        0x3 ff
+                0x00007fa5       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+ *fill*         0x00007fbd        0x3 ff
  .rodata.__huge_vall
-                0x00007f38        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_hugeval.o)
-                0x00007f38                __huge_vall
-                0x00007f40                . = ALIGN (0x4)
+                0x00007fc0        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_hugeval.o)
+                0x00007fc0                __huge_vall
+                0x00007fc8                . = ALIGN (0x4)
 
-.glue_7         0x00007f40        0x0
- .glue_7        0x00007f40        0x0 linker stubs
+.glue_7         0x00007fc8        0x0
+ .glue_7        0x00007fc8        0x0 linker stubs
 
-.glue_7t        0x00007f40        0x0
- .glue_7t       0x00007f40        0x0 linker stubs
+.glue_7t        0x00007fc8        0x0
+ .glue_7t       0x00007fc8        0x0 linker stubs
 
-.vfp11_veneer   0x00007f40        0x0
- .vfp11_veneer  0x00007f40        0x0 linker stubs
+.vfp11_veneer   0x00007fc8        0x0
+ .vfp11_veneer  0x00007fc8        0x0 linker stubs
 
-.v4_bx          0x00007f40        0x0
- .v4_bx         0x00007f40        0x0 linker stubs
+.v4_bx          0x00007fc8        0x0
+ .v4_bx         0x00007fc8        0x0 linker stubs
 
-.iplt           0x00007f40        0x0
- .iplt          0x00007f40        0x0 ./src/Services/HTTP/HTTP_Server.o
+.iplt           0x00007fc8        0x0
+ .iplt          0x00007fc8        0x0 ./src/Services/HTTP/HTTP_Server.o
 
-.rel.dyn        0x00007f40        0x0
- .rel.iplt      0x00007f40        0x0 ./src/Services/HTTP/HTTP_Server.o
+.rel.dyn        0x00007fc8        0x0
+ .rel.iplt      0x00007fc8        0x0 ./src/Services/HTTP/HTTP_Server.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00007f40                __exidx_start = .
+                0x00007fc8                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00007f40                __exidx_end = .
-                0x00007f40                _etext = .
+                0x00007fc8                __exidx_end = .
+                0x00007fc8                _etext = .
 
-.data_RAM2      0x2007c000        0x0 load address 0x00007f40
+.data_RAM2      0x2007c000        0x0 load address 0x00007fc8
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2, .)
  *(.ramfunc.$RAM2)
@@ -2148,7 +2151,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000      0x498 load address 0x00007f40
+.data           0x10000000      0x498 load address 0x00007fc8
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -2164,7 +2167,7 @@ END GROUP
                 0x10000498                . = ALIGN (0x4)
                 0x10000498                _edata = .
 
-.igot.plt       0x10000498        0x0 load address 0x000083d8
+.igot.plt       0x10000498        0x0 load address 0x00008460
  .igot.plt      0x10000498        0x0 ./src/Services/HTTP/HTTP_Server.o
 
 .bss_RAM2       0x2007c000        0x0
@@ -2256,7 +2259,7 @@ END GROUP
                 [!provide]                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
 OUTPUT(Example01.axf elf32-littlearm)
 
-.debug_info     0x00000000     0xb284
+.debug_info     0x00000000     0xb2ab
  .debug_info    0x00000000      0x714 ./src/Services/HTTP/HTTP_Server.o
  .debug_info    0x00000714      0xb94 ./src/Services/HTTP/ethmac.o
  .debug_info    0x000012a8     0x1616 ./src/Services/HTTP/tcpip.o
@@ -2283,14 +2286,14 @@ OUTPUT(Example01.axf elf32-littlearm)
  .debug_info    0x00008fc8       0xda C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
  .debug_info    0x000090a2      0x13e C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
  .debug_info    0x000091e0       0x61 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
- .debug_info    0x00009241      0x21c C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_info    0x0000945d      0x1f2 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
- .debug_info    0x0000964f       0xe5 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)
- .debug_info    0x00009734     0x1568 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_info    0x0000ac9c      0x346 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_info    0x0000afe2      0x2a2 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_info    0x00009241      0x243 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_info    0x00009484      0x1f2 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
+ .debug_info    0x00009676       0xe5 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)
+ .debug_info    0x0000975b     0x1568 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_info    0x0000acc3      0x346 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_info    0x0000b009      0x2a2 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
 
-.debug_abbrev   0x00000000     0x2d17
+.debug_abbrev   0x00000000     0x2d2f
  .debug_abbrev  0x00000000      0x152 ./src/Services/HTTP/HTTP_Server.o
  .debug_abbrev  0x00000152      0x25f ./src/Services/HTTP/ethmac.o
  .debug_abbrev  0x000003b1      0x367 ./src/Services/HTTP/tcpip.o
@@ -2317,12 +2320,12 @@ OUTPUT(Example01.axf elf32-littlearm)
  .debug_abbrev  0x00002339       0x93 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
  .debug_abbrev  0x000023cc       0xc7 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
  .debug_abbrev  0x00002493       0x48 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
- .debug_abbrev  0x000024db      0x14e C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_abbrev  0x00002629      0x105 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
- .debug_abbrev  0x0000272e       0xb4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)
- .debug_abbrev  0x000027e2      0x29f C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_abbrev  0x00002a81      0x1cf C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_abbrev  0x00002c50       0xc7 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_abbrev  0x000024db      0x166 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_abbrev  0x00002641      0x105 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
+ .debug_abbrev  0x00002746       0xb4 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)
+ .debug_abbrev  0x000027fa      0x29f C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_abbrev  0x00002a99      0x1cf C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_abbrev  0x00002c68       0xc7 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
 
 .debug_loc      0x00000000     0x1bdd
  .debug_loc     0x00000000       0x7e ./src/Services/HTTP/HTTP_Server.o
@@ -2523,7 +2526,7 @@ OUTPUT(Example01.axf elf32-littlearm)
  .debug_macro   0x00007309      0x11d C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
  .debug_macro   0x00007426       0xef C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
 
-.debug_line     0x00000000     0x65e1
+.debug_line     0x00000000     0x65e2
  .debug_line    0x00000000      0x2f7 ./src/Services/HTTP/HTTP_Server.o
  .debug_line    0x000002f7      0x39f ./src/Services/HTTP/ethmac.o
  .debug_line    0x00000696      0x5c5 ./src/Services/HTTP/tcpip.o
@@ -2550,12 +2553,12 @@ OUTPUT(Example01.axf elf32-littlearm)
  .debug_line    0x00004d24      0x280 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(rgb.o)
  .debug_line    0x00004fa4      0x2a9 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
  .debug_line    0x0000524d       0x92 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
- .debug_line    0x000052df      0x303 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
- .debug_line    0x000055e2      0x30b C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
- .debug_line    0x000058ed      0x129 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)
- .debug_line    0x00005a16      0x59d C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
- .debug_line    0x00005fb3      0x334 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
- .debug_line    0x000062e7      0x2fa C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
+ .debug_line    0x000052df      0x304 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
+ .debug_line    0x000055e3      0x30b C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
+ .debug_line    0x000058ee      0x129 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)
+ .debug_line    0x00005a17      0x59d C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(tasks.o)
+ .debug_line    0x00005fb4      0x334 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(heap_2.o)
+ .debug_line    0x000062e8      0x2fa C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(list.o)
 
 .debug_str      0x00000000    0x14df9
  .debug_str     0x00000000     0x61ba ./src/Services/HTTP/HTTP_Server.o
@@ -2611,7 +2614,7 @@ OUTPUT(Example01.axf elf32-littlearm)
  .debug_str     0x00012690      0xe21 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
                                0x32d7 (size before relaxing)
  .debug_str     0x000134b1      0x468 C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(port.o)
-                               0x98fb (size before relaxing)
+                               0x990b (size before relaxing)
  .debug_str     0x00013919       0xaa C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(basic_io.o)
                                0x9847 (size before relaxing)
  .debug_str     0x000139c3       0x4b C:\Users\samuelpereira\Repos\Aviao_Cajada\EC020\firmware_src\FreeRTOS_Library\Debug\libFreeRTOS_Library.a(consoleprint.o)

@@ -264,6 +264,8 @@ unsigned long ulDummy;
 		vTaskIncrementTick();
 	}
 	portCLEAR_INTERRUPT_MASK_FROM_ISR( ulDummy );
+
+	SysTick_Handler();
 }
 /*-----------------------------------------------------------*/
 

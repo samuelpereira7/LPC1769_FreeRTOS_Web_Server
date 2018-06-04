@@ -30,6 +30,7 @@
 							<tool id="com.crt.advproject.gcc.lib.debug.1920639503" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.debug">
 								<option id="gnu.c.compiler.option.include.paths.788503487" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC17xx/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Application/src/Services}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/portable}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS_Library/demo_code}&quot;"/>
