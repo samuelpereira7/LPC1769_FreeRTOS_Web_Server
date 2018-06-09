@@ -5,7 +5,8 @@
  *      Author: samuelpereira
  */
 
-#include "helper.h"
+#include "common.h"
+
 #include "stddef.h"
 
 void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)

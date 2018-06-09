@@ -28,7 +28,7 @@
 #include "Services/HTTP/tcpip.h"
 #include <HTTP_Server.h>
 
-#include "helper.h"
+#include "common.h"
 
 inline static uint8_t calc_threshold( uint16_t trimpot_value );
 
@@ -36,8 +36,13 @@ inline static uint8_t calc_threshold( uint16_t trimpot_value );
 #define mainDELAY_LOOP_COUNT		( 0xfffff )
 
 /* The task functions. */
-void vTask1( void *pvParameters );
+void vMainTask( void *pvParameters );
 void vTask2( void *pvParameters );
+
+void acc_callback(message_t msg);
+void trim_callback(message_t msg);
+void but_callback(message_t msg);
+void temp_callback(message_t msg);
 
 int main( void )
 {
@@ -45,8 +50,8 @@ int main( void )
 	printf( "\n" );
 
 	/* Create one of the two tasks. */
-	xTaskCreate(	vTask1,		/* Pointer to the function that implements the task. */
-					"Task 1",	/* Text name for the task.  This is to facilitate debugging only. */
+	xTaskCreate(	vMainTask,		/* Pointer to the function that implements the task. */
+					"Main Task",/* Text name for the task.  This is to facilitate debugging only. */
 					240 * 8,	/* Stack depth in words. */
 					NULL,		/* We are not using the task parameter. */
 					1,			/* This task will run at priority 1. */
@@ -66,7 +71,7 @@ int main( void )
 	return 0;
 }
 
-void vTask1( void *pvParameters )
+void vMainTask( void *pvParameters )
 {
 	vPortEnterCritical();
 	/* buffer for string operations */
@@ -85,7 +90,10 @@ void vTask1( void *pvParameters )
 
 	/* initializing sensors and actuators */
 	OLED_display_init();
+
 	Temperature_init( &getTicks );
+	Temperature_setCallback(temp_callback);
+
 	Button_init();
 	Accelerometer_init();
 	Trimpot_init();
@@ -146,6 +154,11 @@ void vTask1( void *pvParameters )
 			OLED_display_putString( 1, 17, (uint8_t*) "RGB OFF" );
 		}
 
+		vPortExitCritical();
+
+		vTaskDelay(10);
+
+		vPortEnterCritical();
 		intToString( x, buf, 10, 10 );
 		OLED_display_fillRect( (1 + 9 * 6), 25, 80, 32 );
 		OLED_display_putString( (1 + 9 * 6), 25, buf );
@@ -163,13 +176,35 @@ void vTask1( void *pvParameters )
 		OLED_display_putString( (1 + 9 * 6), 49, buf );
 		vPortExitCritical();
 
-		vTaskDelay( 300 / portTICK_RATE_MS);
+		vTaskDelay( 100 / portTICK_RATE_MS);
 	}
 }
 
 uint8_t calc_threshold( uint16_t trimpot_value )
 {
 	return (uint8_t) (10 + (trimpot_value / 1000) * 2);
+}
+
+void acc_callback(message_t msg)
+{
+
+}
+
+void trim_callback(message_t msg)
+{
+
+}
+void but_callback(message_t msg)
+{
+
+}
+void temp_callback(message_t msg)
+{
+	char buffer[10];
+	memset(buffer, 0x00, 10);
+	sprintf(buffer, "%d\n", (uint32_t)msg.payload[0]);
+
+	vPrintString(buffer);
 }
 
 void vTask2( void *pvParameters )
