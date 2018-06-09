@@ -47,13 +47,14 @@ int main( void )
 	/* Create one of the two tasks. */
 	xTaskCreate(	vTask1,		/* Pointer to the function that implements the task. */
 					"Task 1",	/* Text name for the task.  This is to facilitate debugging only. */
-					240,		/* Stack depth in words. */
+					240 * 8,	/* Stack depth in words. */
 					NULL,		/* We are not using the task parameter. */
 					1,			/* This task will run at priority 1. */
 					NULL );		/* We are not using the task handle. */
 
 	/* Create the other task in exactly the same way. */
-	xTaskCreate( vTask2, "Task 2", 240, NULL, 1, NULL );
+	//xTaskCreate( vTask2, "Task 2", 240, NULL, 1, NULL );
+	HTTP_Server_init();
 
 	/* Start the scheduler so our tasks start executing. */
 	vTaskStartScheduler();
@@ -104,81 +105,65 @@ void vTask1( void *pvParameters )
 
 	while (1)
 	{
-		if ((counter % 50000) == 0)
+		/* reading sensors */
+		temp = Temperature_read();
+		button_status = Button_read();
+		Accelerometer_read( &x, &y, &z );
+		trimpot_value = Trimpot_read();
+
+		/* calculating the threshold value for y-axis of the accelerometer */
+		threshold = calc_threshold( trimpot_value );
+
+		/* RGB leds operations */
+		if (button_status == 0)
 		{
-			HTTP_Server_reset();
+			RGB_on = !RGB_on;
 		}
 
-		if ((counter++ % 4000) == 0)
+		if ((y > threshold) && RGB_on)
 		{
-			/* reading sensors */
-			temp = Temperature_read();
-			button_status = Button_read();
-			Accelerometer_read( &x, &y, &z );
-			trimpot_value = Trimpot_read();
-
-			/* calculating the threshold value for y-axis of the accelerometer */
-			threshold = calc_threshold( trimpot_value );
-
-			/* RGB leds operations */
-			if (button_status == 0)
-			{
-				RGB_on = !RGB_on;
-			}
-
-			if ((y > threshold) && RGB_on)
-			{
-				RGB_Leds_setLeds( RGB_LEDS_BLUE );
-			}
-			else if ((y < -threshold) && RGB_on)
-			{
-				RGB_Leds_setLeds( RGB_LEDS_RED );
-			}
-			else
-			{
-				RGB_Leds_setLeds( 0 );
-			}
-
-			vPortEnterCritical();
-
-			/* displaying info in the oled display */
-			OLED_display_fillRect( (1 + 9 * 6), 17, 80, 24 );
-			if (RGB_on == 1)
-			{
-				OLED_display_putString( 1, 17, (uint8_t*) "RGB ON " );
-			}
-			else
-			{
-				OLED_display_putString( 1, 17, (uint8_t*) "RGB OFF" );
-			}
-
-			intToString( x, buf, 10, 10 );
-			OLED_display_fillRect( (1 + 9 * 6), 25, 80, 32 );
-			OLED_display_putString( (1 + 9 * 6), 25, buf );
-
-			intToString( y, buf, 10, 10 );
-			OLED_display_fillRect( (1 + 9 * 6), 33, 80, 40 );
-			OLED_display_putString( (1 + 9 * 6), 33, buf );
-
-			intToString( z, buf, 10, 10 );
-			OLED_display_fillRect( (1 + 9 * 6), 41, 80, 48 );
-			OLED_display_putString( (1 + 9 * 6), 41, buf );
-
-			sprintf( (char*) buf, "%d.%dC", temp / 10, temp % 10 );
-			OLED_display_fillRect( (1 + 9 * 6), 49, 90, 56 );
-			OLED_display_putString( (1 + 9 * 6), 49, buf );
-			vPortExitCritical();
+			RGB_Leds_setLeds( RGB_LEDS_BLUE );
+		}
+		else if ((y < -threshold) && RGB_on)
+		{
+			RGB_Leds_setLeds( RGB_LEDS_RED );
+		}
+		else
+		{
+			RGB_Leds_setLeds( 0 );
 		}
 
-		/* network operations */
-		if (!(SocketStatus & SOCK_ACTIVE))
+		vPortEnterCritical();
+
+		/* displaying info in the oled display */
+		OLED_display_fillRect( (1 + 9 * 6), 17, 80, 24 );
+		if (RGB_on == 1)
 		{
-			TCPPassiveOpen();
+			OLED_display_putString( 1, 17, (uint8_t*) "RGB ON " );
+		}
+		else
+		{
+			OLED_display_putString( 1, 17, (uint8_t*) "RGB OFF" );
 		}
 
-		DoNetworkStuff();
+		intToString( x, buf, 10, 10 );
+		OLED_display_fillRect( (1 + 9 * 6), 25, 80, 32 );
+		OLED_display_putString( (1 + 9 * 6), 25, buf );
 
-		HTTP_Server_process();
+		intToString( y, buf, 10, 10 );
+		OLED_display_fillRect( (1 + 9 * 6), 33, 80, 40 );
+		OLED_display_putString( (1 + 9 * 6), 33, buf );
+
+		intToString( z, buf, 10, 10 );
+		OLED_display_fillRect( (1 + 9 * 6), 41, 80, 48 );
+		OLED_display_putString( (1 + 9 * 6), 41, buf );
+
+		sprintf( (char*) buf, "%d.%dC", temp / 10, temp % 10 );
+		OLED_display_fillRect( (1 + 9 * 6), 49, 90, 56 );
+		OLED_display_putString( (1 + 9 * 6), 49, buf );
+		vPortExitCritical();
+
+		vTaskDelay( 300 / portTICK_RATE_MS);
 	}
 }
 

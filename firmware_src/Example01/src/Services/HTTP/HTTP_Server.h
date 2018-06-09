@@ -14,6 +14,7 @@
 #ifndef __HTTP_SERVER_H
 #define __HTTP_SERVER_H
 
+void HTTP_Server_init(void);
 void HTTP_Server_reset(void);
 void HTTP_Server_process(void);
 void InsertDynamicValues(void);

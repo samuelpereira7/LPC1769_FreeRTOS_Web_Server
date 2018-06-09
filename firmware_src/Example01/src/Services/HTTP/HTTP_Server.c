@@ -19,6 +19,13 @@
 #include "stdlib.h"
 #include "stdio.h"
 
+/* FreeRTOS.org includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+
+/* Demo includes. */
+#include "basic_io.h"
+
 // CodeRed - added #define extern on next line (else variables
 // not defined). This has been done due to include the .h files 
 // rather than the .c files as in the original version of easyweb.
@@ -49,11 +56,57 @@
 // not work. In this case, simply add some extra lines
 // (e.g. CR and LFs) to the HTML-code.
 
+void HTTP_Server_task( void *pvParameters );
+void HTTP_Server_resetTask( void *pvParameters );
+
 const unsigned char GetResponse[] =   // 1st thing our server sends to a client
 		{ "HTTP/1.0 200 OK\r\n"     // protocol ver 1.0, code 200, reason OK
 						"Content-Type: text/html\r\n"// type of data we want to send
 						"\r\n"               // indicate end of HTTP-header
 		};
+
+void HTTP_Server_init(void)
+{
+	HTTP_Server_reset();
+
+	xTaskCreate( HTTP_Server_task, "HTTP Server", 240, NULL, 2, NULL );
+	xTaskCreate( HTTP_Server_resetTask, "Reset HTTP", 100, NULL, 2, NULL );
+}
+
+void HTTP_Server_task( void *pvParameters )
+{
+	uint64_t counter = 0;
+
+	while(1)
+	{
+//		if ((++counter % 5000) == 0)
+//		{
+//			HTTP_Server_reset();
+//		}
+
+		/* network operations */
+		if (!(SocketStatus & SOCK_ACTIVE))
+		{
+			TCPPassiveOpen();
+		}
+
+		DoNetworkStuff();
+
+		HTTP_Server_process();
+
+		vTaskDelay(5);
+	}
+}
+
+void HTTP_Server_resetTask( void *pvParameters )
+{
+
+	while(1)
+	{
+		vTaskDelay( 20000 / portTICK_RATE_MS);
+		HTTP_Server_reset();
+	}
+}
 
 void HTTP_Server_reset(void)
 {
