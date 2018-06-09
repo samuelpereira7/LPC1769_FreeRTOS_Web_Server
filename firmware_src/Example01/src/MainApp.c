@@ -67,6 +67,7 @@ int main( void )
 
 void vTask1( void *pvParameters )
 {
+	vPortEnterCritical();
 	/* buffer for string operations */
 	uint8_t buf[30];
 
@@ -98,6 +99,8 @@ void vTask1( void *pvParameters )
 	OLED_display_putString( 1, 33, (uint8_t*) "Acc y  : " );
 	OLED_display_putString( 1, 41, (uint8_t*) "Acc z  : " );
 	OLED_display_putString( 1, 49, (uint8_t*) "Temp   : " );
+
+	vPortExitCritical();
 
 	while (1)
 	{
@@ -136,6 +139,8 @@ void vTask1( void *pvParameters )
 				RGB_Leds_setLeds( 0 );
 			}
 
+			vPortEnterCritical();
+
 			/* displaying info in the oled display */
 			OLED_display_fillRect( (1 + 9 * 6), 17, 80, 24 );
 			if (RGB_on == 1)
@@ -162,6 +167,7 @@ void vTask1( void *pvParameters )
 			sprintf( (char*) buf, "%d.%dC", temp / 10, temp % 10 );
 			OLED_display_fillRect( (1 + 9 * 6), 49, 90, 56 );
 			OLED_display_putString( (1 + 9 * 6), 49, buf );
+			vPortExitCritical();
 		}
 
 		/* network operations */
