@@ -266,7 +266,7 @@ void InsertDynamicValues( void )
 					case 'T':
 						xSemaphoreTake(data_semaphr, blockTime);
 
-						sprintf( NewKey, "%03d", Temperature_getTemp() );
+						sprintf( NewKey, "%03d", data.temp );
 						memcpy( Key, NewKey, 3 );
 
 						xSemaphoreGive(data_semaphr);
