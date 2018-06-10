@@ -14,6 +14,13 @@
 #ifndef __HTTP_SERVER_H
 #define __HTTP_SERVER_H
 
+#include "FreeRTOS.h"
+#include "queue.h"
+
+#include "common.h"
+
+xQueueHandle HTTP_Server_queue;
+
 void HTTP_Server_init(void);
 void HTTP_Server_reset(void);
 void HTTP_Server_process(void);

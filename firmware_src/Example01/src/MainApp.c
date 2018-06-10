@@ -205,6 +205,11 @@ void acc_callback(message_t msg)
 		sprintf(buffer, "acc = %d,%d,%d\n", x, y, z);
 
 		vPrintString(buffer);
+
+		if ( xQueueSendToBack( HTTP_Server_queue, &msg, 25) != pdTRUE )
+		{
+			vPrintString("fail acc");
+		}
 	}
 }
 
@@ -248,6 +253,11 @@ void temp_callback(message_t msg)
 		sprintf(buffer, "t = %d\n", temp);
 
 		vPrintString(buffer);
+
+		if ( xQueueSendToBack( HTTP_Server_queue, &msg, 25) != pdTRUE )
+		{
+			vPrintString("fail temp");
+		}
 	}
 }
 

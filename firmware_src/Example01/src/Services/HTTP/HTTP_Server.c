@@ -16,12 +16,14 @@
  ******************************************************************/
 
 // Modifications by Code Red Technologies for NXP LPC1769
+#include <HTTP_Server.h>
+
 #include "stdlib.h"
 #include "stdio.h"
 
 /* FreeRTOS.org includes. */
-#include "FreeRTOS.h"
 #include "task.h"
+#include "semphr.h"
 
 /* Demo includes. */
 #include "basic_io.h"
@@ -30,8 +32,6 @@
 // not defined). This has been done due to include the .h files 
 // rather than the .c files as in the original version of easyweb.
 #define extern 
-
-#include <HTTP_Server.h>
 
 //CodeRed - added for LPC ethernet controller
 #include "ethmac.h"
@@ -58,6 +58,18 @@
 
 void HTTP_Server_task( void *pvParameters );
 void HTTP_Server_resetTask( void *pvParameters );
+void HTTP_Server_updaterTask( void *pvParameters );
+
+typedef struct http_data
+{
+	int32_t x;
+	int32_t y;
+	int32_t z;
+	int32_t temp;
+} http_data_t;
+
+static http_data_t data;
+xSemaphoreHandle data_semaphr;
 
 const unsigned char GetResponse[] =   // 1st thing our server sends to a client
 		{ "HTTP/1.0 200 OK\r\n"     // protocol ver 1.0, code 200, reason OK
@@ -69,8 +81,12 @@ void HTTP_Server_init(void)
 {
 	HTTP_Server_reset();
 
+	HTTP_Server_queue = xQueueCreate( 15, sizeof(message_t) );
+	data_semaphr = xSemaphoreCreateMutex();
+
 	xTaskCreate( HTTP_Server_task, "HTTP Server", 240, NULL, 2, NULL );
 	xTaskCreate( HTTP_Server_resetTask, "Reset HTTP", 100, NULL, 2, NULL );
+	xTaskCreate( HTTP_Server_updaterTask, "HTTP Updater", 256, NULL, 1, NULL );
 }
 
 void HTTP_Server_task( void *pvParameters )
@@ -79,11 +95,6 @@ void HTTP_Server_task( void *pvParameters )
 
 	while(1)
 	{
-//		if ((++counter % 5000) == 0)
-//		{
-//			HTTP_Server_reset();
-//		}
-
 		/* network operations */
 		if (!(SocketStatus & SOCK_ACTIVE))
 		{
@@ -105,6 +116,41 @@ void HTTP_Server_resetTask( void *pvParameters )
 	{
 		vTaskDelay( 20000 / portTICK_RATE_MS);
 		HTTP_Server_reset();
+	}
+}
+
+void HTTP_Server_updaterTask( void *pvParameters )
+{
+	message_t msg;
+	portBASE_TYPE xStatus = pdFALSE;
+	portTickType blockTime = 20 / portTICK_RATE_MS;
+
+	while(1)
+	{
+		xStatus = xQueueReceive(HTTP_Server_queue, &msg, blockTime);
+
+		if( xStatus == pdTRUE )
+		{
+			switch( msg.source )
+			{
+				case ACC:
+					xSemaphoreTake(data_semaphr, blockTime);
+					data.x = msg.payload[0];
+					data.y = msg.payload[1];
+					data.z = msg.payload[2];
+					xSemaphoreGive(data_semaphr);
+					vPrintString("Acc updated\n");
+					break;
+				case TEMP:
+					xSemaphoreTake(data_semaphr, blockTime);
+					data.temp = msg.payload[0];
+					xSemaphoreGive(data_semaphr);
+					vPrintString("Temp updated\n");
+					break;
+				default:
+					break;
+			}
+		}
 	}
 }
 
@@ -178,6 +224,7 @@ void InsertDynamicValues( void )
 	unsigned char *Key;
 	char NewKey[6];
 	unsigned int i;
+	portTickType blockTime = 20 / portTICK_RATE_MS;
 
 	if (TCPTxDataCount < 4)
 		return;                     // there can't be any special string
@@ -193,20 +240,36 @@ void InsertDynamicValues( void )
 				switch (*(Key + 2))
 				{
 					case 'X':
-						sprintf( NewKey, "%04d", Accelerometer_getX() );
+						xSemaphoreTake(data_semaphr, blockTime);
+
+						sprintf( NewKey, "%04d", data.x );
 						memcpy( Key, NewKey, 4 );
+
+						xSemaphoreGive(data_semaphr);
 						break;
 					case 'Y':
-						sprintf( NewKey, "%04d", Accelerometer_getY() );
+						xSemaphoreTake(data_semaphr, blockTime);
+
+						sprintf( NewKey, "%04d", data.y );
 						memcpy( Key, NewKey, 4 );
+
+						xSemaphoreGive(data_semaphr);
 						break;
 					case 'Z':
-						sprintf( NewKey, "%04d", Accelerometer_getZ() );
+						xSemaphoreTake(data_semaphr, blockTime);
+
+						sprintf( NewKey, "%04d", data.z );
 						memcpy( Key, NewKey, 4 );
+
+						xSemaphoreGive(data_semaphr);
 						break;
 					case 'T':
+						xSemaphoreTake(data_semaphr, blockTime);
+
 						sprintf( NewKey, "%03d", Temperature_getTemp() );
 						memcpy( Key, NewKey, 3 );
+
+						xSemaphoreGive(data_semaphr);
 						break;
 				}
 			}
