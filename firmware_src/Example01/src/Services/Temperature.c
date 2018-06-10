@@ -29,7 +29,6 @@ static ttagTemperature Temp_Instance;
 void Temperature_init (uint32_t (*getMsTick)(void))
 {
 	temp_init(getMsTick);
-
 	xTaskCreate( Temperature_task, "Temp", 192, NULL, 1, NULL );
 }
 
@@ -67,7 +66,7 @@ void Temperature_task( void *pvParameters )
 			tx_callback(msg);
 		}
 
-		vTaskDelay(500 / portTICK_RATE_MS );
+		vTaskDelay(200 / portTICK_RATE_MS );
 	}
 }
 

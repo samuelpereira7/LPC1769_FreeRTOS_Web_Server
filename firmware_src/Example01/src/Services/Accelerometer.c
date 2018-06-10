@@ -5,9 +5,20 @@
  *      Author: samuelpereira
  */
 
+/* FreeRTOS.org includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+
+/* Demo includes. */
+#include "basic_io.h"
+
 #include "Accelerometer.h"
 #include "lpc17xx_i2c.h"
 #include "lpc17xx_pinsel.h"
+
+static callback_t tx_callback;
+
+void Accelerometer_task( void *pvParameters );
 
 typedef struct tagAccelerometer
 {
@@ -51,10 +62,20 @@ void Accelerometer_init (void)
 	Accelerometer_init_i2c();
 	acc_init();
 
-	acc_read(&x, &y, &z);
+	acc_read( &x, &y, &z );
 	Acc_Instance.xoff = 0 - x;
 	Acc_Instance.yoff = 0 - y;
 	Acc_Instance.zoff = 64 - z;
+
+	xTaskCreate( Accelerometer_task, "Acc", 256, NULL, 1, NULL );
+}
+
+void Accelerometer_setCallback(callback_t c)
+{
+	if (c != NULL)
+	{
+		tx_callback = c;
+	}
 }
 
 void Accelerometer_read (int8_t* x, int8_t* y, int8_t* z)
@@ -92,4 +113,27 @@ int8_t Accelerometer_getY()
 int8_t Accelerometer_getZ()
 {
 	return Acc_Instance.cz;
+}
+
+void Accelerometer_task( void *pvParameters )
+{
+	message_t msg;
+	int8_t x, y, z;
+
+	while(1)
+	{
+		memset(&msg, 0x00, sizeof(msg));
+		msg.source = ACC;
+		Accelerometer_read( &x, &y, &z );
+		msg.payload[0] = x;
+		msg.payload[1] = y;
+		msg.payload[2] = z;
+
+		if (tx_callback != NULL)
+		{
+			tx_callback(msg);
+		}
+
+		vTaskDelay(200 / portTICK_RATE_MS );
+	}
 }

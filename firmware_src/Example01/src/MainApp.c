@@ -44,6 +44,11 @@ void trim_callback(message_t msg);
 void but_callback(message_t msg);
 void temp_callback(message_t msg);
 
+int8_t x = 0;
+int8_t y = 0;
+int8_t z = 0;
+int16_t temp = 0;
+
 int main( void )
 {
 	/* Init the semi-hosting. */
@@ -77,10 +82,6 @@ void vMainTask( void *pvParameters )
 	/* buffer for string operations */
 	uint8_t buf[30];
 
-	int8_t x = 0;
-	int8_t y = 0;
-	int8_t z = 0;
-	int16_t temp = 0;
 	uint8_t button_status;
 	uint16_t trimpot_value;
 
@@ -95,7 +96,10 @@ void vMainTask( void *pvParameters )
 	Temperature_setCallback(temp_callback);
 
 	Button_init();
+
 	Accelerometer_init();
+	Accelerometer_setCallback(acc_callback);
+
 	Trimpot_init();
 	RGB_Leds_init();
 
@@ -114,9 +118,9 @@ void vMainTask( void *pvParameters )
 	while (1)
 	{
 		/* reading sensors */
-		temp = Temperature_read();
+		//temp = Temperature_read();
 		button_status = Button_read();
-		Accelerometer_read( &x, &y, &z );
+		//Accelerometer_read( &x, &y, &z );
 		trimpot_value = Trimpot_read();
 
 		/* calculating the threshold value for y-axis of the accelerometer */
@@ -187,7 +191,16 @@ uint8_t calc_threshold( uint16_t trimpot_value )
 
 void acc_callback(message_t msg)
 {
+	char buffer[20];
 
+	x = msg.payload[0];
+	y = msg.payload[1];
+	z = msg.payload[2];
+
+	memset(buffer, 0x00, 20);
+	sprintf(buffer, "%d,%d,%d\n", x, y, z);
+
+	vPrintString(buffer);
 }
 
 void trim_callback(message_t msg)
@@ -201,8 +214,11 @@ void but_callback(message_t msg)
 void temp_callback(message_t msg)
 {
 	char buffer[10];
+
+	temp = (int32_t)msg.payload[0];
+
 	memset(buffer, 0x00, 10);
-	sprintf(buffer, "%d\n", (uint32_t)msg.payload[0]);
+	sprintf(buffer, "%d\n", temp);
 
 	vPrintString(buffer);
 }

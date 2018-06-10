@@ -23,7 +23,7 @@ typedef enum enuSource
 typedef struct message
 {
 	source_t source;
-	uint16_t payload[3];
+	int16_t payload[3];
 }message_t;
 
 typedef void (*callback_t)(message_t msg);
