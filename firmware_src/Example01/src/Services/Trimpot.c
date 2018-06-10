@@ -8,6 +8,19 @@
 #include "lpc17xx_adc.h"
 #include "lpc17xx_pinsel.h"
 
+/* FreeRTOS.org includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+
+/* Demo includes. */
+#include "basic_io.h"
+
+#include "Trimpot.h"
+
+static callback_t tx_callback;
+
+void Trimpot_task( void *pvParameters );
+
 void Trimpot_init(void)
 {
 	PINSEL_CFG_Type PinCfg;
@@ -30,6 +43,16 @@ void Trimpot_init(void)
 	ADC_Init(LPC_ADC, 1000000);
 	ADC_IntConfig(LPC_ADC,ADC_CHANNEL_0,DISABLE);
 	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,ENABLE);
+
+	xTaskCreate( Trimpot_task, "Trimpot", 192, NULL, 1, NULL );
+}
+
+void Trimpot_setCallback(callback_t c)
+{
+	if (c != NULL)
+	{
+		tx_callback = c;
+	}
 }
 
 uint16_t Trimpot_read(void)
@@ -43,4 +66,24 @@ uint16_t Trimpot_read(void)
 
 	return trim;
 }
+
+void Trimpot_task( void *pvParameters )
+{
+	message_t msg;
+
+	while(1)
+	{
+		memset(&msg, 0x00, sizeof(msg));
+		msg.source = TRIM;
+		msg.payload[0] = Trimpot_read();
+
+		if (tx_callback != NULL)
+		{
+			tx_callback(msg);
+		}
+
+		vTaskDelay( 800 / portTICK_RATE_MS );
+	}
+}
+
 

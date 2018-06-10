@@ -49,6 +49,7 @@ int8_t y = 0;
 int8_t z = 0;
 int16_t temp = 0;
 uint8_t button_status;
+uint16_t trimpot_value;
 
 int main( void )
 {
@@ -83,8 +84,6 @@ void vMainTask( void *pvParameters )
 	/* buffer for string operations */
 	uint8_t buf[30];
 
-	uint16_t trimpot_value;
-
 	uint8_t RGB_on = 1;
 	uint64_t counter = 0;
 	uint8_t threshold;
@@ -102,6 +101,8 @@ void vMainTask( void *pvParameters )
 	Accelerometer_setCallback(acc_callback);
 
 	Trimpot_init();
+	Trimpot_setCallback(trim_callback);
+
 	RGB_Leds_init();
 
 	OLED_display_clearScreen();
@@ -209,7 +210,17 @@ void acc_callback(message_t msg)
 
 void trim_callback(message_t msg)
 {
+	char buffer[10];
 
+	if(msg.source == TRIM)
+	{
+		trimpot_value = (uint16_t)msg.payload[0];
+
+		memset(buffer, 0x00, 10);
+		sprintf(buffer, "tr = %d\n", trimpot_value);
+
+		vPrintString(buffer);
+	}
 }
 void but_callback(message_t msg)
 {
@@ -220,7 +231,7 @@ void but_callback(message_t msg)
 		button_status = (uint8_t)msg.payload[0];
 
 		memset(buffer, 0x00, 10);
-		sprintf(buffer, "b = %d\n", temp);
+		sprintf(buffer, "b = %d\n", button_status);
 
 		vPrintString(buffer);
 	}
