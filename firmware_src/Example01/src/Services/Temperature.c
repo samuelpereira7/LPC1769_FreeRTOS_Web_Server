@@ -66,7 +66,7 @@ void Temperature_task( void *pvParameters )
 			tx_callback(msg);
 		}
 
-		vTaskDelay(200 / portTICK_RATE_MS );
+		vTaskDelay( 500 / portTICK_RATE_MS );
 	}
 }
 

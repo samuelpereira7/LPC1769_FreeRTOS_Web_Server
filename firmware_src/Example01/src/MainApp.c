@@ -48,6 +48,7 @@ int8_t x = 0;
 int8_t y = 0;
 int8_t z = 0;
 int16_t temp = 0;
+uint8_t button_status;
 
 int main( void )
 {
@@ -57,7 +58,7 @@ int main( void )
 	/* Create one of the two tasks. */
 	xTaskCreate(	vMainTask,		/* Pointer to the function that implements the task. */
 					"Main Task",/* Text name for the task.  This is to facilitate debugging only. */
-					240 * 8,	/* Stack depth in words. */
+					240 * 2,	/* Stack depth in words. */
 					NULL,		/* We are not using the task parameter. */
 					1,			/* This task will run at priority 1. */
 					NULL );		/* We are not using the task handle. */
@@ -82,7 +83,6 @@ void vMainTask( void *pvParameters )
 	/* buffer for string operations */
 	uint8_t buf[30];
 
-	uint8_t button_status;
 	uint16_t trimpot_value;
 
 	uint8_t RGB_on = 1;
@@ -96,6 +96,7 @@ void vMainTask( void *pvParameters )
 	Temperature_setCallback(temp_callback);
 
 	Button_init();
+	Button_setCallback(but_callback);
 
 	Accelerometer_init();
 	Accelerometer_setCallback(acc_callback);
@@ -180,7 +181,7 @@ void vMainTask( void *pvParameters )
 		OLED_display_putString( (1 + 9 * 6), 49, buf );
 		vPortExitCritical();
 
-		vTaskDelay( 100 / portTICK_RATE_MS);
+		vTaskDelay( 1000 / portTICK_RATE_MS);
 	}
 }
 
@@ -193,14 +194,17 @@ void acc_callback(message_t msg)
 {
 	char buffer[20];
 
-	x = msg.payload[0];
-	y = msg.payload[1];
-	z = msg.payload[2];
+	if(msg.source == ACC)
+	{
+		x = msg.payload[0];
+		y = msg.payload[1];
+		z = msg.payload[2];
 
-	memset(buffer, 0x00, 20);
-	sprintf(buffer, "%d,%d,%d\n", x, y, z);
+		memset(buffer, 0x00, 20);
+		sprintf(buffer, "acc = %d,%d,%d\n", x, y, z);
 
-	vPrintString(buffer);
+		vPrintString(buffer);
+	}
 }
 
 void trim_callback(message_t msg)
@@ -209,18 +213,31 @@ void trim_callback(message_t msg)
 }
 void but_callback(message_t msg)
 {
+	char buffer[10];
 
+	if(msg.source == BUT)
+	{
+		button_status = (uint8_t)msg.payload[0];
+
+		memset(buffer, 0x00, 10);
+		sprintf(buffer, "b = %d\n", temp);
+
+		vPrintString(buffer);
+	}
 }
 void temp_callback(message_t msg)
 {
 	char buffer[10];
 
-	temp = (int32_t)msg.payload[0];
+	if(msg.source == TEMP)
+	{
+		temp = (int32_t)msg.payload[0];
 
-	memset(buffer, 0x00, 10);
-	sprintf(buffer, "%d\n", temp);
+		memset(buffer, 0x00, 10);
+		sprintf(buffer, "t = %d\n", temp);
 
-	vPrintString(buffer);
+		vPrintString(buffer);
+	}
 }
 
 void vTask2( void *pvParameters )
