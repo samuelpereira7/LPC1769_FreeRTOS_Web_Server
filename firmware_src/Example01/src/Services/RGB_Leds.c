@@ -49,6 +49,7 @@ void RGB_Leds_setLeds (uint8_t ledMask)
 void RGB_Leds_task( void *pvParameters )
 {
 	message_t msg;
+	char buffer[20];
 	portBASE_TYPE xStatus = pdFALSE;
 	portTickType blockTime = 20 / portTICK_RATE_MS;
 	bool valid_source = false;
@@ -59,6 +60,8 @@ void RGB_Leds_task( void *pvParameters )
 
 		if( xStatus == pdTRUE )
 		{
+			memset( buffer, 0x00, sizeof(buffer) );
+
 			switch( msg.source )
 			{
 				case ACC:
@@ -82,10 +85,11 @@ void RGB_Leds_task( void *pvParameters )
 					valid_source = true;
 					break;
 				case TRIM:
-					vPrintString( "Trimpot message received\n" );
-
 					/* calculating the threshold value for y-axis of the accelerometer */
 					RGB_Leds_Instance.threshold = calc_threshold( (uint16_t)msg.payload[0] );
+
+					sprintf( buffer, "Trimpot message received v: %d t: %d\n", (uint16_t)msg.payload[0], RGB_Leds_Instance.threshold );
+					vPrintString( buffer );
 
 					valid_source = true;
 					break;

@@ -75,7 +75,10 @@ void Trimpot_task( void *pvParameters )
 	{
 		memset(&msg, 0x00, sizeof(msg));
 		msg.source = TRIM;
+
+		vPortEnterCritical();
 		msg.payload[0] = (int16_t)Trimpot_read();
+		vPortExitCritical();
 
 		if (tx_callback != NULL)
 		{
