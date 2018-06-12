@@ -75,7 +75,7 @@ void Trimpot_task( void *pvParameters )
 	{
 		memset(&msg, 0x00, sizeof(msg));
 		msg.source = TRIM;
-		msg.payload[0] = Trimpot_read();
+		msg.payload[0] = (int16_t)Trimpot_read();
 
 		if (tx_callback != NULL)
 		{

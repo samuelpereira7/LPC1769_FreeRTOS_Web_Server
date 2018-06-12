@@ -30,8 +30,6 @@
 
 #include "common.h"
 
-inline static uint8_t calc_threshold( uint16_t trimpot_value );
-
 /* Used as a loop counter to create a very crude delay. */
 #define mainDELAY_LOOP_COUNT		( 0xfffff )
 
@@ -121,31 +119,31 @@ void vMainTask( void *pvParameters )
 	{
 		/* reading sensors */
 		//temp = Temperature_read();
-		button_status = Button_read();
+		//button_status = Button_read();
 		//Accelerometer_read( &x, &y, &z );
-		trimpot_value = Trimpot_read();
+		//trimpot_value = Trimpot_read();
 
 		/* calculating the threshold value for y-axis of the accelerometer */
-		threshold = calc_threshold( trimpot_value );
+		//threshold = calc_threshold( trimpot_value );
 
 		/* RGB leds operations */
-		if (button_status == 0)
-		{
-			RGB_on = !RGB_on;
-		}
-
-		if ((y > threshold) && RGB_on)
-		{
-			RGB_Leds_setLeds( RGB_LEDS_BLUE );
-		}
-		else if ((y < -threshold) && RGB_on)
-		{
-			RGB_Leds_setLeds( RGB_LEDS_RED );
-		}
-		else
-		{
-			RGB_Leds_setLeds( 0 );
-		}
+//		if (button_status == 0)
+//		{
+//			RGB_on = !RGB_on;
+//		}
+//
+//		if ((y > threshold) && RGB_on)
+//		{
+//			RGB_Leds_setLeds( RGB_LEDS_BLUE );
+//		}
+//		else if ((y < -threshold) && RGB_on)
+//		{
+//			RGB_Leds_setLeds( RGB_LEDS_RED );
+//		}
+//		else
+//		{
+//			RGB_Leds_setLeds( 0 );
+//		}
 
 		vPortEnterCritical();
 
@@ -186,11 +184,6 @@ void vMainTask( void *pvParameters )
 	}
 }
 
-uint8_t calc_threshold( uint16_t trimpot_value )
-{
-	return (uint8_t) (10 + (trimpot_value / 1000) * 2);
-}
-
 void acc_callback(message_t msg)
 {
 	char buffer[20];
@@ -206,7 +199,14 @@ void acc_callback(message_t msg)
 
 		vPrintString(buffer);
 
+		/* Send message to HTTP Server */
 		if ( xQueueSendToBack( HTTP_Server_queue, &msg, 25) != pdTRUE )
+		{
+			vPrintString("fail acc");
+		}
+
+		/* Send message to RGB Leds */
+		if ( xQueueSendToBack( RGB_Leds_queue, &msg, 25) != pdTRUE )
 		{
 			vPrintString("fail acc");
 		}
@@ -225,6 +225,12 @@ void trim_callback(message_t msg)
 		sprintf(buffer, "tr = %d\n", trimpot_value);
 
 		vPrintString(buffer);
+
+		/* Send message to RGB Leds */
+		if ( xQueueSendToBack( RGB_Leds_queue, &msg, 25) != pdTRUE )
+		{
+			vPrintString("fail trim");
+		}
 	}
 }
 void but_callback(message_t msg)
@@ -239,6 +245,12 @@ void but_callback(message_t msg)
 		sprintf(buffer, "b = %d\n", button_status);
 
 		vPrintString(buffer);
+
+		/* Send message to RGB Leds */
+		if ( xQueueSendToBack( RGB_Leds_queue, &msg, 25) != pdTRUE )
+		{
+			vPrintString("fail button");
+		}
 	}
 }
 void temp_callback(message_t msg)
@@ -254,6 +266,7 @@ void temp_callback(message_t msg)
 
 		vPrintString(buffer);
 
+		/* Send message to HTTP Server */
 		if ( xQueueSendToBack( HTTP_Server_queue, &msg, 25) != pdTRUE )
 		{
 			vPrintString("fail temp");
@@ -263,8 +276,8 @@ void temp_callback(message_t msg)
 
 void vTask2( void *pvParameters )
 {
-const char *pcTaskName = "Task 2 is running\n";
-volatile unsigned long ul;
+	const char *pcTaskName = "Task 2 is running\n";
+	volatile unsigned long ul;
 
 	/* As per most tasks, this task is implemented in an infinite loop. */
 	for( ;; )

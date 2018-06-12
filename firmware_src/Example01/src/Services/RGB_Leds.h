@@ -11,9 +11,16 @@
 #include "rgb.h"
 #include <stdint.h>
 
+#include "FreeRTOS.h"
+#include "queue.h"
+
+#include "common.h"
+
 #define RGB_LEDS_RED   RGB_RED
 #define RGB_LEDS_BLUE  RGB_BLUE
 #define RGB_LEDS_GREEN RGB_GREEN
+
+xQueueHandle RGB_Leds_queue;
 
 void RGB_Leds_init (void);
 void RGB_Leds_setLeds (uint8_t ledMask);

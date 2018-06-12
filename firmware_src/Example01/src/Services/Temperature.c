@@ -61,9 +61,12 @@ void Temperature_task( void *pvParameters )
 		msg.source = TEMP;
 		msg.payload[0] = Temperature_read();
 
-		if (tx_callback != NULL)
+		if( msg.payload[0] > 0 && msg.payload[0] < 70 )
 		{
-			tx_callback(msg);
+			if (tx_callback != NULL)
+			{
+				tx_callback(msg);
+			}
 		}
 
 		vTaskDelay( 500 / portTICK_RATE_MS );
