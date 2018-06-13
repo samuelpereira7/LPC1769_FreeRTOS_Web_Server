@@ -10,12 +10,14 @@
 /* FreeRTOS.org includes. */
 #include "task.h"
 
+/* Demo includes. */
+#include "basic_io.h"
+
 #include <stdbool.h>
+#include <string.h>
+#include <stdio.h>
 
 #define INVALID 126
-
-void RGB_Leds_task( void *pvParameters );
-inline static uint8_t calc_threshold( uint16_t trimpot_value );
 
 typedef struct tagRGB_Leds
 {
@@ -25,6 +27,11 @@ typedef struct tagRGB_Leds
 }ttagRGB_Leds;
 
 static ttagRGB_Leds RGB_Leds_Instance;
+
+static callback_t tx_callback;
+
+void RGB_Leds_task( void *pvParameters );
+inline static uint8_t calc_threshold( uint16_t trimpot_value );
 
 void RGB_Leds_init (void)
 {
@@ -41,6 +48,14 @@ void RGB_Leds_init (void)
 	xTaskCreate( RGB_Leds_task, "RGB Task", 128, NULL, 1, NULL );
 }
 
+void RGB_Leds_setCallback(callback_t c)
+{
+	if (c != NULL)
+	{
+		tx_callback = c;
+	}
+}
+
 void RGB_Leds_setLeds (uint8_t ledMask)
 {
 	rgb_setLeds(ledMask);
@@ -49,6 +64,7 @@ void RGB_Leds_setLeds (uint8_t ledMask)
 void RGB_Leds_task( void *pvParameters )
 {
 	message_t msg;
+	message_t msg_out;
 	char buffer[20];
 	portBASE_TYPE xStatus = pdFALSE;
 	portTickType blockTime = 20 / portTICK_RATE_MS;
@@ -80,6 +96,11 @@ void RGB_Leds_task( void *pvParameters )
 					if( msg.payload[0] == 0)
 					{
 						RGB_Leds_Instance.on = !RGB_Leds_Instance.on;
+
+						memset( &msg_out, 0x00, sizeof(msg_out) );
+						msg_out.source = RGB;
+						msg_out.payload[0] = RGB_Leds_Instance.on;
+						tx_callback( msg_out );
 					}
 
 					valid_source = true;

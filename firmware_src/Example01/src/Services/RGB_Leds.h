@@ -23,6 +23,7 @@
 xQueueHandle RGB_Leds_queue;
 
 void RGB_Leds_init (void);
+void RGB_Leds_setCallback(callback_t c);
 void RGB_Leds_setLeds (uint8_t ledMask);
 
 #endif /* SERVICES_RGB_LEDS_H_ */
