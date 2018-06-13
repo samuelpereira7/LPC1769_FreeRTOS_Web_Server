@@ -10,6 +10,14 @@
 
 #include <stdint.h>
 
+/* FreeRTOS.org includes. */
+#include "FreeRTOS.h"
+#include "queue.h"
+
+#include "common.h"
+
+xQueueHandle OLED_display_queue;
+
 void OLED_display_init (void);
 void OLED_display_fillRect(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1);
 void OLED_display_clearScreen(void);

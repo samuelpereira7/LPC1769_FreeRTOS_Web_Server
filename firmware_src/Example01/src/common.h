@@ -18,6 +18,7 @@ typedef enum enuSource
 	TRIM,
 	BUT,
 	TEMP,
+	RGB
 }source_t;
 
 typedef struct message

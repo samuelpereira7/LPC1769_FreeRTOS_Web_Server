@@ -56,9 +56,6 @@
 // not work. In this case, simply add some extra lines
 // (e.g. CR and LFs) to the HTML-code.
 
-void HTTP_Server_task( void *pvParameters );
-void HTTP_Server_resetTask( void *pvParameters );
-void HTTP_Server_updaterTask( void *pvParameters );
 
 typedef struct http_data
 {
@@ -70,6 +67,10 @@ typedef struct http_data
 
 static http_data_t data;
 xSemaphoreHandle data_semaphr;
+
+void HTTP_Server_task( void *pvParameters );
+void HTTP_Server_resetTask( void *pvParameters );
+void HTTP_Server_updaterTask( void *pvParameters );
 
 const unsigned char GetResponse[] =   // 1st thing our server sends to a client
 		{ "HTTP/1.0 200 OK\r\n"     // protocol ver 1.0, code 200, reason OK
@@ -91,8 +92,6 @@ void HTTP_Server_init(void)
 
 void HTTP_Server_task( void *pvParameters )
 {
-	uint64_t counter = 0;
-
 	while(1)
 	{
 		/* network operations */

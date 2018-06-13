@@ -40,6 +40,7 @@ static char cBuffer[ ioMAX_MSG_LEN ];
 
 void vPrintString( const char *pcString )
 {
+	return;
 	/* Print the string, suspending the scheduler as method of mutual
 	exclusion. */
 	vTaskSuspendAll();

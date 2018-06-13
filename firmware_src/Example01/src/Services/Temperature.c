@@ -61,7 +61,7 @@ void Temperature_task( void *pvParameters )
 		msg.source = TEMP;
 		msg.payload[0] = Temperature_read();
 
-		if( msg.payload[0] > 0 && msg.payload[0] < 700 )
+		//if( msg.payload[0] > 0 && msg.payload[0] < 700 )
 		{
 			if (tx_callback != NULL)
 			{

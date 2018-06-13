@@ -36,9 +36,9 @@ void RGB_Leds_init (void)
 	RGB_Leds_Instance.y = INVALID;
 	RGB_Leds_Instance.threshold = INVALID;
 
-	RGB_Leds_queue = xQueueCreate( 15, sizeof(message_t) );
+	RGB_Leds_queue = xQueueCreate( 6, sizeof(message_t) );
 
-	xTaskCreate( RGB_Leds_task, "RGB Task", 256, NULL, 1, NULL );
+	xTaskCreate( RGB_Leds_task, "RGB Task", 128, NULL, 1, NULL );
 }
 
 void RGB_Leds_setLeds (uint8_t ledMask)
