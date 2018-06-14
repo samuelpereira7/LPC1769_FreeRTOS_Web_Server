@@ -5,9 +5,22 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PlaneComponent } from './plane/plane.component';
 import { SkyComponent } from './sky/sky.component';
-import { PlaneService } from './plane.service';
-import { HttpClientModule } from '@angular/common/http';
+import {
+  IMqttMessage,
+  MqttModule,
+  IMqttServiceOptions,
+  MqttService,
+} from 'ngx-mqtt';
 
+export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
+  hostname: 'localhost',
+  port: 9001,
+  path: '/mqtt',
+};
+
+export function mqttServiceFactory() {
+  return new MqttService(MQTT_SERVICE_OPTIONS);
+}
 
 @NgModule({
   declarations: [
@@ -17,9 +30,12 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    MqttModule.forRoot({
+      provide: MqttService,
+      useFactory: mqttServiceFactory
+    })
   ],
-  providers: [PlaneService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
