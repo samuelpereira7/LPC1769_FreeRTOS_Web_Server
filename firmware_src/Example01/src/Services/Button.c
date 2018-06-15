@@ -19,7 +19,7 @@
 
 static callback_t tx_callback;
 
-void Button_task( void *pvParameters );
+void Button_readerTask( void *pvParameters );
 
 #define INPUT 	0
 #define OUTPUT	1
@@ -31,7 +31,7 @@ void Button_init(void)
 {
 	GPIO_SetDir( DEFAULT_PORT, DEFAULT_PIN, INPUT);
 
-	xTaskCreate( Button_task, "Button", 192, NULL, 1, NULL );
+	xTaskCreate( Button_readerTask, "Button", 192, NULL, 1, NULL );
 }
 
 void Button_setCallback(callback_t c)
@@ -47,7 +47,7 @@ uint8_t Button_read(void)
 	return ((GPIO_ReadValue(DEFAULT_PORT) >> DEFAULT_PIN) & 0x01);
 }
 
-void Button_task( void *pvParameters )
+void Button_readerTask( void *pvParameters )
 {
 	message_t msg;
 

@@ -18,7 +18,7 @@
 
 static callback_t tx_callback;
 
-void Accelerometer_task( void *pvParameters );
+void Accelerometer_readerTask( void *pvParameters );
 
 typedef struct tagAccelerometer
 {
@@ -67,7 +67,7 @@ void Accelerometer_init (void)
 	Acc_Instance.yoff = 0 - y;
 	Acc_Instance.zoff = 64 - z;
 
-	xTaskCreate( Accelerometer_task, "Acc", 256, NULL, 1, NULL );
+	xTaskCreate( Accelerometer_readerTask, "Acc", 256, NULL, 1, NULL );
 }
 
 void Accelerometer_setCallback(callback_t c)
@@ -115,7 +115,7 @@ int8_t Accelerometer_getZ()
 	return Acc_Instance.cz;
 }
 
-void Accelerometer_task( void *pvParameters )
+void Accelerometer_readerTask( void *pvParameters )
 {
 	message_t msg;
 	int8_t x, y, z;

@@ -17,7 +17,7 @@
 
 static callback_t tx_callback;
 
-void Temperature_task( void *pvParameters );
+void Temperature_readerTask( void *pvParameters );
 
 typedef struct tagTemperature
 {
@@ -29,7 +29,7 @@ static ttagTemperature Temp_Instance;
 void Temperature_init (uint32_t (*getMsTick)(void))
 {
 	temp_init(getMsTick);
-	xTaskCreate( Temperature_task, "Temp", 192, NULL, 1, NULL );
+	xTaskCreate( Temperature_readerTask, "Temp", 192, NULL, 1, NULL );
 }
 
 void Temperature_setCallback(callback_t c)
@@ -51,7 +51,7 @@ int32_t Temperature_getTemp(void)
 	return Temp_Instance.temperature;
 }
 
-void Temperature_task( void *pvParameters )
+void Temperature_readerTask( void *pvParameters )
 {
 	message_t msg;
 

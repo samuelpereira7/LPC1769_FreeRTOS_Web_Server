@@ -41,7 +41,7 @@ xSemaphoreHandle data_semaphr;
 
 static void OLED_display_init_ssp(void);
 
-void OLED_display_mainTask( void *pvParameters );
+void OLED_display_writerTask( void *pvParameters );
 void OLED_display_updaterTask( void *pvParameters );
 
 void OLED_display_init_ssp(void)
@@ -97,7 +97,7 @@ void OLED_display_init (void)
 	OLED_display_queue = xQueueCreate( 8, sizeof(message_t) );
 	data_semaphr = xSemaphoreCreateMutex();
 
-	xTaskCreate( OLED_display_mainTask, "OLED Main", 240, NULL, 1, NULL );
+	xTaskCreate( OLED_display_writerTask, "OLED Main", 240, NULL, 1, NULL );
 	xTaskCreate( OLED_display_updaterTask, "OLED Updater", 100, NULL, 1, NULL );
 }
 
@@ -116,7 +116,7 @@ void OLED_display_putString(uint8_t x, uint8_t y, uint8_t *pStr)
 	oled_putString(x, y, pStr, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 }
 
-void OLED_display_mainTask( void *pvParameters )
+void OLED_display_writerTask( void *pvParameters )
 {
 	uint8_t buf[30];
 

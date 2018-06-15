@@ -68,8 +68,8 @@ typedef struct http_data
 static http_data_t data;
 xSemaphoreHandle data_semaphr;
 
-void HTTP_Server_task( void *pvParameters );
-void HTTP_Server_resetTask( void *pvParameters );
+void HTTP_Server_mainTask( void *pvParameters );
+void HTTP_Server_reseterTask( void *pvParameters );
 void HTTP_Server_updaterTask( void *pvParameters );
 
 const unsigned char GetResponse[] =   // 1st thing our server sends to a client
@@ -85,12 +85,12 @@ void HTTP_Server_init(void)
 	HTTP_Server_queue = xQueueCreate( 15, sizeof(message_t) );
 	data_semaphr = xSemaphoreCreateMutex();
 
-	xTaskCreate( HTTP_Server_task, "HTTP Server", 240, NULL, 2, NULL );
-	xTaskCreate( HTTP_Server_resetTask, "Reset HTTP", 100, NULL, 1, NULL );
+	xTaskCreate( HTTP_Server_mainTask, "HTTP Server", 240, NULL, 2, NULL );
+	xTaskCreate( HTTP_Server_reseterTask, "Reset HTTP", 100, NULL, 1, NULL );
 	xTaskCreate( HTTP_Server_updaterTask, "HTTP Updater", 256, NULL, 1, NULL );
 }
 
-void HTTP_Server_task( void *pvParameters )
+void HTTP_Server_mainTask( void *pvParameters )
 {
 	while(1)
 	{
@@ -108,7 +108,7 @@ void HTTP_Server_task( void *pvParameters )
 	}
 }
 
-void HTTP_Server_resetTask( void *pvParameters )
+void HTTP_Server_reseterTask( void *pvParameters )
 {
 
 	while(1)

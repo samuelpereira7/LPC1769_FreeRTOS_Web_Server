@@ -30,7 +30,7 @@ static ttagRGB_Leds RGB_Leds_Instance;
 
 static callback_t tx_callback;
 
-void RGB_Leds_task( void *pvParameters );
+void RGB_Leds_updaterTask( void *pvParameters );
 inline static uint8_t calc_threshold( uint16_t trimpot_value );
 
 void RGB_Leds_init (void)
@@ -45,7 +45,7 @@ void RGB_Leds_init (void)
 
 	RGB_Leds_queue = xQueueCreate( 6, sizeof(message_t) );
 
-	xTaskCreate( RGB_Leds_task, "RGB Task", 128, NULL, 1, NULL );
+	xTaskCreate( RGB_Leds_updaterTask, "RGB Task", 128, NULL, 1, NULL );
 }
 
 void RGB_Leds_setCallback(callback_t c)
@@ -61,7 +61,7 @@ void RGB_Leds_setLeds (uint8_t ledMask)
 	rgb_setLeds(ledMask);
 }
 
-void RGB_Leds_task( void *pvParameters )
+void RGB_Leds_updaterTask( void *pvParameters )
 {
 	message_t msg;
 	message_t msg_out;
