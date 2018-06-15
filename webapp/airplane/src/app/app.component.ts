@@ -1,34 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { PlaneService } from './plane.service';
+import { Component, OnDestroy } from '@angular/core';
+import { MqttService, IMqttMessage } from 'ngx-mqtt';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnDestroy {
     title = 'app';
     x = -8;
     y = 0;
     z = 95;
     temp = 150;
+    subscription: any;
 
     constructor(
-        private planeService: PlaneService
+        private mqttService: MqttService
     ) {
-
+        this.subscription = this.mqttService.observe('plane').subscribe((message: IMqttMessage) => {
+            this.parseServerResponse(message.payload);
+        });
     }
 
-    ngOnInit() {
-        setInterval(() => {
-            // Realiza requisição ao servidor
-            this.planeService.getAirplane().subscribe(
-                // Requisição realizada com sucesso
-                (res) => this.parseServerResponse(res),
-                // Erro ao realizar requisição
-                (error) => console.log('error:' + error)
-            );
-        }, 1000);
+    ngOnDestroy() {
+        this.subscription.unsubscribe();
     }
 
     // Faz o parse dos dados recebidos
