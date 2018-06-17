@@ -28,6 +28,8 @@ export class AppComponent implements OnDestroy {
 
     // Faz o parse dos dados recebidos
     parseServerResponse(data) {
+		data = JSON.parse(data);
+		console.log(data);
         this.x = data.x;
         this.y = data.y;
         this.temp = data.t;
