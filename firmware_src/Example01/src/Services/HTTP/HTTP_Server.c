@@ -92,6 +92,8 @@ void HTTP_Server_init(void)
 
 void HTTP_Server_mainTask( void *pvParameters )
 {
+	HTTP_Server_reset();
+
 	while(1)
 	{
 		/* network operations */
