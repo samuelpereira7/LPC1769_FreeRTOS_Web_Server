@@ -5,11 +5,12 @@ import json
 import paho.mqtt.publish as publish
 
 def publish_sensor(mes):
-    publish.single("plane", mes, hostname="localhost")
+    publish.single("plane", mes, hostname="broker.hivemq.com")
 
 while(1):
     ac_const = 90/65
     r = requests.get('http://192.168.0.87:80')
+    print(r.status_code)
     resp = str(r.content).split(',')
     payload = {}
     payload['x'] = int(int(resp[1]) * ac_const)
@@ -22,4 +23,4 @@ while(1):
     print
 
     publish_sensor(str_payload)
-    time.sleep(10)
+    time.sleep(0.5)
